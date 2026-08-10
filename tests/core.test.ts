@@ -1,0 +1,27 @@
+import { describe, expect, it } from "vitest";
+import { questions } from "@/constants/questions";
+import { assessmentItemSchema } from "@/validation/assessment";
+import { assembleAssessment, validateAssessmentForm } from "@/lib/assessment/assembly";
+import { calculateResultCoverage, scoreAssessment, scoreItem, scoreMatching, scoreRanking, scoreSelectMultiple } from "@/lib/scoring";
+import { generateRoadmap } from "@/lib/roadmap";
+import { generateParticipantCode } from "@/lib/participant";
+import { escapeCsv, toCsv } from "@/lib/csv";
+import { suppressSmallGroups } from "@/lib/research";
+import { canMutateQuestions } from "@/lib/admin-auth";
+import { permitsAnswerKey } from "@/lib/pilot-config";
+import { isDuplicateSubmissionError } from "@/lib/submission";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+
+describe("item schema",()=>{it("accepts every migrated item",()=>{for(const item of questions)expect(assessmentItemSchema.safeParse(item).success,item.id).toBe(true)});it("rejects invalid competency/category mappings",()=>{expect(assessmentItemSchema.safeParse({...questions[0],competencyCode:"PF-01"}).success).toBe(false)})});
+describe("assembly",()=>{it("is seeded and reproducible",()=>{expect(assembleAssessment(questions,"pilot-a").itemRefs).toEqual(assembleAssessment(questions,"pilot-a").itemRefs)});it("builds a valid balanced 48 item form without duplicates",()=>{const form=assembleAssessment(questions,"pilot-b"),validation=validateAssessmentForm(form,questions);expect(validation.errors).toEqual([]);expect(form.itemRefs).toHaveLength(48);expect(new Set(form.itemRefs.map(item=>item.id)).size).toBe(48)})});
+describe("scoring",()=>{it("scores binary and multiple selection",()=>{expect(scoreItem(questions.find(item=>item.id==="SKM-DL-EASY-001")!,"B")).toBe(1);expect(scoreSelectMultiple(["A","B","D"],["A","B","C"])).toBeCloseTo(1/3)});it("scores ranking and matching proportionally",()=>{expect(scoreRanking(["A","B","C"],["A","C","B"])).toBeCloseTo(2/3);expect(scoreMatching({a:"1",b:"2"},{a:"1",b:"3"})).toBe(.5)});it("recalculates server-compatible category and competency scores",()=>{const form=assembleAssessment(questions,"score"),items=form.itemRefs.map(ref=>questions.find(item=>item.id===ref.id)!),answers=Object.fromEntries(items.map(item=>[item.id,item.correctAnswer])),result=scoreAssessment(items,answers);expect(result.overall).toBe(100);expect(result.categories).toHaveLength(6);expect(result.competencies.length).toBeGreaterThanOrEqual(18);expect(result.misconceptions).toHaveLength(0);expect(generateRoadmap(result)).toHaveLength(4)})});
+describe("pilot utilities",()=>{it("generates stable display codes",()=>expect(generateParticipantCode(1,2026)).toBe("SM-2026-000001"));it("escapes UTF-8 CSV safely",()=>{expect(escapeCsv('a,"b"')).toBe('"a,""b"""');expect(toCsv([{name:"O‘quvchi",note:"a\nb"}],["name","note"])).toContain('"a\nb"')});it("suppresses small groups",()=>expect(suppressSmallGroups([{participants:4},{participants:5}],5)).toEqual([{participants:5}]));it("enforces admin mutation roles",()=>{expect(canMutateQuestions("editor")).toBe(true);expect(canMutateQuestions("researcher")).toBe(false)})});
+describe("pre-pilot safeguards",()=>{
+  it("assembles from approved active publishable items only",()=>{const form=assembleAssessment(questions,"quality-gate");for(const ref of form.itemRefs){const item=questions.find(candidate=>candidate.id===ref.id)!;expect(item.reviewStatus).toBe("approved");expect(item.publishable).toBe(true);expect(item.status).toBe("active")}});
+  it("holds unsupported and unreviewed items outside live forms",()=>{expect(questions.filter(item=>item.reviewStatus==="needs_review")).toHaveLength(16);expect(questions.filter(item=>item.reviewStatus==="do_not_publish").map(item=>item.type).sort()).toEqual(["matching","ranking"])});
+  it("calculates diagnostic coverage from completion and evidence",()=>{expect(calculateResultCoverage(48,48,[{answered:2},{answered:1}])).toBe(75);expect(calculateResultCoverage(24,48,[{answered:2},{answered:0}])).toBe(50)});
+  it("does not duplicate consecutive roadmap content",()=>{const form=assembleAssessment(questions,"roadmap"),items=form.itemRefs.map(ref=>questions.find(item=>item.id===ref.id)!),answers=Object.fromEntries(items.map(item=>[item.id,item.correctAnswer])),result=scoreAssessment(items,answers),weeks=generateRoadmap({...result,competencies:result.competencies.map((item,index)=>({...item,score:index<4?index*10:item.score}))},"en");for(let index=1;index<weeks.length;index++){expect(weeks[index].goals).not.toEqual(weeks[index-1].goals);expect(weeks[index].exercises).not.toEqual(weeks[index-1].exercises);expect(weeks[index].project).not.toBe(weeks[index-1].project);expect(weeks[index].milestone).not.toBe(weeks[index-1].milestone)}});
+  it("keeps research-safe feedback from exposing answer keys",()=>{expect(permitsAnswerKey("research-safe")).toBe(false);expect(permitsAnswerKey("diagnostic")).toBe(true)});
+  it("recognizes duplicate-key protection",()=>{expect(isDuplicateSubmissionError({code:"23505"})).toBe(true);expect(isDuplicateSubmissionError({code:"42501"})).toBe(false)});
+  it("has complete bilingual item and result labels",()=>{for(const item of questions){expect(item.prompt.en.trim()).not.toBe("");expect(item.prompt.uz.trim()).not.toBe("");for(const option of item.options){expect(option.label.en.trim()).not.toBe("");expect(option.label.uz.trim()).not.toBe("")}}expect(Object.keys(getDictionary("en").results)).toEqual(Object.keys(getDictionary("uz").results))});
+});

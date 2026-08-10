@@ -1,0 +1,1 @@
+import {Skeleton}from "@/components/ui/states";export default function Loading(){return <div className="container-shell py-16"><Skeleton className="h-8 w-32"/><Skeleton className="mt-5 h-14 max-w-2xl"/><div className="mt-10 grid gap-5 md:grid-cols-3"><Skeleton className="h-56"/><Skeleton className="h-56"/><Skeleton className="h-56"/></div></div>}

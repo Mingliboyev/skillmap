@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@theme inline {
+  --font-sans:"Segoe UI",Arial,sans-serif; --font-serif:Georgia,"Times New Roman",serif;
+  --color-ink:var(--text-primary); --color-cream:var(--page-background);
+  --color-page:var(--page-background); --color-surface:var(--surface-background); --color-elevated:var(--elevated-surface);
+  --color-primary-text:var(--text-primary); --color-secondary-text:var(--text-secondary); --color-muted-text:var(--text-muted);
+  --color-inverse-text:var(--text-inverse); --color-ui-border:var(--border); --color-strong-border:var(--border-strong);
+  --color-action:var(--primary-action); --color-action-hover:var(--primary-action-hover); --color-focus-ring:var(--focus-ring);
+  --color-success-ui:var(--success); --color-warning-ui:var(--warning); --color-error-ui:var(--error);
+}
+:root {
+  --page-background:#f8faf9; --surface-background:#ffffff; --elevated-surface:#ffffff;
+  --text-primary:#102a2a; --text-secondary:#3f5355; --text-muted:#58696b; --text-inverse:#ffffff;
+  --border:#cbd5d4; --border-strong:#829492; --primary-action:#115e59; --primary-action-hover:#0b4b47;
+  --success:#166534; --warning:#92400e; --error:#b91c1c; --focus-ring:#0f766e;
+  --chart-grid:#cbd5d4; --chart-label:#405456; --tooltip-background:#102a2a; --tooltip-text:#ffffff;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--page-background); color:var(--text-primary); font-family:"Segoe UI",Arial,sans-serif; }
+a { text-decoration:none; }
+button, a, input, select { -webkit-tap-highlight-color:transparent; }
+button, [role="button"], a, input, select, summary { outline-offset:3px; }
+:focus-visible { outline:3px solid var(--focus-ring); outline-offset:3px; }
+input::placeholder, textarea::placeholder { color:#647476; opacity:1; }
+input:disabled, select:disabled { background:#e9eeed; border-color:#a9b7b5; color:#526365; cursor:not-allowed; }
+a:not([class]) { color:#0f625d; text-decoration:underline; text-underline-offset:3px; }
+.text-slate-400 { color:#58696b; }
+.text-slate-500 { color:#4f6264; }
+.border-slate-100 { border-color:#d6dfde; }
+.divide-slate-100 > :not(:last-child) { border-color:#d6dfde; }
+.opacity-45 { opacity:1; color:#526365; background:#f1f5f4; }
+.recharts-cartesian-axis-tick-value,.recharts-polar-angle-axis-tick-value { fill:var(--chart-label); font-weight:600; }
+.recharts-cartesian-grid line,.recharts-polar-grid-concentric-polygon { stroke:var(--chart-grid); }
+.recharts-default-tooltip { background:var(--tooltip-background)!important; border:1px solid var(--border-strong)!important; border-radius:8px!important; color:var(--tooltip-text)!important; }
+.recharts-default-tooltip * { color:var(--tooltip-text)!important; }
+.recharts-wrapper:focus,.recharts-surface:focus { outline:none; }
+::selection { background:#bfe3db; color:#102a2a; }
+.display { font-family:Georgia,"Times New Roman",serif; letter-spacing:-.035em; }
+.container-shell { width:min(1180px,calc(100% - 2rem)); margin-inline:auto; }
+.section { padding-block:clamp(4.5rem,8vw,8rem); }
+.grid-paper { background-image:linear-gradient(rgba(15,118,110,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(15,118,110,.05) 1px,transparent 1px);background-size:32px 32px; }
+@media (max-width:374px) { .container-shell{width:min(100% - 1.25rem,1180px)} .section{padding-block:3.75rem} }
+@media print {
+  @page{margin:14mm}
+  .no-print{display:none!important} html,body{background:#fff!important;color:#111!important}
+  main{display:block}.print-break{break-before:page}.print-avoid{break-inside:avoid}
+  .print-inverse{background:#fff!important;color:#111!important;border:2px solid #334155!important}
+  .print-inverse *{color:#111!important}.print-progress{background:#d7dfde!important;border:1px solid #64748b!important}
+  .bg-teal-900,.bg-slate-950{background:#fff!important;color:#111!important;border-color:#334155!important}
+  .bg-teal-900 *,.bg-slate-950 *{color:#111!important}.shadow-sm,.shadow-xl{box-shadow:none!important}
+  [class*="rounded-2xl"]{break-inside:avoid}.recharts-responsive-container{min-height:260px!important}
+  .print-progress>div{background:#115e59!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  svg text{fill:#111!important} a{color:#111!important;text-decoration:none!important}
+}
+body:has(.admin-shell) > header,body:has(.admin-shell) > footer{display:none}
+body:has(.admin-shell) > main{min-height:100vh}

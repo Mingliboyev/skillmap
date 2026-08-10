@@ -1,0 +1,7 @@
+import type { ButtonHTMLAttributes, ReactNode } from "react";
+import Link from "next/link";
+import { cn } from "@/utils/cn";
+const styles = "inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:border-slate-300 disabled:bg-slate-200 disabled:text-slate-600";
+export function buttonClass(variant:"primary"|"secondary"|"ghost"="primary") { return cn(styles, variant === "primary" && "border border-action bg-action text-inverse-text hover:border-action-hover hover:bg-action-hover active:bg-teal-950", variant === "secondary" && "border border-strong-border bg-surface text-primary-text hover:border-teal-800 hover:bg-teal-50 active:bg-teal-100", variant === "ghost" && "border border-transparent text-secondary-text hover:bg-slate-100 hover:text-primary-text active:bg-slate-200"); }
+export function Button({className,children,...props}:ButtonHTMLAttributes<HTMLButtonElement>) { return <button className={cn(buttonClass(),className)} {...props}>{children}</button> }
+export function ButtonLink({href,children,variant="primary",className}:{href:string;children:ReactNode;variant?:"primary"|"secondary"|"ghost";className?:string}) { return <Link href={href} className={cn(buttonClass(variant),className)}>{children}</Link> }

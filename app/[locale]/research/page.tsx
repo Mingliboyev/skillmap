@@ -1,0 +1,2 @@
+import {notFound} from "next/navigation";import {ResearchDashboard} from "@/features/research/research-dashboard";import {isLocale}from "@/lib/i18n/dictionaries";import{getResearchSnapshot}from "@/lib/research";
+export default async function Page({params}:{params:Promise<{locale:string}>}){const{locale}=await params;if(!isLocale(locale))notFound();const data=await getResearchSnapshot();return <ResearchDashboard locale={locale} data={data}/>}
