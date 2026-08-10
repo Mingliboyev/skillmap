@@ -1,4 +1,9 @@
 import Link from "next/link";
 import { Map } from "lucide-react";
 import type { Locale } from "@/types/domain";
-export function SiteFooter({locale}:{locale:Locale}) { return <footer className="border-t border-ui-border bg-surface py-10"><div className="container-shell flex flex-col gap-6 text-sm text-secondary-text md:flex-row md:items-center md:justify-between"><div className="flex items-center gap-2 font-bold text-ink"><Map size={18} className="text-teal-800"/>SkillMap Uzbekistan</div><p>Practical digital skills intelligence · Pilot MVP</p><div className="flex flex-wrap gap-x-5 gap-y-3">{[[`/${locale}/research`,"Research"],[`/${locale}/admin`,"Admin"],[`/${locale}/privacy`,"Privacy"]].map(([href,label])=><Link className="rounded text-teal-900 underline decoration-teal-300 underline-offset-4 hover:decoration-teal-900" key={href} href={href}>{label}</Link>)}</div></div></footer> }
+
+export function SiteFooter({ locale }: { locale: Locale }) {
+  const uz = locale === "uz";
+  const links = [[`/${locale}/research`, uz ? "Tadqiqot" : "Research"], [`/${locale}/admin`, uz ? "Administrator" : "Admin"], [`/${locale}/privacy`, uz ? "Maxfiylik" : "Privacy"]];
+  return <footer className="border-t border-ui-border bg-surface py-10"><div className="container-shell flex flex-col gap-6 text-sm text-secondary-text md:flex-row md:items-center md:justify-between"><div className="flex items-center gap-2 font-bold text-ink"><Map size={18} className="text-teal-800"/>SkillMap Uzbekistan</div><p>{uz ? "Amaliy raqamli ko‘nikmalar · Ta’limiy pilot" : "Practical digital skills · Educational pilot"}</p><div className="flex flex-wrap gap-x-5 gap-y-3">{links.map(([href,label])=><Link className="rounded text-teal-900 underline decoration-teal-300 underline-offset-4 hover:decoration-teal-900" key={href} href={href}>{label}</Link>)}</div></div></footer>;
+}

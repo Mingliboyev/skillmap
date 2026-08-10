@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
 import { questions } from "@/constants/questions";
 import { assessmentItemSchema } from "@/validation/assessment";
 import { assembleAssessment, validateAssessmentForm } from "@/lib/assessment/assembly";
@@ -24,4 +25,6 @@ describe("pre-pilot safeguards",()=>{
   it("keeps research-safe feedback from exposing answer keys",()=>{expect(permitsAnswerKey("research-safe")).toBe(false);expect(permitsAnswerKey("diagnostic")).toBe(true)});
   it("recognizes duplicate-key protection",()=>{expect(isDuplicateSubmissionError({code:"23505"})).toBe(true);expect(isDuplicateSubmissionError({code:"42501"})).toBe(false)});
   it("has complete bilingual item and result labels",()=>{for(const item of questions){expect(item.prompt.en.trim()).not.toBe("");expect(item.prompt.uz.trim()).not.toBe("");for(const option of item.options){expect(option.label.en.trim()).not.toBe("");expect(option.label.uz.trim()).not.toBe("")}}expect(Object.keys(getDictionary("en").results)).toEqual(Object.keys(getDictionary("uz").results))});
+  it("keeps locale dictionaries structurally aligned and public labels presentation-safe",()=>{const en=getDictionary("en"),uz=getDictionary("uz");expect(Object.keys(en)).toEqual(Object.keys(uz));expect(Object.keys(en.results)).toEqual(Object.keys(uz.results));for(const dictionary of [en,uz]){const publicCopy=JSON.stringify(dictionary);expect(publicCopy).not.toMatch(/needs_review|do_not_publish|Pilot MVP/)}});
+  it("keeps public privacy and status copy aligned with production behavior",()=>{const privacy=readFileSync("app/[locale]/privacy/page.tsx","utf8"),research=readFileSync("features/research/research-dashboard.tsx","utf8"),footer=readFileSync("components/layout/site-footer.tsx","utf8");expect(privacy).toContain("stored in the pilot database");expect(privacy).toContain("pilot ma’lumotlar bazasida saqlanadi");expect(privacy).toContain("Raw individual responses are not public");expect(research).not.toContain("note:data.mode");expect(footer).not.toContain("Pilot MVP")});
 });
