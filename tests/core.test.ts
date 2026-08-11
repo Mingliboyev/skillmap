@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
+import { renderToStaticMarkup } from "react-dom/server";
+import Landing from "@/app/[locale]/page";
 import { questions } from "@/constants/questions";
 import { assessmentItemSchema } from "@/validation/assessment";
 import { assembleAssessment, validateAssessmentForm } from "@/lib/assessment/assembly";
@@ -27,4 +29,5 @@ describe("pre-pilot safeguards",()=>{
   it("has complete bilingual item and result labels",()=>{for(const item of questions){expect(item.prompt.en.trim()).not.toBe("");expect(item.prompt.uz.trim()).not.toBe("");for(const option of item.options){expect(option.label.en.trim()).not.toBe("");expect(option.label.uz.trim()).not.toBe("")}}expect(Object.keys(getDictionary("en").results)).toEqual(Object.keys(getDictionary("uz").results))});
   it("keeps locale dictionaries structurally aligned and public labels presentation-safe",()=>{const en=getDictionary("en"),uz=getDictionary("uz");expect(Object.keys(en)).toEqual(Object.keys(uz));expect(Object.keys(en.results)).toEqual(Object.keys(uz.results));for(const dictionary of [en,uz]){const publicCopy=JSON.stringify(dictionary);expect(publicCopy).not.toMatch(/needs_review|do_not_publish|Pilot MVP/)}});
   it("keeps public privacy and status copy aligned with production behavior",()=>{const privacy=readFileSync("app/[locale]/privacy/page.tsx","utf8"),research=readFileSync("features/research/research-dashboard.tsx","utf8"),footer=readFileSync("components/layout/site-footer.tsx","utf8");expect(privacy).toContain("stored in the pilot database");expect(privacy).toContain("pilot ma’lumotlar bazasida saqlanadi");expect(privacy).toContain("Raw individual responses are not public");expect(research).not.toContain("note:data.mode");expect(footer).not.toContain("Pilot MVP")});
+  it("does not render the known English landing leaks in Uzbek",async()=>{const html=renderToStaticMarkup(await Landing({params:Promise.resolve({locale:"uz"})}));for(const leak of ["Student skill map","Diagnostic overview","Developing","4 strengths mapped","SkillMap measures applied judgment and reasoning — not memorization alone.","8 questions · Easy to hard · Applied scenarios"]){expect(html).not.toContain(leak)}expect(html).toContain("O‘quvchi ko‘nikmalari xaritasi");expect(html).toContain("Amaliy vaziyatlar")});
 });
