@@ -82,24 +82,24 @@
       "correctOption": "C",
       "content": {
         "en": {
-          "context": "Anar sends a private photo to a group chat. Five minutes later, she regrets it and selects “Delete for everyone.”",
-          "question": "Why might copies of the photo still remain online after it is deleted from the chat?",
+          "context": "Anar sends a photo to a group chat, then chooses “Delete for everyone.”",
+          "question": "Why could someone still have a copy of the photo?",
           "options": {
-            "A": "Deleting it from the sender’s phone physically erases it from all internet servers.",
-            "B": "Encryption guarantees deleted data cannot be recovered by anyone.",
-            "C": "The photo may already have been downloaded, screenshotted, or stored by the service provider.",
-            "D": "All digital data automatically disappears after 24 hours."
+            "A": "Deleting the chat message removes every copy everywhere.",
+            "B": "A deleted photo can never be opened again.",
+            "C": "Someone may already have downloaded it or taken a screenshot.",
+            "D": "Photos always disappear from every device after 24 hours."
           },
           "explanation": "Digital information can persist through copies, screenshots, caches, logs, or service-provider storage even after a deletion action."
         },
         "uz": {
-          "context": "Anar guruh chatiga shaxsiy surat yuboradi. Besh daqiqadan so‘ng pushaymon bo‘lib, “Hamma uchun o‘chirish”ni tanlaydi.",
-          "question": "Surat chatdan o‘chirilganidan keyin ham nega uning nusxalari internetda qolishi mumkin?",
+          "context": "Anar guruh chatiga surat yuboradi, keyin “Hamma uchun o‘chirish”ni tanlaydi.",
+          "question": "Nega suratning nusxasi baribir kimdadir qolgan bo‘lishi mumkin?",
           "options": {
-            "A": "Yuboruvchining telefonidan o‘chirilsa, u barcha internet serverlaridan ham jismonan o‘chadi.",
-            "B": "Shifrlash o‘chirilgan ma’lumotni hech kim tiklay olmasligini kafolatlaydi.",
-            "C": "Surat avvalroq yuklab olingan, skrinshot qilingan yoki xizmat provayderi tomonidan saqlangan bo‘lishi mumkin.",
-            "D": "Barcha raqamli ma’lumotlar 24 soatdan keyin avtomatik yo‘qoladi."
+            "A": "Chatdagi xabar o‘chirilsa, barcha nusxalar ham yo‘qoladi.",
+            "B": "O‘chirilgan suratni boshqa hech qachon ochib bo‘lmaydi.",
+            "C": "Kimdir uni oldin yuklab olgan yoki skrinshot qilgan bo‘lishi mumkin.",
+            "D": "Suratlar 24 soatdan keyin barcha qurilmalardan o‘z-o‘zidan yo‘qoladi."
           },
           "explanation": "Raqamli ma’lumot nusxalar, skrinshotlar, kesh, loglar yoki xizmat provayderi saqlovi orqali o‘chirishdan keyin ham mavjud bo‘lib qolishi mumkin."
         }
@@ -346,8 +346,8 @@
       "correctOption": "A",
       "content": {
         "en": {
-          "context": "A system transforms shapes: [Circle, Square] → [Square, Triangle]; [Square, Triangle] → [Triangle, Circle]; [Triangle, Circle] → [Circle, Square].",
-          "question": "What is the output for [Circle, Triangle]?",
+          "context": "A program replaces each shape using this rule: Circle → Square, Square → Triangle, Triangle → Circle.",
+          "question": "If the input is [Circle, Triangle], what is the output?",
           "options": {
             "A": "[Square, Circle]",
             "B": "[Triangle, Square]",
@@ -357,8 +357,8 @@
           "explanation": "Each shape is replaced by the next in the cycle Circle → Square → Triangle → Circle."
         },
         "uz": {
-          "context": "Tizim shakllarni quyidagicha o‘zgartiradi: [Doira, Kvadrat] → [Kvadrat, Uchburchak]; [Kvadrat, Uchburchak] → [Uchburchak, Doira]; [Uchburchak, Doira] → [Doira, Kvadrat].",
-          "question": "[Doira, Uchburchak] uchun chiqish natijasi qanday bo‘ladi?",
+          "context": "Dastur har bir shaklni shu qoida bo‘yicha almashtiradi: Doira → Kvadrat, Kvadrat → Uchburchak, Uchburchak → Doira.",
+          "question": "Kirish [Doira, Uchburchak] bo‘lsa, chiqish qanday bo‘ladi?",
           "options": {
             "A": "[Kvadrat, Doira]",
             "B": "[Uchburchak, Kvadrat]",
@@ -478,8 +478,8 @@
       "correctOption": "C",
       "content": {
         "en": {
-          "context": "Consider: X ← 10; Y ← 5; X ← Y; Y ← X.",
-          "question": "What are the final values of X and Y?",
+          "context": "Run this Python-style code from top to bottom:\nX = 10\nY = 5\nX = Y\nY = X",
+          "question": "What are X and Y after the last line?",
           "options": {
             "A": "X=10, Y=5",
             "B": "X=5, Y=10",
@@ -489,8 +489,8 @@
           "explanation": "X ← Y overwrites X with 5. Then Y ← X copies the new X value, so both are 5."
         },
         "uz": {
-          "context": "Quyidagi buyruqlarni ko‘rib chiqing: X ← 10; Y ← 5; X ← Y; Y ← X.",
-          "question": "X va Y ning yakuniy qiymatlari qanday?",
+          "context": "Python uslubidagi kodni yuqoridan pastga bajaring:\nX = 10\nY = 5\nX = Y\nY = X",
+          "question": "Oxirgi qatordan keyin X va Y nechaga teng?",
           "options": {
             "A": "X=10, Y=5",
             "B": "X=5, Y=10",
@@ -522,8 +522,8 @@
       "correctOption": "C",
       "content": {
         "en": {
-          "context": "A program runs: Total ← 0; FOR Counter ← 1 TO 3; Total ← Total + Counter; NEXT Counter.",
-          "question": "What is Total when the loop finishes?",
+          "context": "This Python code adds each number from 1 through 3:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
+          "question": "What is total after the loop finishes?",
           "options": {
             "A": "3",
             "B": "4",
@@ -533,8 +533,8 @@
           "explanation": "Total becomes 1, then 3, then 6."
         },
         "uz": {
-          "context": "Dastur quyidagicha ishlaydi: Total ← 0; FOR Counter ← 1 TO 3; Total ← Total + Counter; NEXT Counter.",
-          "question": "Sikl tugaganda Total qiymati nechaga teng bo‘ladi?",
+          "context": "Bu Python kodi 1 dan 3 gacha bo‘lgan sonlarni qo‘shadi:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
+          "question": "Sikl tugagach, total nechaga teng bo‘ladi?",
           "options": {
             "A": "3",
             "B": "4",
@@ -610,24 +610,24 @@
       "correctOption": "C",
       "content": {
         "en": {
-          "context": "A library uses: IF (Books_Returned=TRUE) AND (Overdue_Fine<5 OR Is_Senior=TRUE) THEN Allowed←TRUE.",
-          "question": "Which student is allowed to borrow?",
+          "context": "A library allows borrowing only when both rules are met:\n1. All earlier books were returned.\n2. The fine is below $5 OR the student is in a senior grade.",
+          "question": "Which student meets both rules?",
           "options": {
-            "A": "Returned books; fine=10; not senior.",
-            "B": "Did not return books; fine=0; senior.",
-            "C": "Returned books; fine=2; not senior.",
-            "D": "Did not return books; fine=10; senior."
+            "A": "Returned all books; $10 fine; not in a senior grade.",
+            "B": "Did not return all books; no fine; in a senior grade.",
+            "C": "Returned all books; $2 fine; not in a senior grade.",
+            "D": "Did not return all books; $10 fine; in a senior grade."
           },
           "explanation": "The student must have returned the books and also satisfy either Fine<5 or Is_Senior=TRUE."
         },
         "uz": {
-          "context": "Kutubxona quyidagi shartdan foydalanadi: IF (Books_Returned=TRUE) AND (Overdue_Fine<5 OR Is_Senior=TRUE) THEN Allowed←TRUE.",
-          "question": "Qaysi o‘quvchiga kitob olishga ruxsat beriladi?",
+          "context": "Kutubxonadan kitob olish uchun ikkala qoida ham bajarilishi kerak:\n1. Oldingi kitoblarning barchasi qaytarilgan.\n2. Jarima 5 dollardan kam YOKI o‘quvchi yuqori sinfda o‘qiydi.",
+          "question": "Qaysi o‘quvchi ikkala qoidaga ham mos keladi?",
           "options": {
-            "A": "Kitoblarni qaytargan; jarima=10; yuqori sinf o‘quvchisi emas.",
-            "B": "Kitoblarni qaytarmagan; jarima=0; yuqori sinf o‘quvchisi.",
-            "C": "Kitoblarni qaytargan; jarima=2; yuqori sinf o‘quvchisi emas.",
-            "D": "Kitoblarni qaytarmagan; jarima=10; yuqori sinf o‘quvchisi."
+            "A": "Barcha kitoblarni qaytargan; jarima 10 dollar; yuqori sinfda emas.",
+            "B": "Barcha kitoblarni qaytarmagan; jarima yo‘q; yuqori sinfda.",
+            "C": "Barcha kitoblarni qaytargan; jarima 2 dollar; yuqori sinfda emas.",
+            "D": "Barcha kitoblarni qaytarmagan; jarima 10 dollar; yuqori sinfda."
           },
           "explanation": "O‘quvchi avvalo kitoblarni qaytargan bo‘lishi va qo‘shimcha ravishda jarima 5 dan kichik YOKI Is_Senior=TRUE shartlaridan birini bajarishi kerak."
         }
@@ -1006,23 +1006,23 @@
       "correctOption": "C",
       "content": {
         "en": {
-          "context": "You use Integer for Number_of_Absences, Student_ID_Number, and Final_Exam_Percentage_Score (e.g. 85.5%).",
-          "question": "Which field will lose information because Integer is inappropriate?",
+          "context": "An Integer stores whole numbers only. A school system stores absences, student ID, and exam score as Integers. An exam score can be 85.5.",
+          "question": "Which value could lose its decimal part?",
           "options": {
-            "A": "Number_of_Absences",
-            "B": "Student_ID_Number",
-            "C": "Final_Exam_Percentage_Score",
+            "A": "Number of absences",
+            "B": "Student ID",
+            "C": "Exam score",
             "D": "None of them"
           },
           "explanation": "Integer stores whole numbers, so a value such as 85.5 requires a Real/Float representation."
         },
         "uz": {
-          "context": "Siz Number_of_Absences, Student_ID_Number va Final_Exam_Percentage_Score (masalan, 85.5%) maydonlari uchun Integer turidan foydalanyapsiz.",
-          "question": "Qaysi maydonda Integer noto‘g‘ri tanlov bo‘lib, ma’lumotning bir qismi yo‘qolishi mumkin?",
+          "context": "Integer faqat butun sonlarni saqlaydi. Maktab tizimi dars qoldirish soni, o‘quvchi ID raqami va imtihon balini Integer sifatida saqlaydi. Imtihon bali 85.5 bo‘lishi mumkin.",
+          "question": "Qaysi qiymatning kasr qismi yo‘qolishi mumkin?",
           "options": {
-            "A": "Number_of_Absences",
-            "B": "Student_ID_Number",
-            "C": "Final_Exam_Percentage_Score",
+            "A": "Dars qoldirish soni",
+            "B": "O‘quvchi ID raqami",
+            "C": "Imtihon bali",
             "D": "Hech qaysisi"
           },
           "explanation": "Integer faqat butun sonlarni saqlaydi. 85.5 kabi qiymat uchun Real/Float kerak."
