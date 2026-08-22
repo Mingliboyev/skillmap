@@ -10,7 +10,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "db:seed": "vite-node scripts/seed-question-bank.ts",
-    "db:seed:v2": "vite-node scripts/seed-v2-bank.ts"
+    "db:seed:v2": "vite-node scripts/seed-v2-bank.ts",
+    "test:e2e:real": "vite-node scripts/e2e-real-auth.ts",
+    "test:ai:real": "vite-node --config vitest.config.mts scripts/smoke-ai-roadmap.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.7.1",
@@ -32,6 +34,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
+    "playwright": "^1.62.1",
     "supabase": "^2.112.0",
     "tailwindcss": "^4",
     "typescript": "^5",
