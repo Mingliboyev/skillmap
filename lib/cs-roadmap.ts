@@ -69,3 +69,12 @@ export function buildCsRoadmap(evidence?:V2EvidenceSummary|null):RoadmapStage[]{
  const scores=new Map<string,number>(evidence?.domainScores.map(d=>[d.domain,d.score])??[]);
  return stages.map((s,i)=>{const stage=i+1;const related=Object.entries(domainStage).filter(([,ids])=>ids.includes(stage)).map(([d])=>scores.get(d)).filter((v):v is number=>v!==undefined);const score=related.length?Math.min(...related):undefined;return{stage,titleEn:s.titleEn,titleUz:s.titleUz,descriptionEn:s.descriptionEn,descriptionUz:s.descriptionUz,optional:s.optional,nodes:s.items.map((item,index)=>({id:item[0],stage,titleEn:item[1],titleUz:item[2],descriptionEn:item[3],descriptionUz:item[4],difficulty:stage<=3?"foundation":stage<=7?"intermediate":"advanced",prerequisites:stage===1||s.optional?[]:[stages[stage-2].items[Math.min(index,stages[stage-2].items.length-1)][0]],estimatedLearningTime:stage<=3?"2–4 hours":"3–6 hours",status:s.optional?"recommended":score===undefined?(stage===1?"recommended":"locked"):score>=80?"completed":score>=50?"recommended":index===0?"in_progress":"recommended",assessmentCompetencyIds:related.length?Object.keys(domainStage).filter(d=>domainStage[d].includes(stage)):undefined}))}});
 }
+
+export function roadmapNodeIds(roadmap:RoadmapStage[]){return new Set(roadmap.flatMap(stage=>stage.nodes.map(node=>node.id)))}
+
+export function buildPersonalizedNodePath(evidence:V2EvidenceSummary,roadmap:RoadmapStage[]){
+ const scores=[...evidence.domainScores].sort((a,b)=>a.score-b.score);
+ const selected=scores.flatMap(result=>Object.entries(domainStage).find(([domain])=>domain===result.domain)?.[1]??[]).flatMap(stage=>roadmap.find(item=>item.stage===stage)?.nodes??[]).map(node=>node.id);
+ const allowed=roadmapNodeIds(roadmap);
+ return [...new Set(selected)].filter(id=>allowed.has(id)).slice(0,12);
+}

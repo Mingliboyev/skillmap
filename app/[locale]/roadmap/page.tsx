@@ -1,13 +1,11 @@
 import { notFound } from "next/navigation";
 import { CsRoadmap } from "@/features/roadmap/cs-roadmap";
-import { ThreeMonthPlan } from "@/features/roadmap/three-month-plan";
-import { buildCsRoadmap } from "@/lib/cs-roadmap";
+import { buildCsRoadmap, buildPersonalizedNodePath } from "@/lib/cs-roadmap";
 import { isLocale } from "@/lib/i18n/dictionaries";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { V2_SUPPORTED_VERSIONS } from "@/lib/assessment/v2-bank";
 import type { V2EvidenceSummary } from "@/lib/assessment/v2-results";
 import { buildTwelveWeekPlan } from "@/lib/twelve-week-plan";
-import type { V2Roadmap } from "@/lib/ai/v2-roadmap";
 
 export const metadata = { title: "Computer Science Roadmap" };
 
@@ -18,7 +16,6 @@ export default async function RoadmapPage({ params }: { params: Promise<{ locale
   let evidence: V2EvidenceSummary | null = null;
   let attemptId: string | null = null;
   let completed: string[] = [];
-  let guidance: V2Roadmap["threeMonthGuidance"] = [];
 
   if (supabase) {
     const { data: { user } } = await supabase.auth.getUser();
@@ -33,8 +30,6 @@ export default async function RoadmapPage({ params }: { params: Promise<{ locale
         .maybeSingle();
       evidence = (data?.result_summary as V2EvidenceSummary | null) ?? null;
       attemptId = data?.id ?? null;
-      const saved = (data?.roadmaps as unknown as { plan: Partial<V2Roadmap> }[] | null)?.[0]?.plan;
-      guidance = saved?.threeMonthGuidance ?? [];
       if (attemptId) {
         const { data: rows } = await supabase.from("roadmap_task_progress").select("task_id").eq("attempt_id", attemptId);
         completed = (rows ?? []).map((row) => row.task_id);
@@ -42,8 +37,6 @@ export default async function RoadmapPage({ params }: { params: Promise<{ locale
     }
   }
 
-  return <>
-    {evidence && attemptId && <div id="twelve-week-plan" className="scroll-mt-24"><ThreeMonthPlan locale={locale} weeks={buildTwelveWeekPlan(evidence)} attemptId={attemptId} initialCompleted={completed} guidance={guidance}/></div>}
-    <div id="long-term-roadmap" className="scroll-mt-24"><CsRoadmap locale={locale} stages={buildCsRoadmap(evidence)} personalized={Boolean(evidence)}/></div>
-  </>;
+  const stages=buildCsRoadmap(evidence),weeks=evidence?buildTwelveWeekPlan(evidence):[];
+  return <div id="long-term-roadmap" className="scroll-mt-24"><CsRoadmap locale={locale} stages={stages} personalized={Boolean(evidence)} recommendedNodeIds={evidence?buildPersonalizedNodePath(evidence,stages):[]} weeks={weeks} attemptId={attemptId} initialCompleted={completed}/></div>;
 }

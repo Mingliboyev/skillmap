@@ -128,8 +128,8 @@ export function buildTwelveWeekPlan(evidence: V2EvidenceSummary): LearningWeek[]
           resourceUrl: resource.url,
           resourceTitleEn: resource.titleEn,
           resourceTitleUz: resource.titleUz,
-          successCheckEn: day === 5 ? plan.resultEn : `Save the work from day ${day} in your weekly evidence folder.`,
-          successCheckUz: day === 5 ? plan.resultUz : `${day}-kun natijasini haftalik dalillar papkasiga saqlang.`,
+          successCheckEn: day === 5 ? plan.resultEn : `Complete the instruction and verify that its stated output works in at least one example.`,
+          successCheckUz: day === 5 ? plan.resultUz : `Ko‘rsatmani bajaring va aytilgan natija kamida bitta misolda ishlashini tekshiring.`,
         };
       }),
     };
