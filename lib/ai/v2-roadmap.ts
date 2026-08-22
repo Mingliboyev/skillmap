@@ -71,8 +71,8 @@ export function deterministicRoadmap(evidence: V2EvidenceSummary): V2Roadmap {
   });
 
   return {
-    summary: uz ? `30 savollik diagnostika natijangiz ${evidence.overallScore}%. 12 haftalik reja eng ko‘p yordam kerak bo‘lgan yo‘nalishlardan boshlanadi.` : `Your 30-question diagnostic result is ${evidence.overallScore}%. The 12-week plan starts with the areas where practice will help most.`,
-    strengths: strengths.map((competency) => ({ competency, evidence: uz ? "30 savollik baholashda bu ko‘nikma bo‘yicha to‘g‘ri yechim ko‘rsatildi." : "A correct solution was demonstrated for this skill in the 30-question assessment." })),
+    summary: uz ? `Natijangiz ${evidence.overallScore}%. 12 haftalik reja eng ko‘p yordam kerak bo‘lgan yo‘nalishlardan boshlanadi.` : `Your result is ${evidence.overallScore}%. The 12-week plan starts with the areas where practice will help most.`,
+    strengths: strengths.map((competency) => ({ competency, evidence: uz ? "Bu yo‘nalishdagi vazifani to‘g‘ri bajardingiz." : "You solved the task in this area correctly." })),
     priorities: priorities.map((item) => ({ competency: item.competency, reason: uz ? `${friendlyDomains[item.domain].uz} bo‘yicha ko‘proq amaliy mashq foydali bo‘ladi.` : `More hands-on practice with ${friendlyDomains[item.domain].en} will be useful.`, severity: "high" as const })),
     roadmap: shortRoadmap,
     threeMonthGuidance: twelveWeeks.map((week) => ({ week: week.week, focus: uz ? week.focusUz : week.focusEn, coachNote: uz ? `Bu haftada ${week.tasks.length} ta aniq vazifa bor. Har kuni natijani saqlang; mukammallikdan ko‘ra izchillik muhim.` : `This week has ${week.tasks.length} concrete tasks. Save evidence each day; consistency matters more than perfection.` })),

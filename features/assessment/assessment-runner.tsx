@@ -7,7 +7,6 @@ import type { Locale } from "@/types/domain";
 import type { PublicV2Item } from "@/lib/assessment/v2-bank";
 import type { StoredProgress } from "@/lib/assessment/attempt-state";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/utils/cn";
 
@@ -21,12 +20,13 @@ function looksLikeCode(item: PublicV2Item) {
 }
 
 function monotonicNow() { return performance.now(); }
+const activeQuestionCount = 24;
 
 export function AssessmentRunner({ locale, attemptId, initialProgress }: { locale: Locale; attemptId?: string; initialProgress?: StoredProgress }) {
   const uz = locale === "uz";
   const router = useRouter();
   const [items, setItems] = useState<PublicV2Item[]>([]);
-  const [index, setIndex] = useState(() => Math.min(initialProgress?.index ?? stored("skillmap-v2-page", 0), 29));
+  const [index, setIndex] = useState(() => Math.min(initialProgress?.index ?? stored("skillmap-v2-page", 0), activeQuestionCount - 1));
   const [answers, setAnswers] = useState<Record<string, string>>(() => initialProgress?.answers ?? stored("skillmap-v2-answers", {}));
   const [version, setVersion] = useState("");
   const [submitting, setSubmitting] = useState(false);
@@ -35,7 +35,7 @@ export function AssessmentRunner({ locale, attemptId, initialProgress }: { local
 
   useEffect(() => {
     fetch(`/api/assessment/v2?locale=${locale}`).then((response) => response.json()).then((data) => {
-      setItems(data.items.slice(0, 30));
+      setItems(data.items.slice(0, activeQuestionCount));
       setVersion(data.assessmentVersion);
       sessionStorage.removeItem("skillmap-v2-isolation");
       sessionStorage.removeItem("skillmap-v2-stage");
@@ -72,8 +72,8 @@ export function AssessmentRunner({ locale, attemptId, initialProgress }: { local
   }
 
   async function finish() {
-    if (items.length !== 30 || items.some((candidate) => !answers[candidate.itemId])) {
-      alert(uz ? "Yakunlashdan oldin barcha 30 savolga javob bering." : "Answer all 30 questions before finishing.");
+    if (items.length !== activeQuestionCount || items.some((candidate) => !answers[candidate.itemId])) {
+      alert(uz ? "Yakunlashdan oldin barcha 24 savolga javob bering." : "Answer all 24 questions before finishing.");
       return;
     }
     setSubmitting(true);
@@ -99,8 +99,8 @@ export function AssessmentRunner({ locale, attemptId, initialProgress }: { local
   const selected = answers[item.itemId];
 
   return <div className="container-shell py-8 lg:py-14"><div className="mx-auto max-w-3xl">
-    <div className="flex flex-wrap items-end justify-between gap-4"><div><Badge>{uz ? "Asosiy baholash" : "Core assessment"}</Badge><h1 className="display mt-4 text-3xl font-semibold">{uz ? `${index + 1}-savol, 30 tadan` : `Question ${index + 1} of 30`}</h1></div><div className="flex items-center gap-2 text-sm text-secondary-text"><Clock3 size={17}/>{uz ? "20–30 daqiqa" : "20–30 min"}</div></div>
-    <div className="mt-7"><Progress value={Math.round((index + Number(Boolean(selected))) / 30 * 100)} label={`${answered} / 30`}/></div>
+    <div className="flex flex-wrap items-end justify-between gap-4"><div><h1 className="display text-3xl font-semibold">{uz ? `Savol ${index + 1} / 24` : `Question ${index + 1} / 24`}</h1></div><div className="flex items-center gap-2 text-sm text-secondary-text"><Clock3 size={17}/>{uz ? "20–30 daqiqa" : "20–30 min"}</div></div>
+    <div className="mt-7"><Progress value={Math.round((index + Number(Boolean(selected))) / activeQuestionCount * 100)} label={`${answered} / ${activeQuestionCount}`}/></div>
     <article className="mt-7 rounded-2xl border border-ui-border bg-surface p-5 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-teal-800">{uz ? "Vaziyat" : "Context"}</p>{looksLikeCode(item) ? <pre className="mt-3 overflow-x-auto whitespace-pre-wrap rounded-xl bg-slate-950 p-4 font-mono text-sm leading-6 text-white"><code>{item.context.replaceAll("; ", ";\n")}</code></pre> : <p className="mt-3 whitespace-pre-wrap leading-7 text-secondary-text">{item.context}</p>}<div className="my-6 border-t border-slate-200"/><p className="text-xs font-bold uppercase tracking-wider text-teal-800">{uz ? "Savol" : "Question"}</p><h2 className="mt-3 text-xl font-bold leading-8 text-ink">{item.question}</h2><fieldset className="mt-7"><legend className="text-xs font-bold uppercase tracking-wider text-slate-600">{uz ? "Javob variantlari" : "Answer options"}</legend><div className="mt-3 grid gap-3">{item.options.map((option) => { const active = selected === option.id; return <label key={option.id} className={cn("flex min-h-14 cursor-pointer items-start gap-3 rounded-xl border p-4 text-sm leading-6 focus-within:ring-2 focus-within:ring-focus-ring", active ? "border-teal-800 bg-teal-50 font-semibold" : "border-strong-border bg-white hover:bg-slate-50")}><input className="sr-only" type="radio" name={item.itemId} checked={active} onChange={() => choose(item.itemId, option.id)}/><span aria-hidden className={cn("mt-0.5 grid size-5 shrink-0 place-items-center rounded-full border-2", active ? "border-teal-800 bg-teal-800 text-white" : "border-slate-500")}>{active && <Check size={12}/>}</span><span><strong className="mr-2">{option.id}.</strong>{option.label}</span></label>; })}</div></fieldset></article>
     <div className="mt-6 flex justify-between gap-3"><Button disabled={index === 0 || submitting} onClick={() => move(index - 1)}><ArrowLeft size={17}/>{uz ? "Orqaga" : "Back"}</Button>{!final ? <Button disabled={!selected || submitting} onClick={() => move(index + 1)}>{uz ? "Keyingi" : "Next"}<ArrowRight size={17}/></Button> : <Button disabled={submitting || !selected} onClick={finish}>{submitting ? (uz ? "Natija tayyorlanmoqda…" : "Preparing results…") : (uz ? "Natijani ko‘rish" : "View results")}<ArrowRight size={17}/></Button>}</div>
   </div></div>;

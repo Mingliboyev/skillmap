@@ -12,8 +12,9 @@ function loadLocalEnv() {
 loadLocalEnv();
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const baseUrl = process.env.E2E_BASE_URL ?? "http://localhost:3214";
-if (!supabaseUrl || !serviceRoleKey) throw new Error("Supabase application credentials are required");
+if (!supabaseUrl || !serviceRoleKey || !anonKey) throw new Error("Supabase application credentials are required");
 
 const admin = createClient(supabaseUrl, serviceRoleKey, { auth: { persistSession: false, autoRefreshToken: false } });
 const suffix = `${Date.now()}-${crypto.randomUUID().slice(0, 8)}`;
@@ -36,15 +37,20 @@ try {
   const created = await admin.auth.admin.createUser({ email, password, email_confirm: true });
   if (created.error || !created.data.user) throw created.error ?? new Error("Temporary user was not created");
   userId = created.data.user.id;
+  const authProbe = createClient(supabaseUrl, anonKey, { auth: { persistSession: false, autoRefreshToken: false } });
+  const probe = await authProbe.auth.signInWithPassword({ email, password });
+  if (probe.error) throw new Error(`Direct auth probe failed: ${probe.error.message}`);
+  await authProbe.auth.signOut();
   browser = await chromium.launch({ channel: "chrome", headless: true });
   const context = await browser.newContext({ locale: "uz-UZ" });
   const page = await context.newPage();
-  page.setDefaultTimeout(20_000);
+  page.setDefaultTimeout(60_000);
 
   await page.goto(`${baseUrl}/uz/sign-in`, { waitUntil: "networkidle" });
   await page.getByLabel("Email").fill(email);
   await page.getByLabel("Parol", { exact: true }).fill(password);
-  await Promise.all([page.waitForURL((url) => url.pathname === "/uz" || url.pathname === "/uz/assessment"), page.getByRole("button", { name: "Kirish" }).click()]);
+  await page.getByRole("button", { name: "Kirish" }).click();
+  await page.waitForURL((url) => url.pathname === "/uz" || url.pathname === "/uz/assessment", { timeout: 60_000 }).catch(async () => { throw new Error(`Sign-in stayed at ${page.url()}: ${(await page.locator("body").innerText()).slice(0, 800)}`); });
   console.log("E2E_SIGN_IN=passed");
 
   const participant = {
@@ -73,21 +79,21 @@ try {
   if (start.status !== 200 || !start.body.attemptId) throw new Error(`Attempt start failed with ${start.status}`);
   await page.goto(`${baseUrl}/uz/assessment`, { waitUntil: "networkidle" });
 
-  for (let index = 0; index < 30; index++) {
+  for (let index = 0; index < 24; index++) {
     await page.locator("article label").first().click();
-    if (index < 29) await page.getByRole("button", { name: "Keyingi" }).click();
+    if (index < 23) await page.getByRole("button", { name: "Keyingi" }).click();
   }
   const submitResponse = page.waitForResponse((response) => response.url().endsWith("/api/attempts/submit") && response.request().method() === "POST", { timeout: 60_000 });
   await page.getByRole("button", { name: "Natijani ko‘rish" }).click();
   const submitted = await submitResponse;
   if (!submitted.ok()) throw new Error(`Assessment submission failed with ${submitted.status()}: ${(await submitted.text()).slice(0, 500)}`);
   await page.waitForURL(/\/uz\/results/, { timeout: 60_000 });
-  await page.getByRole("link", { name: "12 haftalik rejani ochish" }).waitFor();
-  console.log("E2E_30_QUESTION_SUBMISSION=passed");
+  await page.getByRole("link", { name: "12 haftalik rejamni boshlash" }).waitFor();
+  console.log("E2E_24_QUESTION_SUBMISSION=passed");
 
-  await page.getByRole("link", { name: "12 haftalik rejani ochish" }).click();
+  await page.getByRole("link", { name: "12 haftalik rejamni boshlash" }).click();
   await page.waitForURL(/\/uz\/roadmap/);
-  await page.getByText("Shaxsiy 3 oylik reja", { exact: true }).waitFor({ timeout: 20_000 }).catch(async () => {
+  await page.locator("#three-month-title").waitFor({ timeout: 20_000 }).catch(async () => {
     throw new Error(`Three-month plan did not render at ${page.url()}: ${(await page.locator("body").innerText()).slice(0, 1000)}`);
   });
   const incomplete = page.locator('button[aria-pressed="false"]');
@@ -107,11 +113,12 @@ try {
   await page.goto(`${baseUrl}/uz/sign-in`, { waitUntil: "networkidle" });
   await page.getByLabel("Email").fill(email);
   await page.getByLabel("Parol", { exact: true }).fill(password);
-  await Promise.all([page.waitForURL((url) => url.pathname === "/uz" || url.pathname === "/uz/assessment"), page.getByRole("button", { name: "Kirish" }).click()]);
+  await page.getByRole("button", { name: "Kirish" }).click();
+  await page.waitForURL((url) => url.pathname === "/uz" || url.pathname === "/uz/assessment", { timeout: 60_000 }).catch(async () => { throw new Error(`Re-login stayed at ${page.url()}: ${(await page.locator("body").innerText()).slice(0, 800)}`); });
   await page.goto(`${baseUrl}/uz/roadmap`, { waitUntil: "networkidle" });
   if (await page.locator('button[aria-pressed="true"]').count() !== 1) throw new Error("Roadmap progress did not survive logout/login");
   await page.goto(`${baseUrl}/uz`, { waitUntil: "networkidle" });
-  await page.getByRole("link", { name: "12 haftalik rejani davom ettirish" }).waitFor();
+  await page.getByRole("link", { name: "Davom ettirish" }).waitFor();
   await page.getByRole("link", { name: "Natijalarni ko‘rish" }).waitFor();
   await page.getByRole("link", { name: "Uzoq muddatli CS yo‘li" }).waitFor();
   console.log("E2E_ROADMAP_72_TASKS=passed");

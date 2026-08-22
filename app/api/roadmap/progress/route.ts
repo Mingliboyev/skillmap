@@ -8,6 +8,17 @@ const mutation = z.object({
   completed: z.boolean(),
 });
 
+export async function GET(request: Request) {
+  const attemptId = z.string().uuid().safeParse(new URL(request.url).searchParams.get("attemptId"));
+  if (!attemptId.success) return NextResponse.json({ error: "Invalid attempt" }, { status: 400 });
+  const supabase = await createSupabaseServerClient();
+  if (!supabase) return NextResponse.json({ error: "Authentication required" }, { status: 401 });
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: "Authentication required" }, { status: 401 });
+  const { data, error } = await supabase.from("roadmap_task_progress").select("task_id").eq("user_id", user.id).eq("attempt_id", attemptId.data);
+  return error ? NextResponse.json({ error: "Progress could not be loaded" }, { status: 403 }) : NextResponse.json({ taskIds: (data ?? []).map((row) => row.task_id) });
+}
+
 export async function POST(request: Request) {
   const parsed = mutation.safeParse(await request.json().catch(() => null));
   if (!parsed.success) return NextResponse.json({ error: "Invalid roadmap progress" }, { status: 400 });

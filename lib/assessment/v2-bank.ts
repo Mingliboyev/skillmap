@@ -2,14 +2,17 @@ import rawBank from "../../skillmap-v2-core-isolation-bank.json";
 import type { Locale } from "../../types/domain";
 
 export const V2_BANK_ID = "skillmap-v2-pilot";
-export const V2_BANK_VERSION = rawBank.bankVersion;
+export const LEGACY_V2_BANK_VERSION = rawBank.bankVersion;
+export const V2_BANK_VERSION = `${rawBank.bankVersion}-24`;
+export const V2_SUPPORTED_VERSIONS = [V2_BANK_VERSION, LEGACY_V2_BANK_VERSION] as const;
+export const V2_EXCLUDED_CORE_IDS = ["DLIT-05", "CT-01", "PROG-03", "SYS-04", "DATA-05", "AI-05"] as const;
 export const v2Domains = ["Digital & Information Literacy","Computational Thinking & Algorithms","Programming Fundamentals","Systems, Networks & Cybersecurity","Data & Databases","AI Literacy"] as const;
 export type V2Domain = typeof v2Domains[number];
 export type V2Role = "core"|"isolation";
 export type V2OptionId = "A"|"B"|"C"|"D";
 export interface V2LocalizedContent {context:string;question:string;options:Record<V2OptionId,string>;explanation:string}
 export interface V2BankItem {itemId:string;assessmentRole:V2Role;parentCoreItemId:string|null;domain:V2Domain;domainUz:string;competency:string;subCompetency:string;source:{name:string;citation:string};difficulty:"foundation"|"standard"|"stretch";recommendedGradeBand:"grade_8_9"|"grade_10_11";questionType:string;isolationTarget:string|null;possibleFailurePattern:string|null;roadmapMapping:string|null;correctOption:V2OptionId;content:Record<Locale,V2LocalizedContent>}
-export interface PublicV2Item {itemId:string;assessmentRole:V2Role;parentCoreItemId:string|null;domain:string;competency:string;subCompetency:string;difficulty:string;questionType:string;context:string;question:string;options:{id:V2OptionId;label:string}[]}
+export interface PublicV2Item {itemId:string;questionType:string;context:string;question:string;options:{id:V2OptionId;label:string}[]}
 
 const optionIds:V2OptionId[]=["A","B","C","D"];
 export function validateV2Bank(input:unknown=rawBank){
@@ -31,7 +34,9 @@ export function validateV2Bank(input:unknown=rawBank){
 }
 export const v2Bank=validateV2Bank();
 export const v2CoreItems=v2Bank.filter(i=>i.assessmentRole==="core");
-export function publicV2Item(item:V2BankItem,locale:Locale):PublicV2Item{const c=item.content[locale];return{itemId:item.itemId,assessmentRole:item.assessmentRole,parentCoreItemId:item.parentCoreItemId,domain:locale==="uz"?item.domainUz:item.domain,competency:item.competency,subCompetency:item.subCompetency,difficulty:item.difficulty,questionType:item.questionType,context:c.context,question:c.question,options:optionIds.map(id=>({id,label:c.options[id]}))}}
-export function publicV2Core(locale:Locale){return v2CoreItems.map(i=>publicV2Item(i,locale))}
+const excludedCoreIds = new Set<string>(V2_EXCLUDED_CORE_IDS);
+export const v2ActiveCoreItems = v2CoreItems.filter((item) => !excludedCoreIds.has(item.itemId));
+export function publicV2Item(item:V2BankItem,locale:Locale):PublicV2Item{const c=item.content[locale];return{itemId:item.itemId,questionType:item.questionType,context:c.context,question:c.question,options:optionIds.map(id=>({id,label:c.options[id]}))}}
+export function publicV2Core(locale:Locale){return v2ActiveCoreItems.map(i=>publicV2Item(i,locale))}
 export function v2Item(id:string){return v2Bank.find(i=>i.itemId===id)??null}
 export function isolationForCore(id:string){return v2Bank.find(i=>i.assessmentRole==="isolation"&&i.parentCoreItemId===id)??null}

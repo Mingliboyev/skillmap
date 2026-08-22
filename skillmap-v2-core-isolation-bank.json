@@ -39,7 +39,7 @@
       "content": {
         "en": {
           "context": "A student finds a professional-looking website claiming that a specific exotic fruit will double a person’s memory overnight. No scientific studies are cited.",
-          "question": "Which action best demonstrates a critical evaluation of this information?",
+          "question": "What is the best way to check this claim before believing or sharing it?",
           "options": {
             "A": "Trust the information because the website has high-quality graphics and a logo.",
             "B": "Check whether the same claim is reported by independent, established scientific or news sources.",
@@ -50,7 +50,7 @@
         },
         "uz": {
           "context": "O‘quvchi professional ko‘rinadigan saytda “ma’lum bir ekzotik meva xotirani bir kechada ikki baravar kuchaytiradi” degan da’voni ko‘radi. Saytda hech qanday ilmiy tadqiqot keltirilmagan.",
-          "question": "Bu ma’lumotni tanqidiy baholash uchun qaysi harakat eng to‘g‘ri?",
+          "question": "Bu da’voga ishonish yoki uni ulashishdan oldin tekshirishning eng yaxshi yo‘li qaysi?",
           "options": {
             "A": "Sayt dizayni sifatli va logotipi borligi uchun ma’lumotga ishonish.",
             "B": "Xuddi shu da’vo mustaqil va ishonchli ilmiy yoki yangilik manbalarida ham tasdiqlanganini tekshirish.",
@@ -83,7 +83,7 @@
       "content": {
         "en": {
           "context": "Anar sends a private photo to a group chat. Five minutes later, she regrets it and selects “Delete for everyone.”",
-          "question": "According to the idea of a digital footprint, why might the photo still persist online?",
+          "question": "Why might copies of the photo still remain online after it is deleted from the chat?",
           "options": {
             "A": "Deleting it from the sender’s phone physically erases it from all internet servers.",
             "B": "Encryption guarantees deleted data cannot be recovered by anyone.",
@@ -94,7 +94,7 @@
         },
         "uz": {
           "context": "Anar guruh chatiga shaxsiy surat yuboradi. Besh daqiqadan so‘ng pushaymon bo‘lib, “Hamma uchun o‘chirish”ni tanlaydi.",
-          "question": "“Raqamli iz” tushunchasiga ko‘ra, nega bu surat baribir internetda saqlanib qolishi mumkin?",
+          "question": "Surat chatdan o‘chirilganidan keyin ham nega uning nusxalari internetda qolishi mumkin?",
           "options": {
             "A": "Yuboruvchining telefonidan o‘chirilsa, u barcha internet serverlaridan ham jismonan o‘chadi.",
             "B": "Shifrlash o‘chirilgan ma’lumotni hech kim tiklay olmasligini kafolatlaydi.",
@@ -391,7 +391,7 @@
       "content": {
         "en": {
           "context": "You are planning a New Student Orientation Day.",
-          "question": "Which option shows the best decomposition of the task?",
+          "question": "Which option breaks this large task into the clearest smaller jobs?",
           "options": {
             "A": "List every student alphabetically.",
             "B": "Choose only the start and end time.",
@@ -402,7 +402,7 @@
         },
         "uz": {
           "context": "Siz yangi o‘quvchilar uchun tanishtiruv kunini rejalashtiryapsiz.",
-          "question": "Qaysi variant vazifani eng yaxshi qismlarga ajratishni (decomposition) ko‘rsatadi?",
+          "question": "Qaysi variant bu katta vazifani eng tushunarli kichik ishlarga ajratadi?",
           "options": {
             "A": "Barcha o‘quvchilarni alifbo tartibida yozish.",
             "B": "Faqat boshlanish va tugash vaqtini belgilash.",
@@ -1139,7 +1139,7 @@
       "content": {
         "en": {
           "context": "A bank uses AI to review student loan applications and wants the process to remain responsible and fair.",
-          "question": "Which approach best follows Human Agency?",
+          "question": "How should the bank use AI while keeping a person responsible for the final decision?",
           "options": {
             "A": "Let AI make the final decision automatically.",
             "B": "Use AI to flag risks, but require a bank employee to review and make the final decision.",
@@ -1150,7 +1150,7 @@
         },
         "uz": {
           "context": "Bank talaba kredit arizalarini ko‘rib chiqishda AI dan foydalanadi va jarayon mas’uliyatli hamda adolatli bo‘lishini xohlaydi.",
-          "question": "Qaysi yondashuv Human Agency (inson nazorati va mas’uliyati) tamoyiliga eng mos?",
+          "question": "Yakuniy qaror uchun inson javobgar bo‘lib qolishi uchun bank AI’dan qanday foydalanishi kerak?",
           "options": {
             "A": "Yakuniy qarorni AI ga to‘liq avtomatik qoldirish.",
             "B": "AI xavfli holatlarni belgilaydi, lekin bank xodimi ularni ko‘rib chiqib yakuniy qarorni qabul qiladi.",
@@ -1274,7 +1274,7 @@
           "question": "What is the most likely reason?",
           "options": {
             "A": "The AI intentionally decided children are unauthorized.",
-            "B": "Children’s facial patterns were underrepresented or absent in training data, so the model generalizes poorly to them.",
+            "B": "The training photos did not include enough children, so the AI did not learn to recognize their faces well.",
             "C": "The entire program must be rewritten in another programming language.",
             "D": "The camera automatically turns off for short people."
           },
@@ -1285,7 +1285,7 @@
           "question": "Eng ehtimoliy sabab nima?",
           "options": {
             "A": "AI ataylab bolalarni ruxsatsiz deb qaror qilgan.",
-            "B": "Bolalarning yuz xususiyatlari trening ma’lumotlarida yetarlicha bo‘lmagan yoki umuman bo‘lmagan, shuning uchun model ularga yomon umumlashtiradi.",
+            "B": "O‘rgatish uchun ishlatilgan suratlarda bolalar yetarli bo‘lmagan, shuning uchun AI ularning yuzini yaxshi tanishni o‘rganmagan.",
             "C": "Dastur boshqa dasturlash tilida boshidan yozilishi kerak.",
             "D": "Kamera bo‘yi past odamlarni ko‘rganda avtomatik o‘chadi."
           },
