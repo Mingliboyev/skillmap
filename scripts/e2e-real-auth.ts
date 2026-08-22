@@ -54,6 +54,8 @@ try {
   console.log("E2E_SIGN_IN=passed");
 
   const participant = {
+    firstName: "Test",
+    lastName: "Student",
     participantCode: `SM-2026-${String(Date.now()).slice(-6)}`,
     grade: 10,
     region: "Toshkent shahri",
