@@ -20,6 +20,8 @@ html { scroll-behavior:smooth; }
 body { margin:0; background:var(--page-background); color:var(--text-primary); font-family:"Segoe UI",Arial,sans-serif; }
 a { text-decoration:none; }
 button, a, input, select { -webkit-tap-highlight-color:transparent; }
+button:not(:disabled), [role="button"], summary, a[href] { cursor:pointer; }
+button:disabled, [aria-disabled="true"] { cursor:not-allowed; }
 button, [role="button"], a, input, select, summary { outline-offset:3px; }
 :focus-visible { outline:3px solid var(--focus-ring); outline-offset:3px; }
 input::placeholder, textarea::placeholder { color:#647476; opacity:1; }
