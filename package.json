@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "resources:check": "vite-node scripts/check-learning-resource-links.ts",
     "db:seed": "vite-node scripts/seed-question-bank.ts",
     "db:seed:v2": "vite-node scripts/seed-v2-bank.ts",
     "test:e2e:real": "vite-node scripts/e2e-real-auth.ts",
