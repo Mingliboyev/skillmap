@@ -38,6 +38,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A software developer wants to install an open-source package. A visually attractive website offers a downloadable package, but its public repository has zero stars, no release history, and no verified maintainer signature.",
           "question": "What is the most secure and effective way to verify the package before installing it?",
           "options": {
@@ -58,6 +59,28 @@
             "D": "Qidiruv tizimida birinchi bo‘lib chiqqani uchun uni xavfsiz deb qabul qilish."
           },
           "explanation": "Ochiq kodli dasturiy paketlarni o‘rnatishda sayt dizayniga emas, rasmiy reestrlar (npm, PyPI), manba kodi ochiqligi, yuklab olishlar soni va xavfsizlik auditiga tayanish zarur."
+=======
+          "context": "A student finds a professional-looking website claiming that a specific exotic fruit will double a person’s memory overnight. No scientific studies are cited.",
+          "question": "What is the best way to check this claim before believing or sharing it?",
+          "options": {
+            "A": "Trust the information because the website has high-quality graphics and a logo.",
+            "B": "Check whether the same claim is reported by independent, established scientific or news sources.",
+            "C": "Share the link immediately so others can benefit.",
+            "D": "Assume it is true because it is the first result in a search engine."
+          },
+          "explanation": "Visual quality and search ranking are not evidence of truth; corroboration from independent reliable sources is stronger evidence."
+        },
+        "uz": {
+          "context": "O‘quvchi professional ko‘rinadigan saytda “ma’lum bir ekzotik meva xotirani bir kechada ikki baravar kuchaytiradi” degan da’voni ko‘radi. Saytda hech qanday ilmiy tadqiqot keltirilmagan.",
+          "question": "Bu da’voga ishonish yoki uni ulashishdan oldin tekshirishning eng yaxshi yo‘li qaysi?",
+          "options": {
+            "A": "Sayt dizayni sifatli va logotipi borligi uchun ma’lumotga ishonish.",
+            "B": "Xuddi shu da’vo mustaqil va ishonchli ilmiy yoki yangilik manbalarida ham tasdiqlanganini tekshirish.",
+            "C": "Boshqalar ham foydalansin deb havolani darhol ulashish.",
+            "D": "Qidiruv tizimida birinchi chiqqani uchun ma’lumotni rost deb qabul qilish."
+          },
+          "explanation": "Saytning chiroyli ko‘rinishi yoki qidiruvdagi o‘rni uning to‘g‘riligini isbotlamaydi. Mustaqil va ishonchli manbalarda tasdiq bor-yo‘qligini tekshirish kuchliroq dalildir."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -79,6 +102,7 @@
       "isolationTarget": null,
       "possibleFailurePattern": "Deletion myth / local deletion = global deletion",
       "roadmapMapping": "Digital Footprint & Data Persistence",
+<<<<<<< HEAD
       "correctOption": "B",
       "content": {
         "en": {
@@ -102,6 +126,31 @@
             "D": "Faqat repozitoriy egasigina commit tarixini ko‘rish huquqiga ega."
           },
           "explanation": "Public Git repozitoriylariga tushgan har qanday maxfiy ma’lumot avtomatlashtirilgan botlar tomonidan soniyalar ichida skanerlanadi. Tarixni o‘chirish xavfni bartaraf etmaydi, kalitni darhol bekor qilish kerak."
+=======
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "Anar sends a photo to a group chat, then chooses “Delete for everyone.”",
+          "question": "Why could someone still have a copy of the photo?",
+          "options": {
+            "A": "Deleting the chat message removes every copy everywhere.",
+            "B": "A deleted photo can never be opened again.",
+            "C": "Someone may already have downloaded it or taken a screenshot.",
+            "D": "Photos always disappear from every device after 24 hours."
+          },
+          "explanation": "Digital information can persist through copies, screenshots, caches, logs, or service-provider storage even after a deletion action."
+        },
+        "uz": {
+          "context": "Anar guruh chatiga surat yuboradi, keyin “Hamma uchun o‘chirish”ni tanlaydi.",
+          "question": "Nega suratning nusxasi baribir kimdadir qolgan bo‘lishi mumkin?",
+          "options": {
+            "A": "Chatdagi xabar o‘chirilsa, barcha nusxalar ham yo‘qoladi.",
+            "B": "O‘chirilgan suratni boshqa hech qachon ochib bo‘lmaydi.",
+            "C": "Kimdir uni oldin yuklab olgan yoki skrinshot qilgan bo‘lishi mumkin.",
+            "D": "Suratlar 24 soatdan keyin barcha qurilmalardan o‘z-o‘zidan yo‘qoladi."
+          },
+          "explanation": "Raqamli ma’lumot nusxalar, skrinshotlar, kesh, loglar yoki xizmat provayderi saqlovi orqali o‘chirishdan keyin ham mavjud bo‘lib qolishi mumkin."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -126,6 +175,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A developer needs official reference documentation for Python asynchronous sockets, but generic search queries return outdated forum discussions.",
           "question": "Which search operator query is the most direct and precise to locate the official documentation?",
           "options": {
@@ -146,6 +196,28 @@
             "D": "Brauzerni qayta o‘rnatib, umumiy so‘rovni yana yozish"
           },
           "explanation": "site: operatori va qo‘shtirnoq ichidagi kalit so‘zlar qidiruvni aniq domen va aniq atama bilan cheklab, rasmiy hujjatlarni topishni tezlashtiradi."
+=======
+          "context": "You are researching “Mars” for a science project about space. Your search results are mostly about Mars-brand chocolate bars, which you do not need.",
+          "question": "Which search strategy is the most effective way to improve your results?",
+          "options": {
+            "A": "Type the exact same search again.",
+            "B": "Add “planet” or “astronomy” to the query.",
+            "C": "Only open the first result because it must be the most relevant.",
+            "D": "Delete browsing history and restart the computer."
+          },
+          "explanation": "Adding context-specific keywords narrows an ambiguous query without relying on search-engine-specific syntax."
+        },
+        "uz": {
+          "context": "Siz kosmos haqidagi loyiha uchun “Mars” mavzusida qidiruv qilyapsiz. Natijalarning ko‘pi Mars nomli shokolad mahsulotlari haqida chiqmoqda.",
+          "question": "Qidiruv natijalarini yaxshilashning eng samarali usuli qaysi?",
+          "options": {
+            "A": "Xuddi shu so‘rovni yana qayta kiritish.",
+            "B": "So‘rovga “sayyora” yoki “astronomiya” so‘zlarini qo‘shish.",
+            "C": "Faqat birinchi natijani ochish, chunki u albatta eng mos bo‘ladi.",
+            "D": "Brauzer tarixini o‘chirib, kompyuterni qayta ishga tushirish."
+          },
+          "explanation": "Kontekstni aniqlashtiruvchi kalit so‘zlar noaniq so‘rovni toraytiradi va kerakli natijalarni topishni osonlashtiradi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -170,6 +242,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A software development team needs a standard, unambiguous convention to version and track production releases.",
           "question": "Which release versioning convention follows the widely accepted Semantic Versioning (SemVer) standard?",
           "options": {
@@ -190,6 +263,28 @@
             "D": "release_dushanba, release_seshanba, release_bugun"
           },
           "explanation": "Semantic Versioning (MAJOR.MINOR.PATCH) xalqaro standart bo‘lib, dasturning mosligi, yangi funksiyalari va tuzatishlarini aniq bildiradi."
+=======
+          "context": "You are working on a group presentation called “Ecology_Project.” Your teacher wants the final folder to contain files whose version order is obvious without opening them.",
+          "question": "Which naming convention is the most effective?",
+          "options": {
+            "A": "Ecology_Project_New, Ecology_Project_New2, Ecology_Project_Newest",
+            "B": "Ecology_Project_Final, Ecology_Project_Final_v2, Ecology_Project_Final_v3",
+            "C": "Ecology_Project_v01, Ecology_Project_v02, Ecology_Project_v03",
+            "D": "Project1, My_Work, Presentation_Update"
+          },
+          "explanation": "Sequential version numbers give an objective and unambiguous order and avoid labels such as “New” or “Final” becoming confusing."
+        },
+        "uz": {
+          "context": "Siz “Ecology_Project” nomli guruh taqdimoti ustida ishlayapsiz. O‘qituvchi papkadagi fayllarning qaysi biri yangi ekanini ularni ochmasdan ham bilish mumkin bo‘lishini xohlaydi.",
+          "question": "Qaysi nomlash usuli eng samarali?",
+          "options": {
+            "A": "Ecology_Project_New, Ecology_Project_New2, Ecology_Project_Newest",
+            "B": "Ecology_Project_Final, Ecology_Project_Final_v2, Ecology_Project_Final_v3",
+            "C": "Ecology_Project_v01, Ecology_Project_v02, Ecology_Project_v03",
+            "D": "Project1, My_Work, Presentation_Update"
+          },
+          "explanation": "Ketma-ket versiya raqamlari fayllarning tartibini aniq ko‘rsatadi va “New” yoki “Final” kabi tezda noaniq bo‘lib qoladigan nomlardan qochishga yordam beradi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -214,6 +309,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A developer building a commercial paid software product finds a utility library published under a Creative Commons BY-NC (Non-Commercial) license.",
           "question": "According to this license, how can the developer legally use this code?",
           "options": {
@@ -234,6 +330,28 @@
             "D": "CC BY-NC litsenziyasi kodni hech qachon ishga tushirishga ruxsat bermaydi."
           },
           "explanation": "CC BY-NC mualliflikni ko‘rsatishni (BY) va faqat notijoriy (NC) foydalanishni talab qiladi; tijoriy loyihalarda foydalanish qonunan taqiqlanadi."
+=======
+          "context": "You find a photo online for a school charity fundraiser. The photo has a CC BY-NC license.",
+          "question": "What does this license allow?",
+          "options": {
+            "A": "Use it for free as long as you do not sell the photo itself.",
+            "B": "Use it if you credit the creator and do not use it for commercial purposes.",
+            "C": "Use it however you want because Creative Commons means public domain.",
+            "D": "Modify it and sell it as your own work."
+          },
+          "explanation": "BY requires attribution and NC restricts commercial use."
+        },
+        "uz": {
+          "context": "Maktab xayriya tadbiri uchun internetdan surat topdingiz. Surat CC BY-NC litsenziyasiga ega.",
+          "question": "Bu litsenziya nimaga ruxsat beradi?",
+          "options": {
+            "A": "Suratning o‘zini sotmasangiz, undan istalgan tarzda bepul foydalanish mumkin.",
+            "B": "Muallifni ko‘rsatish va undan tijoriy maqsadda foydalanmaslik sharti bilan ishlatish mumkin.",
+            "C": "Creative Commons bo‘lgani uchun istalgancha foydalanish mumkin.",
+            "D": "Suratni o‘zgartirib, o‘z ishingiz sifatida sotish mumkin."
+          },
+          "explanation": "BY — muallifni ko‘rsatishni, NC esa tijoriy foydalanmaslikni talab qiladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -258,6 +376,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An authentication API service receives a username and password from a client, hashes the password with bcrypt and compares it to the database record, then returns a signed JWT access token.",
           "question": "Which part represents the Process stage of the system?",
           "options": {
@@ -278,6 +397,28 @@
             "D": "Tarmoq kabeli orqali elektr signallarining uzatilishi."
           },
           "explanation": "Kirish (Input) — login va parol, Chiqish (Output) — JWT token. Hisoblash va solishtirish jarayoni esa Qayta ishlash (Process) bosqichidir."
+=======
+          "context": "A smart streetlight uses a light sensor to detect darkness and then sends a signal to turn on an LED bulb.",
+          "question": "Which part is the Process stage of the system?",
+          "options": {
+            "A": "The sensor measuring the light level.",
+            "B": "The code deciding whether the light level is low enough to switch on the lamp.",
+            "C": "The LED bulb lighting the street.",
+            "D": "The electrical wire carrying power."
+          },
+          "explanation": "In the IPO model, Process is the logical transformation or decision made using the input."
+        },
+        "uz": {
+          "context": "Aqlli ko‘cha chirog‘i yorug‘lik sensori orqali qorong‘ilikni aniqlaydi va keyin LED chiroqni yoqish uchun signal yuboradi.",
+          "question": "Tizimning “Process” (qayta ishlash) bosqichi qaysi?",
+          "options": {
+            "A": "Sensorning yorug‘lik darajasini o‘lchashi.",
+            "B": "Dastur kodining yorug‘lik yetarlicha past yoki yo‘qligini aniqlab, chiroqni yoqish haqida qaror qilishi.",
+            "C": "LED chiroqning ko‘chani yoritishi.",
+            "D": "Elektr simining tokni uzatishi."
+          },
+          "explanation": "IPO modelida “Process” — kiruvchi ma’lumot asosida bajariladigan mantiqiy qayta ishlash yoki qaror qabul qilish bosqichi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -302,26 +443,43 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A pointer in a 2D grid starts at coordinate (1,1). MOVE_RIGHT increments x (x = x + 1), while MOVE_UP increments y (y = y + 1).",
           "question": "Which instruction sequence moves the pointer to (2,3)?",
+=======
+          "context": "A robot starts at (1,1). MOVE_RIGHT increases the first number by 1. MOVE_UP increases the second number by 1.",
+          "question": "Which sequence moves it to (2,3)?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "MOVE_RIGHT, MOVE_UP",
             "B": "MOVE_RIGHT, MOVE_UP, MOVE_UP",
             "C": "MOVE_RIGHT, MOVE_RIGHT, MOVE_UP",
             "D": "MOVE_UP, MOVE_RIGHT, MOVE_RIGHT"
           },
+<<<<<<< HEAD
           "explanation": "Starting at (1,1), one MOVE_RIGHT gives (2,1) and two MOVE_UP commands increment y by 2 to reach (2,3)."
         },
         "uz": {
           "context": "2D matritsada kursor (1,1) koordinatadan boshlaydi. MOVE_RIGHT x koordinatasini 1 ga oshiradi (x = x + 1), MOVE_UP esa y koordinatasini 1 ga oshiradi (y = y + 1).",
           "question": "Kursorni (2,3) koordinataga olib borish uchun qaysi buyruqlar ketma-ketligi to‘g‘ri?",
+=======
+          "explanation": "From (1,1), one RIGHT gives (2,1), then two UP commands give (2,3)."
+        },
+        "uz": {
+          "context": "Robot (1,1) nuqtadan boshlaydi. MOVE_RIGHT birinchi sonni 1 ga oshiradi. MOVE_UP ikkinchi sonni 1 ga oshiradi.",
+          "question": "Qaysi buyruqlar ketma-ketligi robotni (2,3) nuqtaga olib boradi?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "MOVE_RIGHT, MOVE_UP",
             "B": "MOVE_RIGHT, MOVE_UP, MOVE_UP",
             "C": "MOVE_RIGHT, MOVE_RIGHT, MOVE_UP",
             "D": "MOVE_UP, MOVE_RIGHT, MOVE_RIGHT"
           },
+<<<<<<< HEAD
           "explanation": "(1,1) dan bitta MOVE_RIGHT (2,1) ga olib keladi. Ikkita MOVE_UP esa y ni 1 dan 3 ga oshiradi: (2,3)."
+=======
+          "explanation": "(1,1) dan bitta RIGHT → (2,1), undan keyin ikkita UP → (2,3)."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -346,14 +504,20 @@
       "correctOption": "A",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A data mapping pipeline transforms tokens according to a cyclic rule: Circle → Square, Square → Triangle, Triangle → Circle.",
           "question": "If the input array is [Circle, Triangle], what is the transformed output?",
+=======
+          "context": "A program replaces each shape using this rule: Circle → Square, Square → Triangle, Triangle → Circle.",
+          "question": "If the input is [Circle, Triangle], what is the output?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "[Square, Circle]",
             "B": "[Triangle, Square]",
             "C": "[Circle, Triangle]",
             "D": "[Square, Triangle]"
           },
+<<<<<<< HEAD
           "explanation": "Circle maps to Square, and Triangle maps to Circle. Output is [Square, Circle]."
         },
         "uz": {
@@ -366,6 +530,20 @@
             "D": "[Square, Triangle]"
           },
           "explanation": "Circle qoida bo‘yicha Square ga, Triangle esa Circle ga aylanadi. Natija: [Square, Circle]."
+=======
+          "explanation": "Each shape is replaced by the next in the cycle Circle → Square → Triangle → Circle."
+        },
+        "uz": {
+          "context": "Dastur har bir shaklni shu qoida bo‘yicha almashtiradi: Doira → Kvadrat, Kvadrat → Uchburchak, Uchburchak → Doira.",
+          "question": "Kirish [Doira, Uchburchak] bo‘lsa, chiqish qanday bo‘ladi?",
+          "options": {
+            "A": "[Kvadrat, Doira]",
+            "B": "[Uchburchak, Kvadrat]",
+            "C": "[Doira, Uchburchak]",
+            "D": "[Kvadrat, Uchburchak]"
+          },
+          "explanation": "Har bir shakl sikldagi keyingi shaklga almashadi: Doira → Kvadrat → Uchburchak → Doira."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -390,6 +568,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An engineering team is architecting a full-scale e-commerce platform from scratch.",
           "question": "Which option demonstrates the most effective architectural decomposition of this system?",
           "options": {
@@ -410,6 +589,28 @@
             "D": "Dasturchilar sonini oshirish va faqat marketing reklamasini rejalashtirish."
           },
           "explanation": "Murakkab tizimni funksional jihatdan mustaqil xizmatlarga bo‘lish — bu to‘g‘ri arxitekturaviy dekompozitsiyadir."
+=======
+          "context": "You are planning a New Student Orientation Day.",
+          "question": "Which option breaks this large task into the clearest smaller jobs?",
+          "options": {
+            "A": "List every student alphabetically.",
+            "B": "Choose only the start and end time.",
+            "C": "Break the plan into Transport, Food/Drinks, Activity Schedule, and Budget.",
+            "D": "Buy decorations and invite a guest speaker."
+          },
+          "explanation": "Decomposition means breaking a large problem into meaningful component parts that can be solved separately."
+        },
+        "uz": {
+          "context": "Siz yangi o‘quvchilar uchun tanishtiruv kunini rejalashtiryapsiz.",
+          "question": "Qaysi variant bu katta vazifani eng tushunarli kichik ishlarga ajratadi?",
+          "options": {
+            "A": "Barcha o‘quvchilarni alifbo tartibida yozish.",
+            "B": "Faqat boshlanish va tugash vaqtini belgilash.",
+            "C": "Rejani Transport, Oziq-ovqat/ichimlik, Faoliyatlar jadvali va Budjet qismlariga ajratish.",
+            "D": "Bezaklar sotib olish va mehmon taklif qilish."
+          },
+          "explanation": "Decomposition — katta muammoni alohida hal qilish mumkin bo‘lgan mazmunli qismlarga ajratishdir."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -434,6 +635,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A software engineer is designing a high-level Database Client API for backend developers.",
           "question": "To maintain effective abstraction, which low-level detail should be hidden from API consumers?",
           "options": {
@@ -454,6 +656,28 @@
             "D": "Qaytariladigan ma’lumotlar jadvali va qatorlar formati."
           },
           "explanation": "Abstraksiya past darajadagi apparat tafsilotlarini yashirib, qulay dasturiy interfeys (API) taqdim etadi."
+=======
+          "context": "You are building a simple metro map for tourists to travel between stations.",
+          "question": "Which detail is irrelevant and should be removed to keep the map clear?",
+          "options": {
+            "A": "Station names.",
+            "B": "Lines connecting stations.",
+            "C": "Exact tunnel depth underground.",
+            "D": "Transfer points where lines meet."
+          },
+          "explanation": "For navigation, tunnel depth is not needed, while stations, connections, and transfers are essential."
+        },
+        "uz": {
+          "context": "Sayyohlar bekatlar orasida yurishi uchun sodda metro xaritasi yaratyapsiz.",
+          "question": "Xaritani aniq va tushunarli saqlash uchun qaysi ma’lumot keraksiz va olib tashlanishi mumkin?",
+          "options": {
+            "A": "Bekat nomlari.",
+            "B": "Bekatlarni bog‘lovchi yo‘nalishlar.",
+            "C": "Tunnellarning yer ostidagi aniq chuqurligi.",
+            "D": "Yo‘nalishlar kesishadigan almashuv bekatlari."
+          },
+          "explanation": "Yo‘l topish uchun tunnelning aniq chuqurligi kerak emas; bekatlar, bog‘lanishlar va almashuv nuqtalari esa zarur."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -478,26 +702,43 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Trace this Python code line by line:\nX = 10\nY = 5\nX = Y\nY = X",
           "question": "What are the values of X and Y after the last line?",
+=======
+          "context": "Run this Python-style code from top to bottom:\nX = 10\nY = 5\nX = Y\nY = X",
+          "question": "What are X and Y after the last line?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "X=10, Y=5",
             "B": "X=5, Y=10",
             "C": "X=5, Y=5",
             "D": "X=10, Y=10"
           },
+<<<<<<< HEAD
           "explanation": "X = Y sets X to 5, overwriting 10. Then Y = X assigns 5 to Y. Both variables hold 5."
         },
         "uz": {
           "context": "Python kodini tahlil qiling:\nX = 10\nY = 5\nX = Y\nY = X",
           "question": "Oxirgi qatordan keyin X va Y ning qiymatlari nechaga teng?",
+=======
+          "explanation": "X ← Y overwrites X with 5. Then Y ← X copies the new X value, so both are 5."
+        },
+        "uz": {
+          "context": "Python uslubidagi kodni yuqoridan pastga bajaring:\nX = 10\nY = 5\nX = Y\nY = X",
+          "question": "Oxirgi qatordan keyin X va Y nechaga teng?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "X=10, Y=5",
             "B": "X=5, Y=10",
             "C": "X=5, Y=5",
             "D": "X=10, Y=10"
           },
+<<<<<<< HEAD
           "explanation": "X = Y qatorida X ga 5 yoziladi. Keyingi Y = X qatorida esa Y ga yangi X (ya’ni 5) yoziladi. Ikkalasi ham 5 bo‘lib qoladi."
+=======
+          "explanation": "X ← Y buyrug‘i X ni 5 ga o‘zgartiradi. Keyin Y ← X yangi X qiymatini Y ga nusxalaydi. Natijada ikkalasi ham 5 bo‘ladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -522,26 +763,43 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Trace this Python loop:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
           "question": "What is the value of total after the loop finishes?",
+=======
+          "context": "This Python code adds each number from 1 through 3:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
+          "question": "What is total after the loop finishes?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "3",
             "B": "4",
             "C": "6",
             "D": "9"
           },
+<<<<<<< HEAD
           "explanation": "The accumulator adds each element sequentially: 0 + 1 + 2 + 3 = 6."
         },
         "uz": {
           "context": "Python siklini tahlil qiling:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
           "question": "Sikl tugagach, total o‘zgaruvchisining yakuniy qiymati nima bo‘ladi?",
+=======
+          "explanation": "Total becomes 1, then 3, then 6."
+        },
+        "uz": {
+          "context": "Bu Python kodi 1 dan 3 gacha bo‘lgan sonlarni qo‘shadi:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
+          "question": "Sikl tugagach, total nechaga teng bo‘ladi?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "3",
             "B": "4",
             "C": "6",
             "D": "9"
           },
+<<<<<<< HEAD
           "explanation": "Akkumulyator: 0 + 1 = 1; 1 + 2 = 3; 3 + 3 = 6. Yakuniy qiymat: 6."
+=======
+          "explanation": "Total ketma-ket 1, keyin 3, so‘ng 6 bo‘ladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -566,7 +824,11 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Trace this pseudocode:\nScore ← 75\nIF Score > 80 THEN\n    Grade ← \"A\"\nELSE\n    Grade ← \"B\"\nENDIF",
+=======
+          "context": "Score ← 75; IF Score > 80 THEN Grade ← \"A\" ELSE Grade ← \"B\" ENDIF.",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "question": "What is the final value of Grade?",
           "options": {
             "A": "75",
@@ -574,10 +836,17 @@
             "C": "B",
             "D": "Error"
           },
+<<<<<<< HEAD
           "explanation": "75 is not greater than 80, so the ELSE branch executes, setting Grade to 'B'."
         },
         "uz": {
           "context": "Kodni tahlil qiling:\nScore ← 75\nIF Score > 80 THEN\n    Grade ← \"A\"\nELSE\n    Grade ← \"B\"\nENDIF",
+=======
+          "explanation": "75 is not greater than 80, so the ELSE branch runs."
+        },
+        "uz": {
+          "context": "Score ← 75; IF Score > 80 THEN Grade ← \"A\" ELSE Grade ← \"B\" ENDIF.",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "question": "Grade ning yakuniy qiymati nima bo‘ladi?",
           "options": {
             "A": "75",
@@ -585,7 +854,11 @@
             "C": "B",
             "D": "Xatolik"
           },
+<<<<<<< HEAD
           "explanation": "Score (75) > 80 sharti False bo‘lgani sababli ELSE bloki bajariladi va Grade = \"B\" bo‘ladi."
+=======
+          "explanation": "75 soni 80 dan katta emas, shuning uchun ELSE tarmog‘i bajariladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -610,6 +883,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An API service checks access permissions using this compound Boolean expression:\n(all_tasks_completed == True) and (penalty < 5 or is_senior == True)",
           "question": "Which evaluation state results in True (access granted)?",
           "options": {
@@ -630,6 +904,28 @@
             "D": "all_tasks_completed = False; penalty = 10; is_senior = True"
           },
           "explanation": "all_tasks_completed = True va (2 < 5 True yoki False) = True. Ikkala qism ham True bo‘lib, natija True bo‘ladi."
+=======
+          "context": "A library allows borrowing only when both rules are met:\n1. All earlier books were returned.\n2. The fine is below $5 OR the student is in a senior grade.",
+          "question": "Which student meets both rules?",
+          "options": {
+            "A": "Returned all books; $10 fine; not in a senior grade.",
+            "B": "Did not return all books; no fine; in a senior grade.",
+            "C": "Returned all books; $2 fine; not in a senior grade.",
+            "D": "Did not return all books; $10 fine; in a senior grade."
+          },
+          "explanation": "The student must have returned the books and also satisfy either Fine<5 or Is_Senior=TRUE."
+        },
+        "uz": {
+          "context": "Kutubxonadan kitob olish uchun ikkala qoida ham bajarilishi kerak:\n1. Oldingi kitoblarning barchasi qaytarilgan.\n2. Jarima 5 dollardan kam YOKI o‘quvchi yuqori sinfda o‘qiydi.",
+          "question": "Qaysi o‘quvchi ikkala qoidaga ham mos keladi?",
+          "options": {
+            "A": "Barcha kitoblarni qaytargan; jarima 10 dollar; yuqori sinfda emas.",
+            "B": "Barcha kitoblarni qaytarmagan; jarima yo‘q; yuqori sinfda.",
+            "C": "Barcha kitoblarni qaytargan; jarima 2 dollar; yuqori sinfda emas.",
+            "D": "Barcha kitoblarni qaytarmagan; jarima 10 dollar; yuqori sinfda."
+          },
+          "explanation": "O‘quvchi avvalo kitoblarni qaytargan bo‘lishi va qo‘shimcha ravishda jarima 5 dan kichik YOKI Is_Senior=TRUE shartlaridan birini bajarishi kerak."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -654,26 +950,43 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A validator function accepts integer age values in the inclusive range 13 <= age <= 19.",
           "question": "Which set represents the optimal boundary value analysis test data?",
+=======
+          "context": "A program accepts ages 13 to 19 inclusive.",
+          "question": "Which set is the best boundary test data?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "1, 50, 100",
             "B": "14, 15, 16",
             "C": "12, 13, 19, 20",
             "D": "13, 19"
           },
+<<<<<<< HEAD
           "explanation": "Boundary value testing verifies the exact boundaries (13, 19) and the immediate out-of-bounds neighbors (12, 20)."
         },
         "uz": {
           "context": "Funksiya 13 dan 19 gacha (ikkala chegara ham kiradi: 13 <= age <= 19) bo‘lgan yosh oralig‘idagi ma’lumotlarni qabul qiladi.",
           "question": "Ushbu funksiya chegaralarini to‘liq tekshirish (boundary value analysis) uchun qaysi test qiymatlari to‘plami eng to‘g‘ri?",
+=======
+          "explanation": "Boundary testing checks values at the limits and immediately outside them."
+        },
+        "uz": {
+          "context": "Dastur 13 dan 19 gacha bo‘lgan yoshlarni, chegaralar bilan birga, qabul qiladi.",
+          "question": "Qaysi qiymatlar to‘plami eng yaxshi chegaraviy test (boundary test) ma’lumotidir?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "1, 50, 100",
             "B": "14, 15, 16",
             "C": "12, 13, 19, 20",
             "D": "13, 19"
           },
+<<<<<<< HEAD
           "explanation": "Chegaraviy testlashda chegaralarning o‘zi (13, 19) va ulardan bir birlik tashqaridagi qiymatlar (12, 20) tekshiriladi."
+=======
+          "explanation": "Chegaraviy test diapazon chegaralaridagi va ulardan bevosita tashqaridagi qiymatlarni tekshiradi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -698,6 +1011,7 @@
       "correctOption": "A",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A database buffer cache is processing transactions in memory before committing to disk. An abrupt power failure occurs and uncommitted buffer data is lost.",
           "question": "Which volatile hardware component was holding the unsaved buffer data prior to power loss?",
           "options": {
@@ -718,6 +1032,28 @@
             "D": "CPU arifmetik-mantiqiy qurilmasi (ALU)"
           },
           "explanation": "RAM (operativ xotira) — uchuvchan (volatile) xotira bo‘lib, elektr toki uzilganda ma’lumotlarini yo‘qotadi."
+=======
+          "context": "A student types three paragraphs but does not save them. The power goes out and the paragraphs disappear.",
+          "question": "Which component was most likely holding the missing text before power loss?",
+          "options": {
+            "A": "RAM",
+            "B": "Hard drive / SSD",
+            "C": "ROM",
+            "D": "CPU"
+          },
+          "explanation": "RAM is volatile working memory; unsaved data in RAM is lost when power is removed."
+        },
+        "uz": {
+          "context": "O‘quvchi uchta paragraf yozadi, lekin hali saqlamaydi. Elektr o‘chib, matn yo‘qoladi.",
+          "question": "Elektr o‘chishidan oldin saqlanmagan matn qaysi komponentda turgan bo‘lishi ehtimol?",
+          "options": {
+            "A": "RAM",
+            "B": "Qattiq disk / SSD",
+            "C": "ROM",
+            "D": "CPU"
+          },
+          "explanation": "RAM — vaqtinchalik (volatile) ishchi xotira. Elektr uzilganda undagi saqlanmagan ma’lumot yo‘qoladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -742,6 +1078,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A large video stream is segmented into network packets before transmission over TCP/IP.",
           "question": "Which statement accurately describes packet routing across packet-switched networks?",
           "options": {
@@ -762,6 +1099,28 @@
             "D": "Paketlar internetga kirishdan oldin yana bitta katta blokka birlashtiriladi."
           },
           "explanation": "IP paketlar turli marshrutlar orqali mustaqil harakatlanadi va qabul qiluvchi tomonda TCP sarlavhasidagi tartib raqamlari bo‘yicha qayta teriladi."
+=======
+          "context": "A large video file is sent over the internet after being split into many packets.",
+          "question": "Which statement is true?",
+          "options": {
+            "A": "All packets must travel along the same path.",
+            "B": "Packets may take different routes and arrive in a different order.",
+            "C": "If one packet is lost, the file is permanently unreadable.",
+            "D": "Packets are merged into one giant block before entering the internet."
+          },
+          "explanation": "Packet-switched networks can route packets independently and reassemble them at the destination."
+        },
+        "uz": {
+          "context": "Katta video fayl internet orqali yuborilishidan oldin ko‘plab paketlarga bo‘linadi.",
+          "question": "Qaysi fikr to‘g‘ri?",
+          "options": {
+            "A": "Barcha paketlar bir xil yo‘ldan borishi shart.",
+            "B": "Paketlar turli yo‘llardan borishi va yuborilgan tartibdan boshqa tartibda yetib kelishi mumkin.",
+            "C": "Bitta paket yo‘qolsa, fayl butunlay tiklab bo‘lmaydigan holga keladi.",
+            "D": "Paketlar internetga kirishdan oldin yana bitta katta blokka birlashtiriladi."
+          },
+          "explanation": "Paketli tarmoqda paketlar mustaqil yo‘nalishlardan borishi va manzilda qayta yig‘ilishi mumkin."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -786,6 +1145,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "You receive an urgent email from security-support@yourbank-update.net stating: \"Your account will be deleted in 2 hours unless you log in through this link\".",
           "question": "What is the safest technical first step to handle this phishing attempt?",
           "options": {
@@ -801,11 +1161,32 @@
           "question": "Ushbu fishing (phishing) xurujiga qarshi eng xavfsiz birinchi qadam qaysi?",
           "options": {
             "A": "Havolani darhol bosib tekshirish.",
+=======
+          "context": "You receive an urgent email from security-support@yourbank-update.net saying your account will be deleted in 2 hours unless you click a link and log in.",
+          "question": "What is the safest first step?",
+          "options": {
+            "A": "Click immediately.",
+            "B": "Reply and ask for proof.",
+            "C": "Ignore the link and open the bank’s official site by typing its address yourself.",
+            "D": "Download the attachment to read the safety policy."
+          },
+          "explanation": "Using the independently known official site avoids interacting with the potentially malicious link or sender."
+        },
+        "uz": {
+          "context": "Siz security-support@yourbank-update.net manzilidan “2 soat ichida havolaga kirib hisobga kirmasangiz, akkauntingiz o‘chiriladi” degan shoshilinch xat olasiz.",
+          "question": "Eng xavfsiz birinchi qadam qaysi?",
+          "options": {
+            "A": "Havolani darhol bosish.",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
             "B": "Xatga javob berib, haqiqiyligini isbotlashni so‘rash.",
             "C": "Havolani bosmasdan, bankning rasmiy sayt manzilini o‘zingiz kiritib ochish.",
             "D": "“Xavfsizlik siyosati”ni o‘qish uchun ilovani yuklab olish."
           },
+<<<<<<< HEAD
           "explanation": "Shubhali xatlardagi havolalarni bosmaslik va rasmiy domenni brauzerga mustaqil kiritish fishingdan himoyalanishning asosiy qoidasidir."
+=======
+          "explanation": "Rasmiy saytni mustaqil ravishda ochish shubhali havola yoki yuboruvchi bilan bevosita ishlashdan qochadi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -830,6 +1211,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Modern computers run an operating system alongside user-space applications.",
           "question": "What is the primary role of the Operating System (OS)?",
           "options": {
@@ -842,6 +1224,20 @@
         },
         "uz": {
           "context": "Kompyuter tizimlarida operatsion tizim (OS) va foydalanuvchi amaliy dasturlari o‘rnatilgan.",
+=======
+          "context": "A computer has different types of software installed.",
+          "question": "What is the primary role of the Operating System (OS)?",
+          "options": {
+            "A": "Help users write essays and spreadsheets.",
+            "B": "Manage hardware and provide a platform for applications to run.",
+            "C": "Browse the internet and send emails.",
+            "D": "Edit photos and videos."
+          },
+          "explanation": "The OS manages hardware/resources and provides services on which applications run."
+        },
+        "uz": {
+          "context": "Kompyuterda turli xil dasturlar o‘rnatilgan.",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "question": "Operatsion tizimning (OS) asosiy vazifasi nima?",
           "options": {
             "A": "Insho yozish va elektron jadval tuzishga yordam berish.",
@@ -849,7 +1245,11 @@
             "C": "Internetda ko‘rish va elektron pochta yuborish.",
             "D": "Rasm va videolarni tahrirlash."
           },
+<<<<<<< HEAD
           "explanation": "OS apparat resurslarini boshqaradi va ilovalar ishlashi uchun zarur tizim interfeyslarini beradi."
+=======
+          "explanation": "Operatsion tizim qurilma va resurslarni boshqaradi hamda ilovalar ishlashi uchun asos yaratadi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -874,6 +1274,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An authentication system requests a master password followed by an OTP code sent to the user's phone (MFA).",
           "question": "Why is this multi-factor method safer than a password alone?",
           "options": {
@@ -887,13 +1288,32 @@
         "uz": {
           "context": "Autentifikatsiya tizimi avval parolni, keyin esa foydalanuvchining telefoniga yuborilgan kodni (MFA) so‘raydi.",
           "question": "Nega bu usul faqat paroldan ko‘ra ancha xavfsizroq?",
+=======
+          "context": "A login asks for a password and then a code sent to the user’s phone.",
+          "question": "Why is this safer than a password alone?",
+          "options": {
+            "A": "It makes the password impossible to forget.",
+            "B": "It guarantees the internet connection is encrypted.",
+            "C": "An attacker would need both the secret knowledge and access to the physical device.",
+            "D": "It makes login faster."
+          },
+          "explanation": "The system uses two different authentication factors: something you know and something you have."
+        },
+        "uz": {
+          "context": "Tizim avval parolni, keyin esa foydalanuvchining telefoniga yuborilgan kodni so‘raydi.",
+          "question": "Nega bu usul faqat paroldan ko‘ra xavfsizroq?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "Parolni unutib bo‘lmaydigan qiladi.",
             "B": "Internet ulanishini albatta shifrlaydi.",
             "C": "Hujumchi ham maxfiy ma’lumotni, ham jismoniy qurilmaga kirishni qo‘lga kiritishi kerak bo‘ladi.",
             "D": "Kirishni tezlashtiradi."
           },
+<<<<<<< HEAD
           "explanation": "MFA turli omillarni (bilish va egalik) birlashtiradi, shuning uchun faqat parolni bilish hujumchiga yetarli bo‘lmaydi."
+=======
+          "explanation": "Bu yerda ikki xil autentifikatsiya omili ishlatiladi: siz biladigan narsa va sizda mavjud bo‘lgan narsa."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -918,14 +1338,20 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An engineer is designing a users table in a relational database for 1,000 active accounts.",
           "question": "Which field is the best Primary Key candidate?",
+=======
+          "context": "You are building a student database for a school with 1,000 students.",
+          "question": "Which field is the best Primary Key?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "Student_Full_Name",
             "B": "Student_Birth_Date",
             "C": "Student_ID_Number",
             "D": "Student_Home_City"
           },
+<<<<<<< HEAD
           "explanation": "Names and dates can duplicate; primary keys must guarantee immutable row uniqueness."
         },
         "uz": {
@@ -938,6 +1364,20 @@
             "D": "Student_Home_City (Shahar nomi)"
           },
           "explanation": "Ismlar va sanalar takrorlanishi mumkin. Primary Key har bir qator uchun qat’iy unikal va o‘zgarmas bo‘lishi shart."
+=======
+          "explanation": "A primary key must uniquely identify each record; names, birth dates, and cities can repeat."
+        },
+        "uz": {
+          "context": "1 000 o‘quvchili maktab uchun o‘quvchilar bazasini yaratyapsiz.",
+          "question": "Qaysi maydon Primary Key (asosiy kalit) uchun eng yaxshi tanlov?",
+          "options": {
+            "A": "Student_Full_Name",
+            "B": "Student_Birth_Date",
+            "C": "Student_ID_Number",
+            "D": "Student_Home_City"
+          },
+          "explanation": "Primary Key har bir yozuvni yagona tarzda ajratishi kerak. Ism, tug‘ilgan sana yoki shahar takrorlanishi mumkin."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -962,6 +1402,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A telemetry sensor records daily temperatures: [15, 12, -99, 14, 16]. You need to calculate the true average temperature.",
           "question": "How should the data cleaning step handle the -99 outlier?",
           "options": {
@@ -982,6 +1423,28 @@
             "D": "Qolgan barcha qiymatlarni ham -99 ga almashtirish."
           },
           "explanation": "-99 fizik jihatdan anomaliya yoki nosozlik signali bo‘lib, o‘rtacha qiymatni buzmasligi uchun tekshirilishi va ajratilishi kerak."
+=======
+          "context": "A sensor records daily temperatures: [15, 12, -99, 14, 16]. You need the average.",
+          "question": "How should you handle -99?",
+          "options": {
+            "A": "Include it because all sensor readings are accurate.",
+            "B": "Change it to 0 without investigation.",
+            "C": "Remove or investigate it because it is likely an outlier/sensor error.",
+            "D": "Change all other values to -99."
+          },
+          "explanation": "An implausible value should be investigated before it distorts analysis."
+        },
+        "uz": {
+          "context": "Sensor kunlik haroratlarni yozdi: [15, 12, -99, 14, 16]. Siz o‘rtacha qiymatni hisoblamoqchisiz.",
+          "question": "-99 qiymati bilan nima qilish kerak?",
+          "options": {
+            "A": "Barcha sensor ma’lumotlari to‘g‘ri deb hisoblab, uni ham qo‘shish.",
+            "B": "Tekshirmasdan 0 ga almashtirish.",
+            "C": "U ehtimol chet qiymat yoki sensor xatosi bo‘lgani uchun uni tekshirish yoki vaqtincha chiqarib tashlash.",
+            "D": "Qolgan barcha qiymatlarni ham -99 ga almashtirish."
+          },
+          "explanation": "Mantiqan shubhali qiymat tahlilni buzmasligi uchun avval tekshirilishi kerak."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1006,26 +1469,45 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Integer fields store only whole numbers. A database stores exam scores as Integers, but real student scores include decimals like 85.5.",
           "question": "Which field risks precision truncation if stored as an Integer?",
           "options": {
             "A": "Absence count",
+=======
+          "context": "An Integer stores whole numbers only. A school system stores absences, student ID, and exam score as Integers. An exam score can be 85.5.",
+          "question": "Which value could lose its decimal part?",
+          "options": {
+            "A": "Number of absences",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
             "B": "Student ID",
             "C": "Exam score",
             "D": "None of them"
           },
+<<<<<<< HEAD
           "explanation": "Storing 85.5 in an integer field causes truncation of the fractional decimal component."
         },
         "uz": {
           "context": "Integer turi faqat butun sonlarni saqlaydi. Tizim imtihon balini Integer sifatida saqlamoqda, ammo haqiqiy ball 85.5 bo‘lishi mumkin.",
           "question": "Qaysi qiymatning kasr qismi yo‘qolishi (truncation) xavfi bor?",
+=======
+          "explanation": "Integer stores whole numbers, so a value such as 85.5 requires a Real/Float representation."
+        },
+        "uz": {
+          "context": "Integer faqat butun sonlarni saqlaydi. Maktab tizimi dars qoldirish soni, o‘quvchi ID raqami va imtihon balini Integer sifatida saqlaydi. Imtihon bali 85.5 bo‘lishi mumkin.",
+          "question": "Qaysi qiymatning kasr qismi yo‘qolishi mumkin?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "Dars qoldirish soni",
             "B": "O‘quvchi ID raqami",
             "C": "Imtihon bali",
             "D": "Hech qaysisi"
           },
+<<<<<<< HEAD
           "explanation": "85.5 soni butun son emas; Integer turida saqlanganda uning .5 kasr qismi tashlab yuboriladi."
+=======
+          "explanation": "Integer faqat butun sonlarni saqlaydi. 85.5 kabi qiymat uchun Real/Float kerak."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1050,26 +1532,43 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Cell C1 contains the formula =A1+B1. You copy this formula down to cell C2.",
           "question": "What does the formula become under relative cell referencing?",
+=======
+          "context": "Cell C1 contains =A1+B1. You copy the formula to C2.",
+          "question": "What does the formula become?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "=A1+B1",
             "B": "=A2+B2",
             "C": "=B1+C1",
             "D": "=SUM(A1:B2)"
           },
+<<<<<<< HEAD
           "explanation": "Copying down by one row shifts relative row indices by +1, producing =A2+B2."
         },
         "uz": {
           "context": "C1 katagida =A1+B1 formulasi bor. Siz formulani C2 katagiga nusxalaysiz.",
           "question": "Nisbiy murojaat (relative referencing) qoidasiga ko‘ra formula qanday o‘zgaradi?",
+=======
+          "explanation": "Relative references move with the copied formula, so row 1 becomes row 2."
+        },
+        "uz": {
+          "context": "C1 katagida =A1+B1 formulasi bor. Siz formulani C2 katagiga nusxalaysiz.",
+          "question": "Formula qanday o‘zgaradi?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "=A1+B1",
             "B": "=A2+B2",
             "C": "=B1+C1",
             "D": "=SUM(A1:B2)"
           },
+<<<<<<< HEAD
           "explanation": "Formula bir qator pastga nusxalanganda qator raqamlari 1 ga ortadi: =A2+B2."
+=======
+          "explanation": "Nisbiy (relative) havolalar formula bilan birga siljiydi, shuning uchun 1-qator 2-qatorga o‘zgaradi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1094,6 +1593,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "You type your new email address twice into a confirmation form to guarantee no typo occurred.",
           "question": "Which data integrity process does this dual-entry check represent?",
           "options": {
@@ -1114,6 +1614,28 @@
             "D": "Shifrlash (Encryption)"
           },
           "explanation": "Validation — ma’lumot formati va qoidalarini tekshirish; Verification — ma’lumotning asl niyatga to‘g‘ri kelishini (masalan ikki marta yozib) solishtirishdir."
+=======
+          "context": "You type your new email address twice into a form to make sure you did not mistype it.",
+          "question": "Which process is this?",
+          "options": {
+            "A": "Validation (range check)",
+            "B": "Verification (double entry)",
+            "C": "Data mining",
+            "D": "Encryption"
+          },
+          "explanation": "Double entry is verification: it checks whether entered data matches the intended/original value, not whether it satisfies a format rule."
+        },
+        "uz": {
+          "context": "Siz yangi elektron pochta manzilingizni xato kiritmaganligingizga ishonch hosil qilish uchun formaga ikki marta yozasiz.",
+          "question": "Bu qaysi jarayon?",
+          "options": {
+            "A": "Validation (masalan, diapazon tekshiruvi)",
+            "B": "Verification (ikki marta kiritib solishtirish)",
+            "C": "Data mining",
+            "D": "Shifrlash"
+          },
+          "explanation": "Ikki marta kiritish — verification. U kiritilgan ma’lumotning asl/ko‘zlangan qiymatga mosligini tekshiradi, format qoidalariga mosligini emas."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1138,6 +1660,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A financial institution uses machine learning models for risk scoring and wants to maintain human accountability (Human-in-the-Loop).",
           "question": "How should the bank architect AI usage so human officers retain final accountability?",
           "options": {
@@ -1158,6 +1681,28 @@
             "D": "Bank javobgar bo‘lmasligi uchun AI qarorining sabablarini yashirish."
           },
           "explanation": "Yuqori mas’uliyatli tizimlarda inson nazorati (Human-in-the-loop) qarorlarning adolatli va qonuniy bo‘lishini ta’minlaydi."
+=======
+          "context": "A bank uses AI to review student loan applications and wants the process to remain responsible and fair.",
+          "question": "How should the bank use AI while keeping a person responsible for the final decision?",
+          "options": {
+            "A": "Let AI make the final decision automatically.",
+            "B": "Use AI to flag risks, but require a bank employee to review and make the final decision.",
+            "C": "Do not allow appeals because AI is objective.",
+            "D": "Hide the AI reasoning so the bank cannot be blamed."
+          },
+          "explanation": "In high-stakes decisions, humans should retain oversight and accountability."
+        },
+        "uz": {
+          "context": "Bank talaba kredit arizalarini ko‘rib chiqishda AI dan foydalanadi va jarayon mas’uliyatli hamda adolatli bo‘lishini xohlaydi.",
+          "question": "Yakuniy qaror uchun inson javobgar bo‘lib qolishi uchun bank AI’dan qanday foydalanishi kerak?",
+          "options": {
+            "A": "Yakuniy qarorni AI ga to‘liq avtomatik qoldirish.",
+            "B": "AI xavfli holatlarni belgilaydi, lekin bank xodimi ularni ko‘rib chiqib yakuniy qarorni qabul qiladi.",
+            "C": "AI xolis bo‘lgani uchun apellyatsiyaga ruxsat bermaslik.",
+            "D": "Bank javobgar bo‘lmasligi uchun AI qarorining sabablarini yashirish."
+          },
+          "explanation": "Yuqori xavfli qarorlarda inson nazorati va yakuniy javobgarlik saqlanib qolishi kerak."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1182,6 +1727,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A generative chatbot confidently asserts that Uruguay won the 1925 World Cup, even though the first tournament was not held until 1930.",
           "question": "Why did the chatbot produce this plausible-sounding factual hallucination?",
           "options": {
@@ -1202,6 +1748,28 @@
             "D": "Bir sport muxlisi aynan shu yolg‘on javobni dasturlab qo‘ygan."
           },
           "explanation": "Katta til modellari faktlarni bilmaydi; ular statistik ehtimollik asosida keyingi so‘zni taxmin qiladi (hallucination)."
+=======
+          "context": "You ask a chatbot who won the World Cup in 1925. It answers “Uruguay,” even though the first World Cup was in 1930.",
+          "question": "Why did the chatbot likely produce this wrong answer?",
+          "options": {
+            "A": "History books are outdated.",
+            "B": "It generated a likely-sounding answer from learned language patterns even though the event never happened.",
+            "C": "It is connected to a verified live database of every sports event.",
+            "D": "A sports fan programmed that exact false answer."
+          },
+          "explanation": "Generative AI can produce fluent but false content by predicting plausible language patterns rather than verifying every fact."
+        },
+        "uz": {
+          "context": "Siz chatbotdan “1925-yilgi Jahon chempionatida kim g‘olib bo‘lgan?” deb so‘raysiz. U “Urugvay” deb javob beradi, aslida birinchi Jahon chempionati 1930-yilda bo‘lgan.",
+          "question": "Chatbot nega bunday noto‘g‘ri javob bergan bo‘lishi mumkin?",
+          "options": {
+            "A": "Tarix kitoblari eskirib qolgan.",
+            "B": "U voqea bo‘lmagan bo‘lsa ham, o‘rgangan til naqshlari asosida ishonarli eshitiladigan javob yaratgan.",
+            "C": "U barcha sport voqealarining tekshirilgan jonli bazasiga ulangan.",
+            "D": "Bir sport muxlisi aynan shu yolg‘on javobni dasturlab qo‘ygan."
+          },
+          "explanation": "Generativ AI har bir faktni tekshirmasdan, ehtimoliy til naqshlari asosida ravon, lekin noto‘g‘ri javob yaratishi mumkin."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1226,6 +1794,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "You are requesting software architectural guidance from an AI model and need a structured, precise output.",
           "question": "Which constrained prompt formulation yields the most effective technical output?",
           "options": {
@@ -1246,6 +1815,28 @@
             "D": "Boshqa AI vositasiga o‘tib, noaniq umumiy so‘rovni takrorlash."
           },
           "explanation": "Auditoriya, tuzilma va chegaralarni (3 ta afzallik, 2 ta kamchilik) ko‘rsatish eng sifatli va aniq javobni ta’minlaydi."
+=======
+          "context": "You ask an AI chatbot “Explain how a computer works.” It returns a 2,000-word answer full of jargon you do not understand.",
+          "question": "Which follow-up is most effective?",
+          "options": {
+            "A": "Paste the same long answer back into the prompt.",
+            "B": "Say “That was too hard; try again.”",
+            "C": "Say “Summarize this into 3 bullet points for a Grade 8 student using simple analogies.”",
+            "D": "Switch tools and repeat the same original question."
+          },
+          "explanation": "The best follow-up adds explicit constraints for length, audience, and style."
+        },
+        "uz": {
+          "context": "Siz AI chatbotga “Kompyuter qanday ishlashini tushuntir” deysiz. U 2 000 so‘zli, murakkab texnik atamalarga boy javob beradi.",
+          "question": "Qaysi keyingi so‘rov eng samarali?",
+          "options": {
+            "A": "Xuddi shu uzun javobni promptga qayta joylashtirish.",
+            "B": "“Bu juda qiyin edi, yaxshiroq tushuntir” deb yozish.",
+            "C": "“Buni 8-sinf o‘quvchisi uchun sodda o‘xshatishlardan foydalanib 3 ta punktda qisqacha tushuntir” deb yozish.",
+            "D": "Boshqa AI vositasiga o‘tib, aynan o‘sha dastlabki savolni takrorlash."
+          },
+          "explanation": "Eng yaxshi keyingi prompt uzunlik, auditoriya va uslub bo‘yicha aniq cheklovlar beradi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1270,6 +1861,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A computer vision facial recognition system was trained exclusively on 100,000 adult photos. In production, it frequently fails on children aged 10–12.",
           "question": "What is the most likely technical cause of this classification failure?",
           "options": {
@@ -1290,6 +1882,28 @@
             "D": "Kamera bo‘yi past odamlarni ko‘rganda avtomatik o‘chadi."
           },
           "explanation": "Dataset bias: o‘quv ma’lumotlarida qaysi toifa yetishmasa, model real hayotda o‘sha toifada yuqori xatolik beradi."
+=======
+          "context": "A facial-recognition AI is trained using 100,000 photos of adults. It then fails to recognize children aged 10–12.",
+          "question": "What is the most likely reason?",
+          "options": {
+            "A": "The AI intentionally decided children are unauthorized.",
+            "B": "The training photos did not include enough children, so the AI did not learn to recognize their faces well.",
+            "C": "The entire program must be rewritten in another programming language.",
+            "D": "The camera automatically turns off for short people."
+          },
+          "explanation": "Model reliability depends on whether training data represents the cases it will encounter."
+        },
+        "uz": {
+          "context": "Yuzni tanish AI tizimi 100 000 ta kattalar suratida o‘qitilgan. Keyin u 10–12 yoshli bolalarni taniy olmaydi.",
+          "question": "Eng ehtimoliy sabab nima?",
+          "options": {
+            "A": "AI ataylab bolalarni ruxsatsiz deb qaror qilgan.",
+            "B": "O‘rgatish uchun ishlatilgan suratlarda bolalar yetarli bo‘lmagan, shuning uchun AI ularning yuzini yaxshi tanishni o‘rganmagan.",
+            "C": "Dastur boshqa dasturlash tilida boshidan yozilishi kerak.",
+            "D": "Kamera bo‘yi past odamlarni ko‘rganda avtomatik o‘chadi."
+          },
+          "explanation": "Modelning ishonchliligi trening ma’lumotlari real foydalanishdagi holatlarni qanchalik yaxshi ifodalashiga bog‘liq."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1314,6 +1928,7 @@
       "correctOption": "A",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An enterprise is establishing guidelines for appropriate and proportionate machine learning deployments.",
           "question": "Which task represents the most appropriate and proportionate deployment of AI?",
           "options": {
@@ -1334,6 +1949,28 @@
             "D": "Hech qanday shifokorsiz murakkab yurak operatsiyasini to‘liq avtonom bajarish."
           },
           "explanation": "Katta hajmdagi ma’lumotlarni tahlil qilish va naqshlarni (spam, anomaliya) topish AI ning kuchli va xavfsiz tomonidir; inson hayoti va taqdiriga daxldor qarorlar esa inson nazorati ostida bo‘lishi shart."
+=======
+          "context": "A large organization wants to use AI only where it is appropriate and low-risk.",
+          "question": "Which task is the most appropriate and proportionate use of AI?",
+          "options": {
+            "A": "Filter 10,000 incoming emails per hour to flag obvious spam.",
+            "B": "Make the final legal sentence for a convicted person.",
+            "C": "Automatically interview and hire a school principal.",
+            "D": "Perform complex heart surgery without any human doctor present."
+          },
+          "explanation": "Spam filtering is high-volume and comparatively low-risk; the other options delegate high-stakes human judgment or safety-critical responsibility."
+        },
+        "uz": {
+          "context": "Katta tashkilot AI dan faqat mos va xavfi nisbatan past vazifalarda foydalanmoqchi.",
+          "question": "Qaysi vazifa AI dan eng maqbul va mutanosib foydalanish hisoblanadi?",
+          "options": {
+            "A": "Soatiga 10 000 ta kiruvchi xatni tahlil qilib, aniq spam xatlarni belgilash.",
+            "B": "Jinoyat sodir etgan shaxsga yakuniy sud jazosi tayinlash.",
+            "C": "Maktab direktorini avtomatik suhbatdan o‘tkazib, ishga olish.",
+            "D": "Hech qanday shifokorsiz murakkab yurak operatsiyasini bajarish."
+          },
+          "explanation": "Spam filtrlash katta hajmli va nisbatan past xavfli vazifa. Qolgan variantlar yuqori xavfli insoniy hukm yoki xavfsizlik mas’uliyatini AI ga topshiradi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1355,6 +1992,7 @@
       "isolationTarget": "Source vs content/visual credibility",
       "possibleFailurePattern": "Source vs content/visual credibility",
       "roadmapMapping": null,
+<<<<<<< HEAD
       "correctOption": "B",
       "content": {
         "en": {
@@ -1378,6 +2016,31 @@
             "D": "Veb-sayt dizayni va dastur fayli har doim bir xil serverda joylashadi."
           },
           "explanation": "Phishing saytlar tashqi ko‘rinishidan haqiqiy sayt kabi ko‘rinishi mumkin. Asosiy e’tiborni domen nomi va SSL sertifikatiga qaratish lozim."
+=======
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "You see a polished website claiming a famous athlete quit today, but no other news source reports it.",
+          "question": "Why should you be careful before believing it?",
+          "options": {
+            "A": "Professional-looking websites never make mistakes.",
+            "B": "The athlete might change their mind later.",
+            "C": "High-quality design does not prove the claim is true.",
+            "D": "News websites are not allowed to use animations."
+          },
+          "explanation": "Design quality is not evidence of factual accuracy."
+        },
+        "uz": {
+          "context": "Siz professional ko‘rinadigan saytda mashhur sportchi bugun faoliyatini tugatgani haqidagi xabarni ko‘rasiz, lekin boshqa yangilik manbalarida bu haqda xabar yo‘q.",
+          "question": "Nega bu xabarga darhol ishonmaslik kerak?",
+          "options": {
+            "A": "Professional ko‘rinadigan saytlar hech qachon xato qilmaydi.",
+            "B": "Sportchi keyin fikrini o‘zgartirishi mumkin.",
+            "C": "Sayt dizayni sifatli bo‘lishi xabarning rostligini isbotlamaydi.",
+            "D": "Yangilik saytlariga animatsiya ishlatish mumkin emas."
+          },
+          "explanation": "Saytning ko‘rinishi faktning to‘g‘riligini isbotlamaydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1402,6 +2065,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A sysadmin deletes a local log file on a virtual machine, but centralized log forwarding (e.g. Elasticsearch/CloudWatch) is active across the cluster.",
           "question": "Did deleting the local file completely erase the logged events from the infrastructure?",
           "options": {
@@ -1422,6 +2086,28 @@
             "D": "Har qanday server logi 1 daqiqa ichida o‘z-o‘zidan yo‘qoladi."
           },
           "explanation": "Taqsimlangan tizimlarda lokal fayl o‘chirilsa ham, tarmoqdagi markaziy xotira yoki replikalarda ma’lumotlar saqlanib qoladi."
+=======
+          "context": "You send a photo to a friend, then delete it from your own phone gallery.",
+          "question": "Is the photo now completely gone from the internet?",
+          "options": {
+            "A": "Yes, deleting the original removes every copy.",
+            "B": "No; the friend may have saved it or the service may still have a copy.",
+            "C": "Yes, the Delete button is a legal guarantee of complete removal.",
+            "D": "No, but it will always disappear automatically after 24 hours."
+          },
+          "explanation": "Local deletion does not guarantee that all remote or copied versions disappear."
+        },
+        "uz": {
+          "context": "Siz do‘stingizga surat yuborasiz, keyin uni o‘z telefoningiz galereyasidan o‘chirasiz.",
+          "question": "Surat endi internetdan butunlay yo‘qoldimi?",
+          "options": {
+            "A": "Ha, asl faylni o‘chirish barcha nusxalarni ham yo‘q qiladi.",
+            "B": "Yo‘q; do‘stingiz uni saqlagan bo‘lishi yoki xizmatda nusxasi qolgan bo‘lishi mumkin.",
+            "C": "Ha, “Delete” tugmasi to‘liq o‘chirishning huquqiy kafolatidir.",
+            "D": "Yo‘q, lekin u har doim 24 soatdan keyin avtomatik yo‘qoladi."
+          },
+          "explanation": "Mahalliy o‘chirish masofadagi yoki nusxalangan barcha versiyalar yo‘qolishini kafolatlamaydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1446,6 +2132,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "You need to find the exact official PostgreSQL documentation syntax for indexing JSONB columns.",
           "question": "Which search query targets the required technical documentation most effectively?",
           "options": {
@@ -1466,6 +2153,28 @@
             "D": "Barcha SQL xatolari ro‘yxati"
           },
           "explanation": "Aniq SQL operatorlari va site: domeni orqali qidirish eng maqbul natijani beradi."
+=======
+          "context": "You want to find the height of the Kalyan Minaret in Bukhara.",
+          "question": "Which search query is most likely to give the exact number quickly?",
+          "options": {
+            "A": "Tell me everything about beautiful Bukhara and its towers.",
+            "B": "Kalyan Minaret height",
+            "C": "Where is the Kalyan Minaret located?",
+            "D": "Big towers Bukhara Uzbekistan history"
+          },
+          "explanation": "A short query that directly expresses the information need is the most precise."
+        },
+        "uz": {
+          "context": "Siz Buxorodagi Kalon minorasining balandligini topmoqchisiz.",
+          "question": "Qaysi qidiruv so‘rovi aniq raqamni tezroq topishga yordam beradi?",
+          "options": {
+            "A": "Go‘zal Buxoro va undagi minoralar haqida hammasini aytib ber.",
+            "B": "Kalon minorasi balandligi",
+            "C": "Kalon minorasi qayerda joylashgan?",
+            "D": "Buxoro O‘zbekiston katta minoralar tarixi"
+          },
+          "explanation": "Aniq axborot ehtiyojini bevosita ifodalagan qisqa so‘rov eng samarali."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1490,6 +2199,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Inside a project root directory, the src/ folder contains a services/ folder with auth.service.ts.",
           "question": "What is the correct relative path from the project root to this file?",
           "options": {
@@ -1510,6 +2220,28 @@
             "D": "src/auth.service.ts/services"
           },
           "explanation": "Ildiz papkadan boshlab ketma-ket papkalar ajratuvchi slash (/) orqali yoziladi: src/services/auth.service.ts."
+=======
+          "context": "Inside a folder named School, you create a folder named Math. Inside Math, you save Homework.pdf.",
+          "question": "Where is Homework.pdf located?",
+          "options": {
+            "A": "Only in Math, unrelated to School.",
+            "B": "Only in School, not in Math.",
+            "C": "In Math, which is inside School.",
+            "D": "Saved twice, once in each folder."
+          },
+          "explanation": "The file is inside the nested Math folder, and Math itself is inside School."
+        },
+        "uz": {
+          "context": "“School” nomli papka ichida “Math” papkasini yaratasiz. “Math” ichiga Homework.pdf faylini saqlaysiz.",
+          "question": "Homework.pdf qayerda joylashgan?",
+          "options": {
+            "A": "Faqat Math papkasida, School bilan bog‘liq emas.",
+            "B": "Faqat School papkasida, Math ichida emas.",
+            "C": "School ichidagi Math papkasida.",
+            "D": "Ikki marta saqlangan: har ikkala papkada bittadan."
+          },
+          "explanation": "Fayl ichki Math papkasida, Math esa School papkasi ichida joylashgan."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1534,6 +2266,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A developer finds public source code in a GitHub repository that does not include any LICENSE file.",
           "question": "Can you automatically incorporate this code into your proprietary project without explicit permission?",
           "options": {
@@ -1554,6 +2287,28 @@
             "D": "Faqat kod C++ tilida yozilgan bo‘lsa mualliflik huquqi bo‘lmaydi."
           },
           "explanation": "Ochiq ko‘rinishi litsenziyasiz koddan foydalanish huquqini bermaydi. Standart mualliflik huquqi bo‘yicha 'barcha huquqlar himoyalangan' hisoblanadi."
+=======
+          "context": "You find an image through a public search engine and can view it without a password.",
+          "question": "Does that automatically mean you may use it as your own?",
+          "options": {
+            "A": "Yes, search-engine results are public domain.",
+            "B": "No; you may still need permission or a license from the creator.",
+            "C": "Yes, digital information cannot be owned.",
+            "D": "Only images with a “Do Not Copy” sign are protected."
+          },
+          "explanation": "Being publicly viewable does not remove copyright or licensing conditions."
+        },
+        "uz": {
+          "context": "Siz qidiruv tizimida parolsiz ko‘rinadigan rasm topdingiz.",
+          "question": "Uni avtomatik ravishda o‘z ishingiz sifatida ishlatishingiz mumkinmi?",
+          "options": {
+            "A": "Ha, qidiruv natijalari public domain hisoblanadi.",
+            "B": "Yo‘q; muallif ruxsati yoki tegishli litsenziya talab qilinishi mumkin.",
+            "C": "Ha, raqamli ma’lumotga egalik qilib bo‘lmaydi.",
+            "D": "Faqat “Nusxa olmang” belgisi bor rasmlar himoyalangan."
+          },
+          "explanation": "Internetda ochiq ko‘rinishi mualliflik huquqi yoki litsenziya shartlarini bekor qilmaydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1578,6 +2333,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A software function receives an array of user objects, filters for users older than 18, and returns the sorted list.",
           "question": "Which component is the Input of this function?",
           "options": {
@@ -1598,6 +2354,28 @@
             "D": "Konsolga chiqarilgan log xabari."
           },
           "explanation": "Funksiyaga uzatilgan dastlabki massiv — bu kirish ma’lumoti (Input)."
+=======
+          "context": "A digital thermometer measures air temperature, calculates the daily average, then displays it.",
+          "question": "Which part is the Input?",
+          "options": {
+            "A": "Displaying the number.",
+            "B": "Calculating the average.",
+            "C": "Measuring the air temperature.",
+            "D": "Saving the data to a file."
+          },
+          "explanation": "Input is the data entering the system from the environment."
+        },
+        "uz": {
+          "context": "Raqamli termometr havo haroratini o‘lchaydi, kunlik o‘rtachani hisoblaydi va natijani ekranda ko‘rsatadi.",
+          "question": "Qaysi qism Input (kirish) hisoblanadi?",
+          "options": {
+            "A": "Raqamni ekranga chiqarish.",
+            "B": "O‘rtacha qiymatni hisoblash.",
+            "C": "Havo haroratini o‘lchash.",
+            "D": "Ma’lumotni faylga saqlash."
+          },
+          "explanation": "Input — tashqi muhitdan tizimga kirayotgan ma’lumot."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1622,6 +2400,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A server daemon state starts as STOPPED. Each TOGGLE command alternates the state: STOPPED → RUNNING, and RUNNING → STOPPED.",
           "question": "What is the server state after the TOGGLE command is executed exactly 3 times?",
           "options": {
@@ -1642,6 +2421,28 @@
             "D": "PAUSED"
           },
           "explanation": "1-marta: RUNNING. 2-marta: STOPPED. 3-marta: RUNNING."
+=======
+          "context": "A light starts Off. Every button press toggles it: Off→On and On→Off.",
+          "question": "What is the state after three presses?",
+          "options": {
+            "A": "Off",
+            "B": "On",
+            "C": "Broken",
+            "D": "Dimmed"
+          },
+          "explanation": "Off → On → Off → On."
+        },
+        "uz": {
+          "context": "Chiroq boshida Off holatda. Har bir bosishda holat almashadi: Off→On, On→Off.",
+          "question": "Tugma uch marta bosilgandan keyin holat qanday bo‘ladi?",
+          "options": {
+            "A": "Off",
+            "B": "On",
+            "C": "Buzilgan",
+            "D": "Xira"
+          },
+          "explanation": "Off → On → Off → On."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1666,6 +2467,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A string utility produces these outputs from inputs: \"Sun\" → \"S\", \"Moon\" → \"M\", \"Star\" → \"S\".",
           "question": "Which algorithmic rule consistently fits all given test cases?",
           "options": {
@@ -1686,6 +2488,28 @@
             "D": "Barcha katta harflarni o‘chirib tashlash."
           },
           "explanation": "Har bir so‘zning 0-indeksdagi birinchi belgisi olinmoqda (S, M, S)."
+=======
+          "context": "Examples: Sun→S, Moon→M, Star→S.",
+          "question": "Which rule fits all examples?",
+          "options": {
+            "A": "Use the last letter.",
+            "B": "Use the first letter.",
+            "C": "Always use S.",
+            "D": "Use every capital letter."
+          },
+          "explanation": "The first letter rule fits every example."
+        },
+        "uz": {
+          "context": "Misollar: Sun→S, Moon→M, Star→S.",
+          "question": "Qaysi qoida barcha misollarga mos keladi?",
+          "options": {
+            "A": "Oxirgi harfni olish.",
+            "B": "Birinchi harfni olish.",
+            "C": "Har doim S ni olish.",
+            "D": "Barcha katta harflarni olish."
+          },
+          "explanation": "Birinchi harfni olish qoidasi barcha misollarga mos keladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1710,6 +2534,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "The software engineering technique of breaking a large, complex system into smaller, self-contained sub-modules.",
           "question": "What is this foundational computational thinking technique called?",
           "options": {
@@ -1730,6 +2555,28 @@
             "D": "Virtualization"
           },
           "explanation": "Muammoni mayda, boshqariladigan qismlarga bo‘lish — Decomposition (dekompozitsiya) deyiladi."
+=======
+          "context": "You plan a school concert by separating the work into booking the stage, buying snacks, and printing tickets.",
+          "question": "What is this process called?",
+          "options": {
+            "A": "Abstraction",
+            "B": "Decomposition",
+            "C": "Coding",
+            "D": "Evaluation"
+          },
+          "explanation": "Breaking a large problem into smaller manageable parts is decomposition."
+        },
+        "uz": {
+          "context": "Siz maktab konsertini rejalashtirib, ishni sahnani band qilish, yegulik sotib olish va chiptalarni chop etish qismlariga ajratasiz.",
+          "question": "Bu jarayon nima deb ataladi?",
+          "options": {
+            "A": "Abstraction",
+            "B": "Decomposition",
+            "C": "Coding",
+            "D": "Evaluation"
+          },
+          "explanation": "Katta vazifani kichik va boshqariladigan qismlarga ajratish decomposition deyiladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1754,6 +2601,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "You are modeling a User class in object-oriented code for authentication and notifications.",
           "question": "Which attribute is irrelevant to this model and should be excluded through abstraction?",
           "options": {
@@ -1774,6 +2622,28 @@
             "D": "user_id"
           },
           "explanation": "Foydalanuvchining monitor rangi dasturiy autentifikatsiya modeli uchun mutlaqo aloqasiz detaldir."
+=======
+          "context": "You draw a simple car diagram only to show where the steering wheel is.",
+          "question": "Which detail is irrelevant?",
+          "options": {
+            "A": "Position of the driver’s seat.",
+            "B": "Color of the car paint.",
+            "C": "Shape of the steering wheel.",
+            "D": "Dashboard layout."
+          },
+          "explanation": "Paint color does not help identify where the steering wheel is."
+        },
+        "uz": {
+          "context": "Siz faqat rul qayerda joylashganini ko‘rsatish uchun avtomobilning sodda chizmasini qilasiz.",
+          "question": "Qaysi detal bu vazifa uchun keraksiz?",
+          "options": {
+            "A": "Haydovchi o‘rindig‘ining joyi.",
+            "B": "Avtomobil bo‘yoq rangi.",
+            "C": "Rulning shakli.",
+            "D": "Old panelning joylashuvi."
+          },
+          "explanation": "Bo‘yoq rangi rulning qayerda ekanini aniqlashga yordam bermaydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1798,26 +2668,43 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Trace this code snippet:\nX = 10\nY = 20\nX = Y",
           "question": "What is the value of X after the third line executes?",
+=======
+          "context": "X ← 10; Y ← 20; X ← Y.",
+          "question": "What is X after the third line?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "10",
             "B": "20",
             "C": "30",
             "D": "0"
           },
+<<<<<<< HEAD
           "explanation": "Assignment copies the value of Y (20) into X, replacing 10."
         },
         "uz": {
           "context": "Kodni tahlil qiling:\nX = 10\nY = 20\nX = Y",
           "question": "Uchinchi qatordan so‘ng X ning qiymati nechaga teng bo‘ladi?",
+=======
+          "explanation": "X receives the current value of Y, which is 20."
+        },
+        "uz": {
+          "context": "X ← 10; Y ← 20; X ← Y.",
+          "question": "Uchinchi qatordan keyin X qiymati nechaga teng?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "10",
             "B": "20",
             "C": "30",
             "D": "0"
           },
+<<<<<<< HEAD
           "explanation": "O‘zlashtirish amali (assignment) o‘ngdagi qiymatni chapdagi o‘zgaruvchiga yozadi: X = 20 bo‘ladi."
+=======
+          "explanation": "X o‘ng tomondagi Y ning joriy qiymatini, ya’ni 20 ni oladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1842,18 +2729,32 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Trace this code snippet:\nscore = 12\nwhile score < 10:\n    score += 1",
           "question": "How many times does the body of the loop execute?",
+=======
+          "context": "WHILE Score < 10 DO ... ; current Score = 12.",
+          "question": "How many times does the loop body run?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "10 times",
             "B": "12 times",
             "C": "0 times",
+<<<<<<< HEAD
             "D": "Infinite loop"
           },
           "explanation": "Initial score is 12, so the condition 12 < 10 evaluates to false immediately. The loop body executes 0 times."
         },
         "uz": {
           "context": "Python kodini ko‘ring:\nscore = 12\nwhile score < 10:\n    score += 1",
+=======
+            "D": "Forever"
+          },
+          "explanation": "A WHILE loop checks the condition before entering; 12<10 is false."
+        },
+        "uz": {
+          "context": "WHILE Score < 10 DO ... ; hozirgi Score = 12.",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "question": "Sikl tanasi necha marta bajariladi?",
           "options": {
             "A": "10 marta",
@@ -1861,7 +2762,11 @@
             "C": "0 marta",
             "D": "Cheksiz"
           },
+<<<<<<< HEAD
           "explanation": "score = 12 bo‘lgani uchun shart (12 < 10) boshidanoq False bo‘ladi va sikl 0 marta bajariladi."
+=======
+          "explanation": "WHILE sikli kirishdan oldin shartni tekshiradi; 12<10 noto‘g‘ri, shuning uchun sikl boshlanmaydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1886,26 +2791,43 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Trace this conditional:\nIF Temperature > 30 THEN OUTPUT \"Hot\" ELSE OUTPUT \"Cold\". Currently Temperature = 25.",
           "question": "What will be output by this statement?",
+=======
+          "context": "IF Temperature > 30 THEN OUTPUT “Hot” ELSE OUTPUT “Cold”. Temperature=25.",
+          "question": "What is output?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "Hot",
             "B": "Cold",
             "C": "25",
             "D": "Both Hot and Cold"
           },
+<<<<<<< HEAD
           "explanation": "Since 25 is not > 30, the ELSE clause executes, outputting 'Cold'."
         },
         "uz": {
           "context": "Shartli operatorni tahlil qiling:\nIF Temperature > 30 THEN OUTPUT \"Hot\" ELSE OUTPUT \"Cold\". Hozirda Temperature = 25.",
           "question": "Dastur qanday natija chiqaradi?",
+=======
+          "explanation": "Because the condition is false, only ELSE runs."
+        },
+        "uz": {
+          "context": "IF Temperature > 30 THEN OUTPUT “Hot” ELSE OUTPUT “Cold”. Temperature=25.",
+          "question": "Natija nima bo‘ladi?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "Hot",
             "B": "Cold",
             "C": "25",
             "D": "Hot va Cold ikkalasi ham"
           },
+<<<<<<< HEAD
           "explanation": "25 > 30 False bo‘lgani uchun ELSE tarmog‘i 'Cold' ni chiqaradi."
+=======
+          "explanation": "Shart noto‘g‘ri bo‘lgani uchun faqat ELSE tarmog‘i bajariladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1930,6 +2852,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Security rule logic: Access_Granted = (Door_Open == True or Window_Open == True).",
           "question": "When does Access_Granted evaluate to True?",
           "options": {
@@ -1943,13 +2866,32 @@
         "uz": {
           "context": "Xavfsizlik qoidasi: Access_Granted = (Door_Open == True or Window_Open == True).",
           "question": "Qachon Access_Granted qiymati True bo‘ladi?",
+=======
+          "context": "An alarm turns ON if Door_Open=TRUE OR Window_Open=TRUE.",
+          "question": "When will it turn ON?",
+          "options": {
+            "A": "Only when both are open.",
+            "B": "When the door is open even if the window is closed.",
+            "C": "Only when the door is closed.",
+            "D": "Only at night."
+          },
+          "explanation": "OR is true when at least one condition is true."
+        },
+        "uz": {
+          "context": "Signalizatsiya Door_Open=TRUE OR Window_Open=TRUE bo‘lsa ON bo‘ladi.",
+          "question": "Qachon signalizatsiya yoqiladi?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "Faqat eshik va deraza ikkalasi ham ochiq bo‘lsa.",
             "B": "Eshik ochiq bo‘lsa, deraza yopiq bo‘lsa ham.",
             "C": "Faqat eshik yopiq bo‘lsa.",
             "D": "Faqat tunda."
           },
+<<<<<<< HEAD
           "explanation": "OR mantiqiy operatorida kamida bitta tomon True bo‘lishi butun ifodani True qiladi."
+=======
+          "explanation": "OR operatorida kamida bitta shart TRUE bo‘lsa, umumiy natija TRUE bo‘ladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -1974,26 +2916,43 @@
       "correctOption": "D",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An endpoint accepts rating integers from 1 to 5 inclusive (1 <= grade <= 5).",
           "question": "Which test input confirms that out-of-range invalid data is properly rejected?",
+=======
+          "context": "A program accepts numbers 1 to 5. You want to check whether it rejects invalid input.",
+          "question": "Which value should you enter?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "3",
             "B": "1",
             "C": "5",
             "D": "10"
           },
+<<<<<<< HEAD
           "explanation": "10 is outside the valid [1, 5] range, serving as an invalid input test case."
         },
         "uz": {
           "context": "Dastur 1 dan 5 gacha bo‘lgan baholarni qabul qiladi (1 <= grade <= 5).",
           "question": "Noto‘g‘ri oraliqdagi qiymat rad etilishini tekshirish uchun qaysi test qiymatini kiritish kerak?",
+=======
+          "explanation": "10 is outside the accepted range and tests rejection behavior."
+        },
+        "uz": {
+          "context": "Dastur 1 dan 5 gacha qiymatlarni qabul qiladi. Siz noto‘g‘ri qiymatlarni rad etishini tekshirmoqchisiz.",
+          "question": "Qaysi qiymatni kiritish kerak?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "3",
             "B": "1",
             "C": "5",
             "D": "10"
           },
+<<<<<<< HEAD
           "explanation": "10 ruxsat etilgan [1, 5] oralig‘idan tashqarida bo‘lib, noto‘g‘ri qiymatni sinovdan o‘tkazadi."
+=======
+          "explanation": "10 qabul qilinadigan diapazondan tashqarida va rad etish mexanizmini tekshiradi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2018,6 +2977,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "When a computer loses electrical power, unsaved contents stored in volatile RAM vanish.",
           "question": "Why does unsaved data in primary memory disappear on power loss?",
           "options": {
@@ -2038,6 +2998,28 @@
             "D": "CPU batareyasiz hisoblay olmagani uchun."
           },
           "explanation": "RAM ma’lumotni saqlash uchun uzluksiz elektr quvvatiga tayanadi."
+=======
+          "context": "You type an essay but do not save it. The power goes out.",
+          "question": "Why is the unsaved work lost?",
+          "options": {
+            "A": "The SSD is too slow.",
+            "B": "It was only in volatile RAM, which loses contents without power.",
+            "C": "The computer became angry.",
+            "D": "The CPU cannot do math without a battery."
+          },
+          "explanation": "Unsaved working data was in volatile RAM."
+        },
+        "uz": {
+          "context": "Siz insho yozasiz, lekin saqlamaysiz. Elektr o‘chadi.",
+          "question": "Nega saqlanmagan matn yo‘qoladi?",
+          "options": {
+            "A": "SSD juda sekin bo‘lgani uchun.",
+            "B": "Matn faqat volatile RAM da bo‘lgan va elektrsiz RAM mazmunini yo‘qotadi.",
+            "C": "Kompyuter “jahli chiqqani” uchun.",
+            "D": "CPU batareyasiz hisoblay olmagani uchun."
+          },
+          "explanation": "Saqlanmagan ishchi ma’lumot volatile RAM da bo‘lgan."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2062,6 +3044,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "How is high-volume data transmitted across modern TCP/IP networks?",
           "question": "In what format does data travel across the network?",
           "options": {
@@ -2082,6 +3065,28 @@
             "D": "Faqat sun’iy yo‘ldosh orqali uzatiladi."
           },
           "explanation": "Ma’lumotlar kichik paketlarga bo‘linib uzatiladi."
+=======
+          "context": "You send a large video file over the internet.",
+          "question": "How does the file travel?",
+          "options": {
+            "A": "As one indivisible continuous block.",
+            "B": "It is split into packets sent separately and rebuilt at the destination.",
+            "C": "As one light pulse containing the entire file.",
+            "D": "Through a private wire reserved only for you."
+          },
+          "explanation": "Internet data is commonly packetized and reassembled at the destination."
+        },
+        "uz": {
+          "context": "Siz katta video faylni internet orqali yuborasiz.",
+          "question": "Fayl tarmoq bo‘ylab qanday uzatiladi?",
+          "options": {
+            "A": "Bitta bo‘linmas uzluksiz blok sifatida.",
+            "B": "Paketlarga bo‘linib alohida yuboriladi va manzilda qayta yig‘iladi.",
+            "C": "Butun faylni o‘zida saqlagan bitta yorug‘lik impulsi sifatida.",
+            "D": "Faqat siz uchun ajratilgan shaxsiy sim orqali."
+          },
+          "explanation": "Internetdagi ma’lumot odatda paketlarga bo‘linadi va qabul qiluvchi tomonda qayta yig‘iladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2106,6 +3111,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An email displays the display name \"System Administrator\", but the actual SMTP sender address is prizes-win-99@gmail.com.",
           "question": "Should this administrative message be trusted?",
           "options": {
@@ -2126,6 +3132,28 @@
             "D": "Yo‘q, chunki administratorlar hech qachon email yubormaydi."
           },
           "explanation": "Ko‘rinadigan ism (display name) osongina soxtalashtiriladi. Asl jo‘natuvchi manzilini tekshirish lozim."
+=======
+          "context": "An email display name says “Your School Principal,” but the actual address is prizes-win-99@gmail.com.",
+          "question": "Should you trust it?",
+          "options": {
+            "A": "Yes, because the display name says Principal.",
+            "B": "No; the address does not match the official school address.",
+            "C": "Yes, because Gmail is a trusted company.",
+            "D": "No, because principals never send email."
+          },
+          "explanation": "The mismatch between display name and sender address is a phishing warning sign."
+        },
+        "uz": {
+          "context": "Xatdagi ko‘rinadigan ism “Maktab direktori”, ammo haqiqiy manzil prizes-win-99@gmail.com.",
+          "question": "Bu xatga ishonish kerakmi?",
+          "options": {
+            "A": "Ha, chunki ko‘rinadigan ismda “Direktor” yozilgan.",
+            "B": "Yo‘q; manzil maktabning rasmiy manziliga mos emas.",
+            "C": "Ha, chunki Gmail ishonchli kompaniya.",
+            "D": "Yo‘q, chunki direktorlar hech qachon email yubormaydi."
+          },
+          "explanation": "Ko‘rinadigan ism va haqiqiy yuboruvchi manzili mos kelmasligi phishing belgisi bo‘lishi mumkin."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2150,6 +3178,7 @@
       "correctOption": "A",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Consider a personal computer without any installed operating system.",
           "question": "Why cannot standard user applications execute on bare hardware?",
           "options": {
@@ -2159,6 +3188,17 @@
             "D": "Applications can only execute when hosted on cloud servers."
           },
           "explanation": "User applications depend on the OS kernel for memory allocation and hardware device drivers."
+=======
+          "context": "Imagine a normal personal computer with no operating system installed.",
+          "question": "Why can ordinary browser/game applications not simply run as usual?",
+          "options": {
+            "A": "Applications normally rely on OS services that manage hardware and provide the execution platform.",
+            "B": "They only need a fast internet connection.",
+            "C": "Applications are themselves the operating system.",
+            "D": "Apps only work when stored in cloud servers."
+          },
+          "explanation": "The OS provides core services and hardware management that normal applications rely on."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         },
         "uz": {
           "context": "Oddiy shaxsiy kompyuterda operatsion tizim o‘rnatilmaganini tasavvur qiling.",
@@ -2169,7 +3209,11 @@
             "C": "Ilovalarning o‘zi operatsion tizim hisoblanadi.",
             "D": "Ilovalar faqat bulut serverida saqlansa ishlaydi."
           },
+<<<<<<< HEAD
           "explanation": "Ilovalar apparat bilan to‘g‘ridan-to‘g‘ri emas, OS tizim chaqiruvlari (system calls) orqali muloqot qiladi."
+=======
+          "explanation": "Operatsion tizim oddiy ilovalar tayanadigan asosiy xizmatlar va qurilma boshqaruvini ta’minlaydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2194,6 +3238,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Which option represents a true Multi-Factor Authentication implementation?",
           "question": "Identify the option that leverages genuinely distinct authentication factor categories.",
           "options": {
@@ -2203,6 +3248,17 @@
             "D": "A single very long password."
           },
           "explanation": "Combining something you know (password) with something you possess (device code) forms true 2FA."
+=======
+          "context": "Which is the best example of multi-factor authentication?",
+          "question": "Choose the option using genuinely different authentication factors.",
+          "options": {
+            "A": "A password, then a second password.",
+            "B": "A password, then a code sent to a physical phone.",
+            "C": "Your name and birth date.",
+            "D": "One very long password."
+          },
+          "explanation": "Password = something you know; phone code = something you have."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         },
         "uz": {
           "context": "Qaysi variant Multi-Factor Authentication (MFA) ga eng yaxshi misol?",
@@ -2213,7 +3269,11 @@
             "C": "Ism va tug‘ilgan sana.",
             "D": "Bitta juda uzun parol."
           },
+<<<<<<< HEAD
           "explanation": "Parol (bilish omili) va telefon/token (egalik omili) — ikki xil omildir."
+=======
+          "explanation": "Parol — siz biladigan narsa; telefon kodi esa sizda mavjud bo‘lgan qurilmaga bog‘liq omil."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2238,6 +3298,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "In a database schema, Student_ID is designated as the Primary Key.",
           "question": "What invariant must hold for any two distinct records in this table?",
           "options": {
@@ -2258,6 +3319,28 @@
             "D": "ID telefon raqamiga teng bo‘lishi shart."
           },
           "explanation": "Primary key hech qachon takrorlanmaydi va har bir yozuvda unikal bo‘ladi."
+=======
+          "context": "A school database uses Student_ID as the Primary Key.",
+          "question": "What must be true for two different students?",
+          "options": {
+            "A": "They must have the same ID.",
+            "B": "They must have different IDs.",
+            "C": "They may choose any duplicate ID.",
+            "D": "Their IDs must equal their phone numbers."
+          },
+          "explanation": "A primary key uniquely identifies each record."
+        },
+        "uz": {
+          "context": "Maktab bazasida Student_ID Primary Key sifatida ishlatiladi.",
+          "question": "Ikki xil o‘quvchi uchun nima to‘g‘ri bo‘lishi kerak?",
+          "options": {
+            "A": "Ularning ID raqami bir xil bo‘lishi kerak.",
+            "B": "Ularning ID raqamlari turlicha bo‘lishi kerak.",
+            "C": "Ular istalgan takrorlanuvchi ID ni tanlashi mumkin.",
+            "D": "ID telefon raqamiga teng bo‘lishi shart."
+          },
+          "explanation": "Primary Key har bir yozuvni yagona tarzda aniqlaydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2282,12 +3365,18 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A data column contains recorded ages: 14, 15, 14, 999, 14, 15.",
           "question": "Which value is an obvious corrupted outlier that requires data cleaning?",
+=======
+          "context": "Student ages are recorded as 14, 15, 14, 999, 14, 15.",
+          "question": "Which value should be checked as likely erroneous?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "14",
             "B": "15",
             "C": "999",
+<<<<<<< HEAD
             "D": "All recorded values are completely valid."
           },
           "explanation": "999 is outside biological reality, representing invalid corrupted data."
@@ -2295,13 +3384,28 @@
         "uz": {
           "context": "Foydalanuvchilarning ro‘yxatdagi yoshi 14, 15, 14, 999, 14, 15 deb yozilgan.",
           "question": "Qaysi qiymat yaqqol anomaliya (outlier/xato) bo‘lgani uchun tekshirilishi kerak?",
+=======
+            "D": "The whole list is definitely correct."
+          },
+          "explanation": "999 is implausible for a student age and should be investigated."
+        },
+        "uz": {
+          "context": "O‘quvchilarning yoshi 14, 15, 14, 999, 14, 15 deb yozilgan.",
+          "question": "Qaysi qiymat ehtimol xato bo‘lgani uchun tekshirilishi kerak?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "14",
             "B": "15",
             "C": "999",
+<<<<<<< HEAD
             "D": "Ro‘yxatning hammasi to‘g‘ri."
           },
           "explanation": "999 inson yoshi uchun mantiqsiz qiymat bo‘lib, kiritish xatosidir."
+=======
+            "D": "Ro‘yxatning hammasi albatta to‘g‘ri."
+          },
+          "explanation": "999 o‘quvchi yoshi sifatida mantiqan ishonchsiz va tekshirilishi kerak."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2326,6 +3430,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A financial column must store decimal currency values like 2500.50 without loss of precision.",
           "question": "Which data type accurately retains fractional numeric values?",
           "options": {
@@ -2346,6 +3451,28 @@
             "D": "Character"
           },
           "explanation": "Kasrli sonlar Float, Real yoki Decimal ma’lumot turlarida saqlanadi."
+=======
+          "context": "You need to store a price such as 2500.50 so the fractional part is not lost.",
+          "question": "Which data type is appropriate?",
+          "options": {
+            "A": "Integer",
+            "B": "Real / Float",
+            "C": "Boolean",
+            "D": "Character"
+          },
+          "explanation": "Real/Float represents numbers with fractional parts."
+        },
+        "uz": {
+          "context": "2500.50 kabi narxni kasr qismi yo‘qolmasdan saqlash kerak.",
+          "question": "Qaysi ma’lumot turi mos?",
+          "options": {
+            "A": "Integer",
+            "B": "Real / Float",
+            "C": "Boolean",
+            "D": "Character"
+          },
+          "explanation": "Real/Float kasr qismiga ega sonlarni ifodalash uchun ishlatiladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2370,15 +3497,24 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "Cell B1 contains the relative formula =A1. You copy the formula from B1 down to B2.",
           "question": "What does the newly pasted formula in B2 become?",
+=======
+          "context": "B1 contains =A1. You copy the formula from B1 to B2.",
+          "question": "What does the new formula become?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "=A1",
             "B": "=A2",
             "C": "=B1",
             "D": "10"
           },
+<<<<<<< HEAD
           "explanation": "The relative row reference increments by one, updating =A1 to =A2."
+=======
+          "explanation": "A relative reference moves one row when the formula is copied one row down."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         },
         "uz": {
           "context": "B1 katagida =A1 formulasi bor. Formulani B1 dan B2 ga nusxalaysiz.",
@@ -2389,7 +3525,11 @@
             "C": "=B1",
             "D": "10"
           },
+<<<<<<< HEAD
           "explanation": "Nisbiy manzil pastga nusxalanganda qator indeksi ortib, =A2 bo‘ladi."
+=======
+          "explanation": "Nisbiy havola formula bir qator pastga ko‘chirilganda ham bir qatorga siljiydi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2414,15 +3554,24 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A signup form asks you to enter your new password twice to ensure you did not mistype it.",
           "question": "What is this dual-entry verification process called?",
+=======
+          "context": "A form asks you to type a new password twice to catch typing mistakes.",
+          "question": "What is this check called?",
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
           "options": {
             "A": "Validation",
             "B": "Verification",
             "C": "Encryption",
             "D": "Coding"
           },
+<<<<<<< HEAD
           "explanation": "Double-entry confirmation is a classic Verification technique."
+=======
+          "explanation": "Double entry compares entries for accuracy and is a verification method."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         },
         "uz": {
           "context": "Forma xato yozmaganligingizni tekshirish uchun yangi parolni ikki marta kiritishni so‘raydi.",
@@ -2433,7 +3582,11 @@
             "C": "Encryption",
             "D": "Coding"
           },
+<<<<<<< HEAD
           "explanation": "Ikki maydonni tengligiga tekshirish — bu Verification jarayonidir."
+=======
+          "explanation": "Ikki marta kiritish ma’lumotlarning mosligini solishtiradi va verification usuli hisoblanadi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2458,6 +3611,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An automated AI system deployed by an enterprise encounters a software failure that causes severe data loss.",
           "question": "Who is ultimately legally and ethically responsible for the system's deployment and outcomes?",
           "options": {
@@ -2478,6 +3632,28 @@
             "D": "Server joylashgan bino egasi."
           },
           "explanation": "Sun’iy intellekt texnologik vositadir; uning xatti-harakatlari uchun uni yaratgan va joriy qilgan insonlar va tashkilotlar mas’uldirlar."
+=======
+          "context": "A self-driving car AI makes a mistake and causes a minor accident.",
+          "question": "Who is ultimately accountable for the system’s design, deployment, and impact?",
+          "options": {
+            "A": "The AI itself as a moral person.",
+            "B": "The humans and organization responsible for creating/deploying the system.",
+            "C": "Nobody because software cannot be responsible.",
+            "D": "The tires because they touched the road."
+          },
+          "explanation": "Human organizations remain responsible for AI systems they create and deploy."
+        },
+        "uz": {
+          "context": "O‘zi boshqariladigan avtomobil AI tizimi xato qilib, kichik avariyaga sabab bo‘ladi.",
+          "question": "Tizimning yaratilishi, ishga tushirilishi va oqibatlari uchun oxir-oqibat kim javobgar?",
+          "options": {
+            "A": "AI ning o‘zi, chunki u alohida axloqiy shaxs.",
+            "B": "Tizimni yaratgan va ishga tushirgan insonlar hamda tashkilot.",
+            "C": "Hech kim, chunki dasturiy ta’minot uchun javobgarlik bo‘lmaydi.",
+            "D": "Yo‘lga tegib turgani uchun shinalar."
+          },
+          "explanation": "AI tizimini yaratgan va undan foydalangan insonlar hamda tashkilotlar javobgarlikni saqlab qoladi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2502,6 +3678,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "You ask a generative AI model to draft a realistic technical story about a completely fictional gadget.",
           "question": "Through what mechanism can the model construct this fictional narrative?",
           "options": {
@@ -2522,6 +3699,28 @@
             "D": "Avval internetdan uning suratini topishi shart."
           },
           "explanation": "Generativ modellar til naqshlari va ehtimollik taqsimotiga tayangan holda to‘qima matnlarni osongina shakllantiradi."
+=======
+          "context": "You ask an AI to write a realistic story about a green cat, even though green cats do not exist.",
+          "question": "How can it produce the story?",
+          "options": {
+            "A": "It must have found a real green cat in a verified facts database.",
+            "B": "It can generate likely sequences of words from patterns learned during training without the described thing being real.",
+            "C": "A tiny human inside the computer writes it.",
+            "D": "It must search the live internet for a green-cat photo first."
+          },
+          "explanation": "Generative models can compose plausible text from learned patterns; generation is not the same as verified factual lookup."
+        },
+        "uz": {
+          "context": "Siz AI dan aslida mavjud bo‘lmagan yashil mushuk haqida realistik hikoya yozishni so‘raysiz.",
+          "question": "AI bunday hikoyani qanday yarata oladi?",
+          "options": {
+            "A": "U tekshirilgan faktlar bazasidan haqiqiy yashil mushukni topgan bo‘lishi kerak.",
+            "B": "U trening davomida o‘rgangan naqshlar asosida ehtimoliy so‘zlar ketma-ketligini yaratishi mumkin; tasvirlangan narsa real bo‘lishi shart emas.",
+            "C": "Kompyuter ichidagi kichkina odam hikoyani yozadi.",
+            "D": "Avval internetdan yashil mushuk suratini topishi shart."
+          },
+          "explanation": "Generativ model o‘rgangan naqshlar asosida ishonarli matn tuzishi mumkin; matn yaratish tekshirilgan faktni qidirib topish bilan bir xil emas."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2546,6 +3745,7 @@
       "correctOption": "C",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "You want an AI assistant to generate a concise, conventional Git commit message for an authentication fix.",
           "question": "Which prompt is most effective for this technical task?",
           "options": {
@@ -2566,6 +3766,28 @@
             "D": "Menga kompyuterlar tarixi haqida she’r yoz."
           },
           "explanation": "Aniq kontekst va formatni (Conventional Commits) belgilash to‘g‘ri natija olish garovidir."
+=======
+          "context": "You want an AI to write a short, kind birthday poem for your mother.",
+          "question": "Which prompt is most useful?",
+          "options": {
+            "A": "Write something.",
+            "B": "Birthday.",
+            "C": "Write a happy and kind 4-line birthday poem for my mother.",
+            "D": "Poem for mom."
+          },
+          "explanation": "The prompt clearly specifies task, audience/topic, tone, and length."
+        },
+        "uz": {
+          "context": "Siz AI dan onangiz uchun qisqa va mehribon tug‘ilgan kun she’ri yozishni xohlaysiz.",
+          "question": "Qaysi prompt eng foydali?",
+          "options": {
+            "A": "Biror narsa yoz.",
+            "B": "Tug‘ilgan kun.",
+            "C": "Onamning tug‘ilgan kuni uchun quvnoq va mehribon 4 qatorli she’r yoz.",
+            "D": "Onam uchun she’r."
+          },
+          "explanation": "Bu prompt vazifa, mavzu, uslub va uzunlikni aniq ko‘rsatadi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2590,6 +3812,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "An object classification model is trained solely on images of red apples, with no other fruit varieties.",
           "question": "What is the primary risk when the model encounters a yellow banana?",
           "options": {
@@ -2610,6 +3833,28 @@
             "D": "Quyoshga qarab bananni avtomatik o‘rganadi."
           },
           "explanation": "Trening to‘plamida xilma-xillik bo‘lmasa, model yangi sinflarni to‘g‘ri aniqlay olmaydi."
+=======
+          "context": "An AI is trained to recognize “fruit” using only 100 photos of red apples and no other fruit.",
+          "question": "What is the main risk when it sees a yellow banana?",
+          "options": {
+            "A": "It will always recognize it correctly because AI is smart.",
+            "B": "It may fail because its training examples do not represent bananas or varied fruit.",
+            "C": "It will ask you to buy a banana.",
+            "D": "It will learn bananas automatically by looking at sunlight."
+          },
+          "explanation": "Poorly representative training data can cause poor generalization to unseen categories."
+        },
+        "uz": {
+          "context": "AI “meva”ni tanish uchun faqat 100 ta qizil olma suratida o‘qitilgan, boshqa mevalar yo‘q.",
+          "question": "U sariq bananni ko‘rganda asosiy xavf nima?",
+          "options": {
+            "A": "AI aqlli bo‘lgani uchun uni har doim to‘g‘ri taniydi.",
+            "B": "Trening misollarida banan va boshqa turdagi mevalar yo‘qligi sababli uni tanimasligi mumkin.",
+            "C": "U sizdan banan sotib olishingizni so‘raydi.",
+            "D": "Quyoshga qarab bananni avtomatik o‘rganadi."
+          },
+          "explanation": "Yetarlicha vakillik qilmagan trening ma’lumotlari yangi toifalarga yomon umumlashtirishga olib kelishi mumkin."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     },
@@ -2634,6 +3879,7 @@
       "correctOption": "B",
       "content": {
         "en": {
+<<<<<<< HEAD
           "context": "A software application needs to compute a simple addition (2 + 2 = 4).",
           "question": "Is deploying a large, energy-intensive generative AI model appropriate for this task?",
           "options": {
@@ -2654,8 +3900,34 @@
             "D": "Yo‘q, AI ga matematika qilish taqiqlangan."
           },
           "explanation": "Oddiy arifmetik amallar uchun og‘ir AI modellarini ishlatish mutanosib emas (proportionality). Dasturlash tillaridagi standart arifmetika yetarli va aniq."
+=======
+          "context": "You need to calculate 2+2.",
+          "question": "Is a large energy-intensive AI system the appropriate tool?",
+          "options": {
+            "A": "Yes, AI is always better.",
+            "B": "No; a simple calculator is sufficient, reliable, faster, and much less resource-intensive.",
+            "C": "Yes, AI may give a more creative answer than 4.",
+            "D": "No, AI is not allowed to do mathematics."
+          },
+          "explanation": "Proportionality means choosing a simpler non-AI solution when it meets the need with lower cost/risk/resource use."
+        },
+        "uz": {
+          "context": "Siz 2+2 ni hisoblamoqchisiz.",
+          "question": "Buning uchun katta va ko‘p energiya sarflaydigan AI tizimidan foydalanish maqbulmi?",
+          "options": {
+            "A": "Ha, AI har doim yaxshiroq.",
+            "B": "Yo‘q; oddiy kalkulyator yetarli, ishonchli, tez va ancha kam resurs sarflaydi.",
+            "C": "Ha, AI 4 dan ijodiyroq javob berishi mumkin.",
+            "D": "Yo‘q, AI ga matematika qilish mumkin emas."
+          },
+          "explanation": "Mutanosiblik tamoyili oddiyroq vosita ehtiyojni kamroq xarajat, xavf va resurs bilan bajarsa, o‘sha vositani tanlashni anglatadi."
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
         }
       }
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
