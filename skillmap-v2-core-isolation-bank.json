@@ -1,0 +1,2661 @@
+{
+  "schemaVersion": "2.0",
+  "bankVersion": "skillmap-v2-pilot-core-isolation-2026-08-19",
+  "targetPopulation": "Grades 8–11",
+  "languages": [
+    "en",
+    "uz"
+  ],
+  "itemCount": 60,
+  "roleCounts": {
+    "core": 30,
+    "isolation": 30
+  },
+  "translationPolicy": {
+    "masterLanguage": "en",
+    "uzbekStyle": "Professional, age-appropriate Uzbek; technical acronyms/keywords such as RAM, OS, MFA, SQL, IF/ELSE, AND/OR/NOT are retained where useful.",
+    "principle": "Translation preserves the tested construct and answer key rather than translating word-for-word."
+  },
+  "items": [
+    {
+      "itemId": "DLIT-01",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Evaluating information",
+      "subCompetency": "Assessing credibility",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "CS1.2.02, CS1.2.06"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "scenario",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Surface-level trust / visual-ranking bias",
+      "roadmapMapping": "Critical Source Evaluation",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A software developer wants to install an open-source package. A visually attractive website offers a downloadable package, but its public repository has zero stars, no release history, and no verified maintainer signature.",
+          "question": "What is the most secure and effective way to verify the package before installing it?",
+          "options": {
+            "A": "Install the package immediately because the landing page has professional design.",
+            "B": "Verify its version history on official registries (npm/PyPI), source code repository, license, and community audits.",
+            "C": "Deploy the package directly to a production server to see if it works.",
+            "D": "Assume it is safe because it appeared as a top sponsored search result."
+          },
+          "explanation": "When installing open-source libraries, visual aesthetics cannot guarantee safety. Developers must audit package registry metrics, maintainer signatures, and source repositories."
+        },
+        "uz": {
+          "context": "Dasturchi yangi loyihaga ochiq kodli kutubxona qo‘shmoqchi. Qidiruvda dizayni chiroyli ko‘ringan, ammo GitHub yulduzchalari va yuklab olishlar soni nolga teng bo‘lgan shubhali paket chiqdi.",
+          "question": "Ushbu paketni loyihaga o‘rnatishdan oldin uning ishonchliligini tekshirishning eng xavfsiz va to‘g‘ri usuli qaysi?",
+          "options": {
+            "A": "Sayt dizayni zamonaviy bo‘lgani uchun paketni darhol o‘rnatish.",
+            "B": "Paketning rasmiy reestr (npm/PyPI)dagi versiyalar tarixi, ochiq manba kodi, litsenziyasi va hamjamiyat sharhlarini tekshirish.",
+            "C": "Paketni to‘g‘ridan-to‘g‘ri production serverga yuklab sinab ko‘rish.",
+            "D": "Qidiruv tizimida birinchi bo‘lib chiqqani uchun uni xavfsiz deb qabul qilish."
+          },
+          "explanation": "Ochiq kodli dasturiy paketlarni o‘rnatishda sayt dizayniga emas, rasmiy reestrlar (npm, PyPI), manba kodi ochiqligi, yuklab olishlar soni va xavfsizlik auditiga tayanish zarur."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-02",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Managing digital identity",
+      "subCompetency": "Persistence of data",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "CS2.6.06, LO2.6.06"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "scenario",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Deletion myth / local deletion = global deletion",
+      "roadmapMapping": "Digital Footprint & Data Persistence",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A developer accidentally committed an API secret key to a public Git repository, then quickly removed the commit locally and force-pushed an update.",
+          "question": "Why must the secret key still be considered compromised and immediately revoked?",
+          "options": {
+            "A": "When a Git commit is replaced, all cached copies on external servers are automatically erased.",
+            "B": "Automated scraping bots, mirrors, forks, or local clones may have already captured the exposed secret from commit history.",
+            "C": "API keys only become visible to third-party observers after 30 days.",
+            "D": "Only the original repository owner has network permission to read commit diffs."
+          },
+          "explanation": "Public git repos are monitored by automated secret scanners. Deleting a commit does not eliminate exposure; credentials must be revoked immediately."
+        },
+        "uz": {
+          "context": "Dasturchi ommaviy (public) Git repozitoriysiga adashib API maxfiy kalitini (API secret key) commit qilib yubordi. Keyin u darhol lokal kompyuterida so‘nggi commitni o‘chirib, repozitoriyni yangiladi.",
+          "question": "Nega maxfiy kalit ochiqlanib qolgan (komprometatsiya bo‘lgan) hisoblanadi va darhol bekor qilinishi (revoke) kerak?",
+          "options": {
+            "A": "Git commit o‘chirilgach, uning nusxasi butun dunyo bo‘yicha avtomatik o‘chib ketadi.",
+            "B": "O‘chirilgunga qadar botlar, klonlar yoki keshlovchi servislar commit tarixidan kalitni nusxalab olgan bo‘lishi mumkin.",
+            "C": "API kalitlari faqat 30 kundan keyin boshqalar uchun ko‘rinadigan bo‘ladi.",
+            "D": "Faqat repozitoriy egasigina commit tarixini ko‘rish huquqiga ega."
+          },
+          "explanation": "Public Git repozitoriylariga tushgan har qanday maxfiy ma’lumot avtomatlashtirilgan botlar tomonidan soniyalar ichida skanerlanadi. Tarixni o‘chirish xavfni bartaraf etmaydi, kalitni darhol bekor qilish kerak."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-03",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Browsing, searching, and filtering",
+      "subCompetency": "Search strategy refinement",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO1.1.08"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "scenario",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Ambiguity blindness / weak query refinement",
+      "roadmapMapping": "Search Refinement & Query Logic",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A developer needs official reference documentation for Python asynchronous sockets, but generic search queries return outdated forum discussions.",
+          "question": "Which search operator query is the most direct and precise to locate the official documentation?",
+          "options": {
+            "A": "All good articles about Python socket programming",
+            "B": "site:docs.python.org \"asyncio\" socket",
+            "C": "async socket forum help questions",
+            "D": "Reinstalling the browser and retyping the general keyword"
+          },
+          "explanation": "Using domain filters (site:) and exact match quotes restricts results directly to official documentation roots."
+        },
+        "uz": {
+          "context": "Dasturchi Python tilida asinxron soketlar (asyncio sockets) bo‘yicha rasmiy hujjatlarni (documentation) topmoqchi, biroq oddiy qidiruvda forumlardagi eskirgan postlar chiqmoqda.",
+          "question": "Qaysi qidiruv so‘rovi rasmiy hujjatlarni eng tez va aniq topib beradi?",
+          "options": {
+            "A": "Python socket dasturlash bo‘yicha barcha yaxshi maqolalar",
+            "B": "site:docs.python.org \"asyncio\" socket",
+            "C": "async socket forum yordam xatolari",
+            "D": "Brauzerni qayta o‘rnatib, umumiy so‘rovni yana yozish"
+          },
+          "explanation": "site: operatori va qo‘shtirnoq ichidagi kalit so‘zlar qidiruvni aniq domen va aniq atama bilan cheklab, rasmiy hujjatlarni topishni tezlashtiradi."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-04",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Managing information",
+      "subCompetency": "File naming conventions in collaborative environments",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "CS1.3.07"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "scenario",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Ambiguous labeling",
+      "roadmapMapping": "Collaborative File Management & Conventions",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "A software development team needs a standard, unambiguous convention to version and track production releases.",
+          "question": "Which release versioning convention follows the widely accepted Semantic Versioning (SemVer) standard?",
+          "options": {
+            "A": "app_new, app_new2, app_final_latest",
+            "B": "app_v1, app_v2_fixed, app_v3_real",
+            "C": "v1.0.0, v1.0.1 (patch), v1.1.0 (minor), v2.0.0 (major)",
+            "D": "release_monday, release_tuesday, release_today"
+          },
+          "explanation": "Semantic Versioning (SemVer: MAJOR.MINOR.PATCH) is the industry standard for communicating breaking changes, features, and patches."
+        },
+        "uz": {
+          "context": "Jamoaviy dasturiy ta’minot ishlab chiqishda relizlar va kutubxonalar versiyalarini boshqarish talab etiladi.",
+          "question": "Dasturiy ta’minotda qaysi versiyalash standarti (Semantic Versioning) eng samarali va xalqaro qabul qilingan?",
+          "options": {
+            "A": "app_new, app_new2, app_final_oxirgi",
+            "B": "app_v1, app_v2_tuzatilgan, app_v3_haqiqiy",
+            "C": "v1.0.0, v1.0.1 (patch), v1.1.0 (minor), v2.0.0 (major)",
+            "D": "release_dushanba, release_seshanba, release_bugun"
+          },
+          "explanation": "Semantic Versioning (MAJOR.MINOR.PATCH) xalqaro standart bo‘lib, dasturning mosligi, yangi funksiyalari va tuzatishlarini aniq bildiradi."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-05",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Copyright and licenses",
+      "subCompetency": "Creative Commons BY-NC",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "CS3.3.07"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "decision",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Binary copyright assumption",
+      "roadmapMapping": "Digital Law & Content Licensing",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A developer building a commercial paid software product finds a utility library published under a Creative Commons BY-NC (Non-Commercial) license.",
+          "question": "According to this license, how can the developer legally use this code?",
+          "options": {
+            "A": "Because the code is public, it can be bundled and sold inside a commercial product.",
+            "B": "It may be used with attribution only for non-commercial purposes; commercial monetization is prohibited.",
+            "C": "Removing the license header allows unrestricted proprietary monetization.",
+            "D": "CC BY-NC strictly forbids executing the software on any computer."
+          },
+          "explanation": "BY-NC licenses grant free use with attribution strictly for non-commercial purposes, barring commercial integration."
+        },
+        "uz": {
+          "context": "Dasturchi tijoriy (pullik) dastur tuzmoqda va GitHub dan CC BY-NC (Non-Commercial) litsenziyasidagi kod modulini topdi.",
+          "question": "Ushbu litsenziya qoidasiga ko‘ra moduldan qanday foydalanish mumkin?",
+          "options": {
+            "A": "Kod ochiq bo‘lgani uchun uni pullik dastur ichiga qo‘shib sotish mumkin.",
+            "B": "Muallifni ko‘rsatgan holda faqat notijoriy/ta’lim maqsadlarida foydalanish mumkin; uni tijoriy mahsulotda sotish taqiqlanadi.",
+            "C": "Litsenziyani o‘chirib tashlab, kodni o‘z muallifligi ostida xohlagancha ishlatish mumkin.",
+            "D": "CC BY-NC litsenziyasi kodni hech qachon ishga tushirishga ruxsat bermaydi."
+          },
+          "explanation": "CC BY-NC mualliflikni ko‘rsatishni (BY) va faqat notijoriy (NC) foydalanishni talab qiladi; tijoriy loyihalarda foydalanish qonunan taqiqlanadi."
+        }
+      }
+    },
+    {
+      "itemId": "CT-01",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Algorithm design",
+      "subCompetency": "IPO stages",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "Section 7.2"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "classification",
+      "isolationTarget": null,
+      "possibleFailurePattern": "IPO stage confusion",
+      "roadmapMapping": "System Architecture & IPO Logic",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "An authentication API service receives a username and password from a client, hashes the password with bcrypt and compares it to the database record, then returns a signed JWT access token.",
+          "question": "Which part represents the Process stage of the system?",
+          "options": {
+            "A": "The user typing their username and password into the client form.",
+            "B": "Hashing the password with bcrypt, comparing it against the stored hash, and evaluating authentication.",
+            "C": "Transmitting the generated JWT access token back to the HTTP client.",
+            "D": "Physical ethernet cables transmitting raw packet voltages."
+          },
+          "explanation": "Credentials are Input, the JWT token is Output, and the cryptographic hash calculation and verification is Process."
+        },
+        "uz": {
+          "context": "Foydalanuvchini autentifikatsiyadan o‘tkazuvchi API servisi mijozdan login va parolni qabul qiladi, parolni bcrypt algoritmi orqali xeshlab ma’lumotlar bazasidagi yozuv bilan solishtiradi va mijozga JWT tokenini qaytaradi.",
+          "question": "Tizimning \"Process\" (qayta ishlash / hisoblash) bosqichi qaysi?",
+          "options": {
+            "A": "Foydalanuvchining klaviaturada login va parolni kiritishi.",
+            "B": "Parolni bcrypt orqali xeshlab, bazadagi xesh bilan solishtirish va autentifikatsiya qarorini qabul qilish.",
+            "C": "Mijoz ilovasiga JWT tokenini JSON ko‘rinishida qaytarish.",
+            "D": "Tarmoq kabeli orqali elektr signallarining uzatilishi."
+          },
+          "explanation": "Kirish (Input) — login va parol, Chiqish (Output) — JWT token. Hisoblash va solishtirish jarayoni esa Qayta ishlash (Process) bosqichidir."
+        }
+      }
+    },
+    {
+      "itemId": "CT-02",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Algorithmic reasoning",
+      "subCompetency": "Rule-based sequencing",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO3.4.08"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "prediction",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Position/state tracking error",
+      "roadmapMapping": "Sequencing & Symbolic Logic",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A pointer in a 2D grid starts at coordinate (1,1). MOVE_RIGHT increments x (x = x + 1), while MOVE_UP increments y (y = y + 1).",
+          "question": "Which instruction sequence moves the pointer to (2,3)?",
+          "options": {
+            "A": "MOVE_RIGHT, MOVE_UP",
+            "B": "MOVE_RIGHT, MOVE_UP, MOVE_UP",
+            "C": "MOVE_RIGHT, MOVE_RIGHT, MOVE_UP",
+            "D": "MOVE_UP, MOVE_RIGHT, MOVE_RIGHT"
+          },
+          "explanation": "Starting at (1,1), one MOVE_RIGHT gives (2,1) and two MOVE_UP commands increment y by 2 to reach (2,3)."
+        },
+        "uz": {
+          "context": "2D matritsada kursor (1,1) koordinatadan boshlaydi. MOVE_RIGHT x koordinatasini 1 ga oshiradi (x = x + 1), MOVE_UP esa y koordinatasini 1 ga oshiradi (y = y + 1).",
+          "question": "Kursorni (2,3) koordinataga olib borish uchun qaysi buyruqlar ketma-ketligi to‘g‘ri?",
+          "options": {
+            "A": "MOVE_RIGHT, MOVE_UP",
+            "B": "MOVE_RIGHT, MOVE_UP, MOVE_UP",
+            "C": "MOVE_RIGHT, MOVE_RIGHT, MOVE_UP",
+            "D": "MOVE_UP, MOVE_RIGHT, MOVE_RIGHT"
+          },
+          "explanation": "(1,1) dan bitta MOVE_RIGHT (2,1) ga olib keladi. Ikkita MOVE_UP esa y ni 1 dan 3 ga oshiradi: (2,3)."
+        }
+      }
+    },
+    {
+      "itemId": "CT-03",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Pattern recognition and generalization",
+      "subCompetency": "Inferring transformation rules",
+      "source": {
+        "name": "DigComp 3.0 / Bebras",
+        "citation": "LO3.4.08"
+      },
+      "difficulty": "stretch",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "prediction",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Rule inference / partial application",
+      "roadmapMapping": "Pattern Recognition & Algorithmic Rules",
+      "correctOption": "A",
+      "content": {
+        "en": {
+          "context": "A data mapping pipeline transforms tokens according to a cyclic rule: Circle → Square, Square → Triangle, Triangle → Circle.",
+          "question": "If the input array is [Circle, Triangle], what is the transformed output?",
+          "options": {
+            "A": "[Square, Circle]",
+            "B": "[Triangle, Square]",
+            "C": "[Circle, Triangle]",
+            "D": "[Square, Triangle]"
+          },
+          "explanation": "Circle maps to Square, and Triangle maps to Circle. Output is [Square, Circle]."
+        },
+        "uz": {
+          "context": "Ma’lumotlarni qayta ishlash algoritmi har bir belgini tsiklik qoida bo‘yicha almashtiradi: Circle → Square, Square → Triangle, Triangle → Circle.",
+          "question": "Kiruvchi massiv [Circle, Triangle] bo‘lsa, algoritm chiqargan natija qanday bo‘ladi?",
+          "options": {
+            "A": "[Square, Circle]",
+            "B": "[Triangle, Square]",
+            "C": "[Circle, Triangle]",
+            "D": "[Square, Triangle]"
+          },
+          "explanation": "Circle qoida bo‘yicha Square ga, Triangle esa Circle ga aylanadi. Natija: [Square, Circle]."
+        }
+      }
+    },
+    {
+      "itemId": "CT-04",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Decomposition",
+      "subCompetency": "Breaking a problem into sub-problems",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "Section 7.1"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "decomposition",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Atomic/detail-first thinking",
+      "roadmapMapping": "Problem Solving & Decomposition",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "An engineering team is architecting a full-scale e-commerce platform from scratch.",
+          "question": "Which option demonstrates the most effective architectural decomposition of this system?",
+          "options": {
+            "A": "Writing all business logic into a single file and naming servers alphabetically.",
+            "B": "Focusing solely on UI wireframes while postponing database design.",
+            "C": "Decomposing into Authentication, Product Catalog, Cart/Payment Gateway, and Order Database services.",
+            "D": "Hiring more developers and prioritizing advertising campaigns."
+          },
+          "explanation": "Decomposition isolates distinct domain responsibilities into modular, maintainable subsystems."
+        },
+        "uz": {
+          "context": "Muhandislar jamoasi yirik elektron tijorat (E-commerce) veb-platformasi arxitekturasini noldan loyihalashtirmoqda.",
+          "question": "Ushbu tizimni to‘g‘ri mustaqil modullarga (arxitekturaviy dekompozitsiya) ajratish qaysi variantda ko‘rsatilgan?",
+          "options": {
+            "A": "Barcha kodni bitta katta faylga yozib, server nomini alifbo tartibida tanlash.",
+            "B": "Faqat frontend dizayniga e’tibor qaratib, ma’lumotlar bazasini keyinroq o‘ylash.",
+            "C": "Tizimni Autentifikatsiya, Mahsulotlar katalogi, Savatcha/To‘lov servisi va Buyurtmalar bazasiga ajratish.",
+            "D": "Dasturchilar sonini oshirish va faqat marketing reklamasini rejalashtirish."
+          },
+          "explanation": "Murakkab tizimni funksional jihatdan mustaqil xizmatlarga bo‘lish — bu to‘g‘ri arxitekturaviy dekompozitsiyadir."
+        }
+      }
+    },
+    {
+      "itemId": "CT-05",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Abstraction",
+      "subCompetency": "Removing irrelevant details",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO3.4.11"
+      },
+      "difficulty": "stretch",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "interpretation",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Detail obsession / weak abstraction",
+      "roadmapMapping": "Abstraction & Modeling",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "A software engineer is designing a high-level Database Client API for backend developers.",
+          "question": "To maintain effective abstraction, which low-level detail should be hidden from API consumers?",
+          "options": {
+            "A": "The high-level query() execution method.",
+            "B": "The connection establishment connect() method.",
+            "C": "Network interface bus voltages and low-level hardware interrupt register offsets.",
+            "D": "The schema format of returned dataset rows."
+          },
+          "explanation": "Abstraction hides physical hardware complexities behind high-level declarative interfaces."
+        },
+        "uz": {
+          "context": "Ma’lumotlar bazasi drayverini yozayotgan dasturchi ilova dasturchilari uchun ma’lumotlar bazasiga ulanish interfeysini (API) loyihalashtirmoqda.",
+          "question": "Interfeysni tushunarli va abstrakt saqlash uchun qaysi past darajali (low-level) apparat detali dasturchidan yashirilishi (abstraksiya qilinishi) kerak?",
+          "options": {
+            "A": "SQL so‘rovlarini bajaruvchi query() metodi.",
+            "B": "Ma’lumotlar bazasiga ulanish uchun connect() funksiyasi.",
+            "C": "Tarmoq platasidagi elektr kuchlanishi va xotira kontrollerining apparat uzilishlari (interrupts).",
+            "D": "Qaytariladigan ma’lumotlar jadvali va qatorlar formati."
+          },
+          "explanation": "Abstraksiya past darajadagi apparat tafsilotlarini yashirib, qulay dasturiy interfeys (API) taqdim etadi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-01",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Variables and state",
+      "subCompetency": "Variable assignment",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.1"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "code_tracing",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Assignment/swap confusion",
+      "roadmapMapping": "Variable State & Mutation",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "Trace this Python code line by line:\nX = 10\nY = 5\nX = Y\nY = X",
+          "question": "What are the values of X and Y after the last line?",
+          "options": {
+            "A": "X=10, Y=5",
+            "B": "X=5, Y=10",
+            "C": "X=5, Y=5",
+            "D": "X=10, Y=10"
+          },
+          "explanation": "X = Y sets X to 5, overwriting 10. Then Y = X assigns 5 to Y. Both variables hold 5."
+        },
+        "uz": {
+          "context": "Python kodini tahlil qiling:\nX = 10\nY = 5\nX = Y\nY = X",
+          "question": "Oxirgi qatordan keyin X va Y ning qiymatlari nechaga teng?",
+          "options": {
+            "A": "X=10, Y=5",
+            "B": "X=5, Y=10",
+            "C": "X=5, Y=5",
+            "D": "X=10, Y=10"
+          },
+          "explanation": "X = Y qatorida X ga 5 yoziladi. Keyingi Y = X qatorida esa Y ga yangi X (ya’ni 5) yoziladi. Ikkalasi ham 5 bo‘lib qoladi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-02",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Control flow",
+      "subCompetency": "Iteration and accumulator tracking",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.4c"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "prediction",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Accumulator tracking failure",
+      "roadmapMapping": "Loop Logic & Accumulators",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "Trace this Python loop:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
+          "question": "What is the value of total after the loop finishes?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "6",
+            "D": "9"
+          },
+          "explanation": "The accumulator adds each element sequentially: 0 + 1 + 2 + 3 = 6."
+        },
+        "uz": {
+          "context": "Python siklini tahlil qiling:\ntotal = 0\nfor number in [1, 2, 3]:\n    total = total + number",
+          "question": "Sikl tugagach, total o‘zgaruvchisining yakuniy qiymati nima bo‘ladi?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "6",
+            "D": "9"
+          },
+          "explanation": "Akkumulyator: 0 + 1 = 1; 1 + 2 = 3; 3 + 3 = 6. Yakuniy qiymat: 6."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-03",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Control flow",
+      "subCompetency": "Conditional selection",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.4b"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "prediction",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Selection path blindness",
+      "roadmapMapping": "Selection & Branching",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "Trace this pseudocode:\nScore ← 75\nIF Score > 80 THEN\n    Grade ← \"A\"\nELSE\n    Grade ← \"B\"\nENDIF",
+          "question": "What is the final value of Grade?",
+          "options": {
+            "A": "75",
+            "B": "A",
+            "C": "B",
+            "D": "Error"
+          },
+          "explanation": "75 is not greater than 80, so the ELSE branch executes, setting Grade to 'B'."
+        },
+        "uz": {
+          "context": "Kodni tahlil qiling:\nScore ← 75\nIF Score > 80 THEN\n    Grade ← \"A\"\nELSE\n    Grade ← \"B\"\nENDIF",
+          "question": "Grade ning yakuniy qiymati nima bo‘ladi?",
+          "options": {
+            "A": "75",
+            "B": "A",
+            "C": "B",
+            "D": "Xatolik"
+          },
+          "explanation": "Score (75) > 80 sharti False bo‘lgani sababli ELSE bloki bajariladi va Grade = \"B\" bo‘ladi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-04",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Control flow",
+      "subCompetency": "Boolean conditional reasoning",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "Section 8.1.4"
+      },
+      "difficulty": "stretch",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "prediction",
+      "isolationTarget": null,
+      "possibleFailurePattern": "AND/OR grouping confusion",
+      "roadmapMapping": "Conditional Logic & Boolean Operators",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "An API service checks access permissions using this compound Boolean expression:\n(all_tasks_completed == True) and (penalty < 5 or is_senior == True)",
+          "question": "Which evaluation state results in True (access granted)?",
+          "options": {
+            "A": "all_tasks_completed = True; penalty = 10; is_senior = False",
+            "B": "all_tasks_completed = False; penalty = 0; is_senior = True",
+            "C": "all_tasks_completed = True; penalty = 2; is_senior = False",
+            "D": "all_tasks_completed = False; penalty = 10; is_senior = True"
+          },
+          "explanation": "Option C satisfies both sides of the AND: all_tasks_completed is True, and (2 < 5) evaluates to True."
+        },
+        "uz": {
+          "context": "API serverida foydalanuvchiga resursga kirish ruxsati quyidagi mantiqiy shart asosida beriladi:\n(all_tasks_completed == True) and (penalty < 5 or is_senior == True)",
+          "question": "Quyidagi holatlardan qaysi birida mantiqiy ifoda to‘liq True (ruxsat berilgan) bo‘ladi?",
+          "options": {
+            "A": "all_tasks_completed = True; penalty = 10; is_senior = False",
+            "B": "all_tasks_completed = False; penalty = 0; is_senior = True",
+            "C": "all_tasks_completed = True; penalty = 2; is_senior = False",
+            "D": "all_tasks_completed = False; penalty = 10; is_senior = True"
+          },
+          "explanation": "all_tasks_completed = True va (2 < 5 True yoki False) = True. Ikkala qism ham True bo‘lib, natija True bo‘ladi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-05",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Testing and validation",
+      "subCompetency": "Boundary test data",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "Section 7.6"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "decision",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Inside-only boundary testing",
+      "roadmapMapping": "Testing & Quality Assurance",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "A validator function accepts integer age values in the inclusive range 13 <= age <= 19.",
+          "question": "Which set represents the optimal boundary value analysis test data?",
+          "options": {
+            "A": "1, 50, 100",
+            "B": "14, 15, 16",
+            "C": "12, 13, 19, 20",
+            "D": "13, 19"
+          },
+          "explanation": "Boundary value testing verifies the exact boundaries (13, 19) and the immediate out-of-bounds neighbors (12, 20)."
+        },
+        "uz": {
+          "context": "Funksiya 13 dan 19 gacha (ikkala chegara ham kiradi: 13 <= age <= 19) bo‘lgan yosh oralig‘idagi ma’lumotlarni qabul qiladi.",
+          "question": "Ushbu funksiya chegaralarini to‘liq tekshirish (boundary value analysis) uchun qaysi test qiymatlari to‘plami eng to‘g‘ri?",
+          "options": {
+            "A": "1, 50, 100",
+            "B": "14, 15, 16",
+            "C": "12, 13, 19, 20",
+            "D": "13, 19"
+          },
+          "explanation": "Chegaraviy testlashda chegaralarning o‘zi (13, 19) va ulardan bir birlik tashqaridagi qiymatlar (12, 20) tekshiriladi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-01",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Hardware architecture",
+      "subCompetency": "Primary vs secondary storage",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "3.3.1"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "scenario",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Volatility confusion",
+      "roadmapMapping": "Hardware, Memory & Storage",
+      "correctOption": "A",
+      "content": {
+        "en": {
+          "context": "A database buffer cache is processing transactions in memory before committing to disk. An abrupt power failure occurs and uncommitted buffer data is lost.",
+          "question": "Which volatile hardware component was holding the unsaved buffer data prior to power loss?",
+          "options": {
+            "A": "RAM (Random Access Memory)",
+            "B": "Hard Drive / SSD",
+            "C": "ROM (Read-Only Memory)",
+            "D": "CPU Arithmetic Logic Unit"
+          },
+          "explanation": "RAM is volatile memory; its state is lost immediately when electrical power is interrupted."
+        },
+        "uz": {
+          "context": "Serverda dastur ma’lumotlarni qayta ishlamoqda, lekin hali doimiy xotiraga (disk/SSD) saqlamagan edi. To‘satdan server quvvati o‘chib qoldi va xotiradagi barcha saqlanmagan ma’lumotlar yo‘qoldi.",
+          "question": "Elektr o‘chishidan oldin saqlanmagan ma’lumotlar qaysi uchuvchan (volatile) apparat komponentida turgan edi?",
+          "options": {
+            "A": "RAM (Tezkor xotira)",
+            "B": "Qattiq disk / SSD",
+            "C": "ROM (Doimiy xotira)",
+            "D": "CPU arifmetik-mantiqiy qurilmasi (ALU)"
+          },
+          "explanation": "RAM (operativ xotira) — uchuvchan (volatile) xotira bo‘lib, elektr toki uzilganda ma’lumotlarini yo‘qotadi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-02",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Internet fundamentals",
+      "subCompetency": "Packet switching",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "2.1.1"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "interpretation",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Monolithic stream model",
+      "roadmapMapping": "Network Protocols & Packets",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A large video stream is segmented into network packets before transmission over TCP/IP.",
+          "question": "Which statement accurately describes packet routing across packet-switched networks?",
+          "options": {
+            "A": "All packets are strictly constrained to traverse the exact same physical path.",
+            "B": "Packets can travel via different dynamic routes and arrive at the destination out of order.",
+            "C": "A single dropped packet causes total network architecture failure.",
+            "D": "Packets must be reassembled into a single block before entering routers."
+          },
+          "explanation": "Packet switching routes datagrams independently across dynamic paths; TCP reorders them at the destination."
+        },
+        "uz": {
+          "context": "Katta video fayl internet tarmog‘i orqali uzatilishidan oldin paketlarga (Packet Switching) bo‘linadi.",
+          "question": "Paketli kommutatsiya (packet switching) tarmoqlarida paketlar harakati haqida qaysi fikr to‘g‘ri?",
+          "options": {
+            "A": "Barcha paketlar bir xil jismoniy simdan ketma-ket borishi shart.",
+            "B": "Paketlar turli yo‘llardan borishi va yuborilgan tartibdan boshqa tartibda yetib kelishi mumkin.",
+            "C": "Bitta paket yo‘qolsa, butun tarmoq doimiy ishdan chiqadi.",
+            "D": "Paketlar internetga kirishdan oldin yana bitta katta blokka birlashtiriladi."
+          },
+          "explanation": "IP paketlar turli marshrutlar orqali mustaqil harakatlanadi va qabul qiluvchi tomonda TCP sarlavhasidagi tartib raqamlari bo‘yicha qayta teriladi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-03",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Protecting personal data",
+      "subCompetency": "Phishing and social engineering",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "CS4.2.14"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "scenario",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Urgency/display-name bias",
+      "roadmapMapping": "Cybersecurity & Social Engineering",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "You receive an urgent email from security-support@yourbank-update.net stating: \"Your account will be deleted in 2 hours unless you log in through this link\".",
+          "question": "What is the safest technical first step to handle this phishing attempt?",
+          "options": {
+            "A": "Click the link immediately to verify.",
+            "B": "Reply to the email demanding verification.",
+            "C": "Never click the email link; navigate directly to the verified official banking domain.",
+            "D": "Download the attached security software executable."
+          },
+          "explanation": "Avoid clicking untrusted email links; navigate independently to the verified domain URL."
+        },
+        "uz": {
+          "context": "Siz security-support@yourbank-update.net manzilidan \"2 soat ichida havolaga kirib hisobga kirmasangiz, akkauntingiz o‘chiriladi\" degan shoshilinch xat olasiz.",
+          "question": "Ushbu fishing (phishing) xurujiga qarshi eng xavfsiz birinchi qadam qaysi?",
+          "options": {
+            "A": "Havolani darhol bosib tekshirish.",
+            "B": "Xatga javob berib, haqiqiyligini isbotlashni so‘rash.",
+            "C": "Havolani bosmasdan, bankning rasmiy sayt manzilini o‘zingiz kiritib ochish.",
+            "D": "“Xavfsizlik siyosati”ni o‘qish uchun ilovani yuklab olish."
+          },
+          "explanation": "Shubhali xatlardagi havolalarni bosmaslik va rasmiy domenni brauzerga mustaqil kiritish fishingdan himoyalanishning asosiy qoidasidir."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-04",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Hardware and software",
+      "subCompetency": "OS vs applications",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO5.1.03"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "classification",
+      "isolationTarget": null,
+      "possibleFailurePattern": "OS/application role blur",
+      "roadmapMapping": "Computer Systems Architecture",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "Modern computers run an operating system alongside user-space applications.",
+          "question": "What is the primary role of the Operating System (OS)?",
+          "options": {
+            "A": "Drafting documents and rendering spreadsheets.",
+            "B": "Managing hardware resources and providing a secure platform for applications.",
+            "C": "Exclusively browsing websites and sending email.",
+            "D": "Editing raster image and video files."
+          },
+          "explanation": "The OS manages hardware abstraction and process execution environments for applications."
+        },
+        "uz": {
+          "context": "Kompyuter tizimlarida operatsion tizim (OS) va foydalanuvchi amaliy dasturlari o‘rnatilgan.",
+          "question": "Operatsion tizimning (OS) asosiy vazifasi nima?",
+          "options": {
+            "A": "Insho yozish va elektron jadval tuzishga yordam berish.",
+            "B": "Qurilmalarni boshqarish va boshqa ilovalar ishlashi uchun platforma yaratish.",
+            "C": "Internetda ko‘rish va elektron pochta yuborish.",
+            "D": "Rasm va videolarni tahrirlash."
+          },
+          "explanation": "OS apparat resurslarini boshqaradi va ilovalar ishlashi uchun zarur tizim interfeyslarini beradi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-05",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Authentication",
+      "subCompetency": "Multi-factor authentication",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "CS4.1.11"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "interpretation",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Multi-step vs multi-factor confusion",
+      "roadmapMapping": "Identity Protection & Authentication",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "An authentication system requests a master password followed by an OTP code sent to the user's phone (MFA).",
+          "question": "Why is this multi-factor method safer than a password alone?",
+          "options": {
+            "A": "It prevents passwords from ever being forgotten.",
+            "B": "It automatically encrypts the local network connection.",
+            "C": "An attacker would need both knowledge of credentials and physical access to the device.",
+            "D": "It accelerates the login handshake latency."
+          },
+          "explanation": "Multi-Factor Authentication requires both a knowledge factor and a possession factor."
+        },
+        "uz": {
+          "context": "Autentifikatsiya tizimi avval parolni, keyin esa foydalanuvchining telefoniga yuborilgan kodni (MFA) so‘raydi.",
+          "question": "Nega bu usul faqat paroldan ko‘ra ancha xavfsizroq?",
+          "options": {
+            "A": "Parolni unutib bo‘lmaydigan qiladi.",
+            "B": "Internet ulanishini albatta shifrlaydi.",
+            "C": "Hujumchi ham maxfiy ma’lumotni, ham jismoniy qurilmaga kirishni qo‘lga kiritishi kerak bo‘ladi.",
+            "D": "Kirishni tezlashtiradi."
+          },
+          "explanation": "MFA turli omillarni (bilish va egalik) birlashtiradi, shuning uchun faqat parolni bilish hujumchiga yetarli bo‘lmaydi."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-01",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Database structure",
+      "subCompetency": "Primary keys",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "9.3"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "selection",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Uniqueness blindness",
+      "roadmapMapping": "Tables, Records, Fields & Unique Identifiers",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "An engineer is designing a users table in a relational database for 1,000 active accounts.",
+          "question": "Which field is the best Primary Key candidate?",
+          "options": {
+            "A": "Student_Full_Name",
+            "B": "Student_Birth_Date",
+            "C": "Student_ID_Number",
+            "D": "Student_Home_City"
+          },
+          "explanation": "Names and dates can duplicate; primary keys must guarantee immutable row uniqueness."
+        },
+        "uz": {
+          "context": "1 000 foydalanuvchili tizim uchun foydalanuvchilar ma’lumotlar bazasi (users table) jadvali yaratilmoqda.",
+          "question": "Qaysi maydon Primary Key (asosiy kalit) uchun eng yaxshi tanlov hisoblanadi?",
+          "options": {
+            "A": "Student_Full_Name (To‘liq ism)",
+            "B": "Student_Birth_Date (Tug‘ilgan sana)",
+            "C": "Student_ID_Number (Noyob unikal identifikator)",
+            "D": "Student_Home_City (Shahar nomi)"
+          },
+          "explanation": "Ismlar va sanalar takrorlanishi mumkin. Primary Key har bir qator uchun qat’iy unikal va o‘zgarmas bo‘lishi shart."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-02",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Data quality",
+      "subCompetency": "Handling outliers",
+      "source": {
+        "name": "UNESCO AI / DigComp",
+        "citation": "UNESCO AI 4.1.2; DigComp 1.3"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "interpretation",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Blind trust in raw data",
+      "roadmapMapping": "Data Quality & Preprocessing",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "A telemetry sensor records daily temperatures: [15, 12, -99, 14, 16]. You need to calculate the true average temperature.",
+          "question": "How should the data cleaning step handle the -99 outlier?",
+          "options": {
+            "A": "Assume all readings are valid and include it directly in the mean.",
+            "B": "Blindly replace it with 0.",
+            "C": "Identify it as a likely sensor outlier/error, investigate, and filter it out.",
+            "D": "Overwrite all remaining values with -99."
+          },
+          "explanation": "-99 represents an extreme outlier or sentinel fault code; it must be investigated and excluded from calculations."
+        },
+        "uz": {
+          "context": "Sensor kunlik haroratlarni o‘lchab yozdi: [15, 12, -99, 14, 16]. Siz o‘rtacha qiymatni hisoblamoqchisiz.",
+          "question": "Ushbu to‘plamdagi -99 qiymati bilan nima qilish kerak?",
+          "options": {
+            "A": "Barcha sensor ma’lumotlari to‘g‘ri deb hisoblab, uni ham o‘rtachaga qo‘shish.",
+            "B": "Tekshirmasdan darhol 0 ga almashtirish.",
+            "C": "U ehtimol chet qiymat (outlier) yoki sensor xatosi bo‘lgani uchun uni tekshirish yoki chiqarib tashlash.",
+            "D": "Qolgan barcha qiymatlarni ham -99 ga almashtirish."
+          },
+          "explanation": "-99 fizik jihatdan anomaliya yoki nosozlik signali bo‘lib, o‘rtacha qiymatni buzmasligi uchun tekshirilishi va ajratilishi kerak."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-03",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Data types",
+      "subCompetency": "Contextual data type selection",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "Section 8.1.2"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "interpretation",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Precision-loss blindness",
+      "roadmapMapping": "Data Types, Fields & Precision",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "Integer fields store only whole numbers. A database stores exam scores as Integers, but real student scores include decimals like 85.5.",
+          "question": "Which field risks precision truncation if stored as an Integer?",
+          "options": {
+            "A": "Absence count",
+            "B": "Student ID",
+            "C": "Exam score",
+            "D": "None of them"
+          },
+          "explanation": "Storing 85.5 in an integer field causes truncation of the fractional decimal component."
+        },
+        "uz": {
+          "context": "Integer turi faqat butun sonlarni saqlaydi. Tizim imtihon balini Integer sifatida saqlamoqda, ammo haqiqiy ball 85.5 bo‘lishi mumkin.",
+          "question": "Qaysi qiymatning kasr qismi yo‘qolishi (truncation) xavfi bor?",
+          "options": {
+            "A": "Dars qoldirish soni",
+            "B": "O‘quvchi ID raqami",
+            "C": "Imtihon bali",
+            "D": "Hech qaysisi"
+          },
+          "explanation": "85.5 soni butun son emas; Integer turida saqlanganda uning .5 kasr qismi tashlab yuboriladi."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-04",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Spreadsheet reasoning",
+      "subCompetency": "Relative cell referencing",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO1.3.11 / LO1.3.19"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "prediction",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Static formula/reference assumption",
+      "roadmapMapping": "Spreadsheet Logic & Automation",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "Cell C1 contains the formula =A1+B1. You copy this formula down to cell C2.",
+          "question": "What does the formula become under relative cell referencing?",
+          "options": {
+            "A": "=A1+B1",
+            "B": "=A2+B2",
+            "C": "=B1+C1",
+            "D": "=SUM(A1:B2)"
+          },
+          "explanation": "Copying down by one row shifts relative row indices by +1, producing =A2+B2."
+        },
+        "uz": {
+          "context": "C1 katagida =A1+B1 formulasi bor. Siz formulani C2 katagiga nusxalaysiz.",
+          "question": "Nisbiy murojaat (relative referencing) qoidasiga ko‘ra formula qanday o‘zgaradi?",
+          "options": {
+            "A": "=A1+B1",
+            "B": "=A2+B2",
+            "C": "=B1+C1",
+            "D": "=SUM(A1:B2)"
+          },
+          "explanation": "Formula bir qator pastga nusxalanganda qator raqamlari 1 ga ortadi: =A2+B2."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-05",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Validation and verification",
+      "subCompetency": "Validation vs verification",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "Section 7.2.b"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "interpretation",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Validation/verification confusion",
+      "roadmapMapping": "Data Quality & Accuracy",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "You type your new email address twice into a confirmation form to guarantee no typo occurred.",
+          "question": "Which data integrity process does this dual-entry check represent?",
+          "options": {
+            "A": "Validation (e.g. format checking)",
+            "B": "Verification (dual-entry comparison)",
+            "C": "Data mining",
+            "D": "Encryption"
+          },
+          "explanation": "Validation checks structural rules; verification confirms factual intent through dual-entry or matching."
+        },
+        "uz": {
+          "context": "Siz yangi elektron pochta manzilingizni xato kiritmaganligingizga ishonch hosil qilish uchun formaga ikki marta yozasiz.",
+          "question": "Ikki marta kiritilgan ma’lumotni solishtirish qaysi jarayonga misol bo‘ladi?",
+          "options": {
+            "A": "Validation (masalan, format tekshiruvi)",
+            "B": "Verification (ikki marta kiritib solishtirish)",
+            "C": "Data mining",
+            "D": "Shifrlash (Encryption)"
+          },
+          "explanation": "Validation — ma’lumot formati va qoidalarini tekshirish; Verification — ma’lumotning asl niyatga to‘g‘ri kelishini (masalan ikki marta yozib) solishtirishdir."
+        }
+      }
+    },
+    {
+      "itemId": "AI-01",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "Human agency",
+      "subCompetency": "Human accountability",
+      "source": {
+        "name": "UNESCO AI",
+        "citation": "4.1.1, 4.2.1"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "scenario",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Automation bias / machine supremacy",
+      "roadmapMapping": "AI Ethics & Human Agency",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A financial institution uses machine learning models for risk scoring and wants to maintain human accountability (Human-in-the-Loop).",
+          "question": "How should the bank architect AI usage so human officers retain final accountability?",
+          "options": {
+            "A": "Delegate full autonomous rejection authority entirely to the AI model.",
+            "B": "AI calculates risk indicators, but qualified human officers review and issue final decisions.",
+            "C": "Prohibit client appeals on the grounds that models are purely objective.",
+            "D": "Conceal model reasoning logs to evade institutional liability."
+          },
+          "explanation": "Human-in-the-loop governance guarantees that automated inference remains advisory to human decision-makers."
+        },
+        "uz": {
+          "context": "Moliya tashkiloti kredit arizalarini baholashda Machine Learning modelidan foydalanadi va jarayonda inson hisobdorligi (Human-in-the-Loop) saqlanishini xohlaydi.",
+          "question": "Yakuniy qaror uchun inson javobgar bo‘lib qolishi uchun AI tizimidan qanday foydalanish kerak?",
+          "options": {
+            "A": "Yakuniy qarorni AI ga to‘liq avtomatik qoldirish.",
+            "B": "AI xavf tahlili va ko‘rsatkichlarini tayyorlaydi, lekin mutaxassis ularni ko‘rib chiqib yakuniy qarorni qabul qiladi.",
+            "C": "AI xolis bo‘lgani uchun apellyatsiyaga ruxsat bermaslik.",
+            "D": "Bank javobgar bo‘lmasligi uchun AI qarorining sabablarini yashirish."
+          },
+          "explanation": "Yuqori mas’uliyatli tizimlarda inson nazorati (Human-in-the-loop) qarorlarning adolatli va qonuniy bo‘lishini ta’minlaydi."
+        }
+      }
+    },
+    {
+      "itemId": "AI-02",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "Verification",
+      "subCompetency": "Plausible accuracy / hallucinations",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "CS1.2.10, LO1.2.16"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "interpretation",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Plausibility/fluency trust; LLM=database myth",
+      "roadmapMapping": "Verifying AI Outputs",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A generative chatbot confidently asserts that Uruguay won the 1925 World Cup, even though the first tournament was not held until 1930.",
+          "question": "Why did the chatbot produce this plausible-sounding factual hallucination?",
+          "options": {
+            "A": "Historical textbooks have expired.",
+            "B": "It generated a statistically plausible token sequence based on language patterns despite the factual falsehood.",
+            "C": "It queried a verified relational database of all sports facts.",
+            "D": "A developer hardcoded this exact error."
+          },
+          "explanation": "LLMs predict likely token sequences from training statistics without native factual grounding, risking hallucinations."
+        },
+        "uz": {
+          "context": "Chatbot 1925-yilgi Jahon chempionati g‘olibi haqida so‘ralganda \"Urugvay\" deb ishonch bilan javob berdi, aslida birinchi Jahon chempionati 1930-yilda o‘tkazilgan.",
+          "question": "Chatbot nega bunday ishonarli ko‘ringan noto‘g‘ri javob (hallucination) bergan bo‘lishi mumkin?",
+          "options": {
+            "A": "Tarix kitoblari eskirib qolgan.",
+            "B": "U voqea bo‘lmagan bo‘lsa ham, o‘rgangan til statistikasi asosida ishonarli eshitiladigan so‘zlar ketma-ketligini generatsiya qilgan.",
+            "C": "U barcha sport voqealarining tekshirilgan jonli bazasiga ulangan.",
+            "D": "Bir sport muxlisi aynan shu yolg‘on javobni dasturlab qo‘ygan."
+          },
+          "explanation": "Katta til modellari faktlarni bilmaydi; ular statistik ehtimollik asosida keyingi so‘zni taxmin qiladi (hallucination)."
+        }
+      }
+    },
+    {
+      "itemId": "AI-03",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "Prompting",
+      "subCompetency": "Iterative refinement with constraints",
+      "source": {
+        "name": "DigComp 3.0 / UNESCO AI",
+        "citation": "LO2.1.24; CG4.1.3.2"
+      },
+      "difficulty": "standard",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "decision",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Vague/one-shot prompting",
+      "roadmapMapping": "Iterative Prompting",
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "You are requesting software architectural guidance from an AI model and need a structured, precise output.",
+          "question": "Which constrained prompt formulation yields the most effective technical output?",
+          "options": {
+            "A": "Tell me everything about software engineering.",
+            "B": "Type 'that was too complex, explain better'.",
+            "C": "'Explain 3 key benefits and 2 trade-offs of microservices for a backend engineer in concise bullet points with examples.'",
+            "D": "Switch to another model and repeat the same vague prompt."
+          },
+          "explanation": "Specifying target audience, concrete metrics, and structural constraints directs prompt execution accurately."
+        },
+        "uz": {
+          "context": "Siz dasturiy arxitektura bo‘yicha AI dan yordam so‘ramoqchisiz va aniq, strukturalangan javob olishni xohlaysiz.",
+          "question": "Qaysi cheklovlar berilgan so‘rov (prompt) eng samarali natija beradi?",
+          "options": {
+            "A": "Menga dasturiy ta’minot haqida hamma narsani aytib ber.",
+            "B": "“Bu juda qiyin edi, yaxshiroq tushuntir” deb yozish.",
+            "C": "“Microservice arxitekturasining 3 ta asosiy afzalligi va 2 ta kamchiligini backend dasturchi uchun qisqa punktlarda, aniq misollar bilan tushuntir.”",
+            "D": "Boshqa AI vositasiga o‘tib, noaniq umumiy so‘rovni takrorlash."
+          },
+          "explanation": "Auditoriya, tuzilma va chegaralarni (3 ta afzallik, 2 ta kamchilik) ko‘rsatish eng sifatli va aniq javobni ta’minlaydi."
+        }
+      }
+    },
+    {
+      "itemId": "AI-04",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "Training data",
+      "subCompetency": "Dataset bias and generalization",
+      "source": {
+        "name": "UNESCO AI / DigComp 3.0",
+        "citation": "CG4.1.2.2; CS1.2.08"
+      },
+      "difficulty": "stretch",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "prediction",
+      "isolationTarget": null,
+      "possibleFailurePattern": "Training-data neutrality / magic-box model",
+      "roadmapMapping": "Training Data & Representation Bias",
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A computer vision facial recognition system was trained exclusively on 100,000 adult photos. In production, it frequently fails on children aged 10–12.",
+          "question": "What is the most likely technical cause of this classification failure?",
+          "options": {
+            "A": "The AI intentionally decided children are unauthorized.",
+            "B": "The training dataset underrepresented child faces, leading to dataset bias and poor out-of-distribution generalization.",
+            "C": "The program must be rewritten in an interpreted scripting language.",
+            "D": "Cameras automatically power down when detecting low stature."
+          },
+          "explanation": "Underrepresentation in the training distribution causes severe generalization failures on excluded demographics."
+        },
+        "uz": {
+          "context": "Yuzni tanish (Computer Vision) AI tizimi faqat 100 000 ta kattalar suratida o‘qitilgan. Ishlab chiqarishda u 10–12 yoshli bolalarning yuzini taniy olmay xato qilmoqda.",
+          "question": "Modelning ushbu xatoligiga eng ehtimoliy sabab nima?",
+          "options": {
+            "A": "AI ataylab bolalarni ruxsatsiz deb qaror qilgan.",
+            "B": "O‘rgatish uchun ishlatilgan o‘quv to‘plamida bolalar suratlari yetarli bo‘lmagan, shuning uchun model bu toifani umumlashtirishni o‘rganmagan (dataset bias).",
+            "C": "Dastur boshqa dasturlash tilida boshidan yozilishi kerak.",
+            "D": "Kamera bo‘yi past odamlarni ko‘rganda avtomatik o‘chadi."
+          },
+          "explanation": "Dataset bias: o‘quv ma’lumotlarida qaysi toifa yetishmasa, model real hayotda o‘sha toifada yuqori xatolik beradi."
+        }
+      }
+    },
+    {
+      "itemId": "AI-05",
+      "assessmentRole": "core",
+      "parentCoreItemId": null,
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "Problem scoping",
+      "subCompetency": "Appropriate vs inappropriate AI use",
+      "source": {
+        "name": "UNESCO AI",
+        "citation": "CG4.1.4.1; CG4.1.1.2"
+      },
+      "difficulty": "stretch",
+      "recommendedGradeBand": "grade_10_11",
+      "questionType": "decision",
+      "isolationTarget": null,
+      "possibleFailurePattern": "AI-as-hammer / proportionality failure",
+      "roadmapMapping": "AI Problem Scoping & Ethics",
+      "correctOption": "A",
+      "content": {
+        "en": {
+          "context": "An enterprise is establishing guidelines for appropriate and proportionate machine learning deployments.",
+          "question": "Which task represents the most appropriate and proportionate deployment of AI?",
+          "options": {
+            "A": "Automating pattern recognition across 10,000 incoming network messages per hour to flag spam and anomaly patterns.",
+            "B": "Issuing final criminal judicial sentencing without human judge oversight.",
+            "C": "Hiring school executives through automated interviews without human review.",
+            "D": "Conducting open-heart surgical operations with zero medical doctor involvement."
+          },
+          "explanation": "High-volume pattern recognition (e.g. spam/threat filtering) is ideal for ML; safety-critical human life domains require strict human control."
+        },
+        "uz": {
+          "context": "Korxona IT infratuzilmasida sun’iy intellekt (AI) modellaridan foydalanish ko‘lami rejalashtirilmoqda.",
+          "question": "Qaysi vazifa AI/Machine Learning dan eng maqbul va mutanosib foydalanish hisoblanadi?",
+          "options": {
+            "A": "Soatiga 10 000 ta kiruvchi xat va tarmoq trafigini tahlil qilib, anomaliya va spam/fishing xabarlarini avtomatik belgilash.",
+            "B": "Sud tizimida inson sudyasisiz fuqaroga yakuniy jinoiy jazo tayinlash.",
+            "C": "Maktab direktorini avtomatik suhbatdan o‘tkazib, inson tekshiruvisiz ishga olish.",
+            "D": "Hech qanday shifokorsiz murakkab yurak operatsiyasini to‘liq avtonom bajarish."
+          },
+          "explanation": "Katta hajmdagi ma’lumotlarni tahlil qilish va naqshlarni (spam, anomaliya) topish AI ning kuchli va xavfsiz tomonidir; inson hayoti va taqdiriga daxldor qarorlar esa inson nazorati ostida bo‘lishi shart."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-I-01",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DLIT-01",
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Evaluating information",
+      "subCompetency": "Source vs content/visual credibility",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO1.2.02"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Source vs content/visual credibility",
+      "possibleFailurePattern": "Source vs content/visual credibility",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A developer accesses a download page that displays a well-known tech brand logo and clean UI, but the domain name does not match the official organization domain.",
+          "question": "Why does a professional visual design fail to guarantee that the binary download is safe?",
+          "options": {
+            "A": "Legitimate-looking websites never host malicious software.",
+            "B": "Attackers can easily replicate the visual stylesheets and logos of legitimate organizations to deceive users.",
+            "C": "Any downloadable binary is automatically safe by default.",
+            "D": "Web design assets and binary files always share the exact same secure server."
+          },
+          "explanation": "Phishing sites frequently clone official CSS and branding. Domain verification and cryptographic checks are required."
+        },
+        "uz": {
+          "context": "Dasturchi dasturiy ta’minot yuklab olish uchun saytga kirdi. Saytda mashhur IT brendining logotipi va chiroyli dizayni bor, lekin domen manzili rasmiy domen emas, shubhali begona IP/URL ga yo‘naltirilgan.",
+          "question": "Nega saytning chiroyli dizayni faylning xavfsiz va haqiqiy ekanligini isbotlay olmaydi?",
+          "options": {
+            "A": "Professional ko‘rinadigan saytlar hech qachon xato qilmaydi.",
+            "B": "Hujumchilar soxta phishing sahifalarida rasmiy brend dizayni va uslubini osongina nusxalab qo‘yishi mumkin.",
+            "C": "Yuklab olinadigan har qanday fayl avtomatik tarzda xavfsiz hisoblanadi.",
+            "D": "Veb-sayt dizayni va dastur fayli har doim bir xil serverda joylashadi."
+          },
+          "explanation": "Phishing saytlar tashqi ko‘rinishidan haqiqiy sayt kabi ko‘rinishi mumkin. Asosiy e’tiborni domen nomi va SSL sertifikatiga qaratish lozim."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-I-02",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DLIT-02",
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Managing digital identity",
+      "subCompetency": "Deleted data vs persistent copies",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO2.6.06"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Deleted data vs persistent copies",
+      "possibleFailurePattern": "Deleted data vs persistent copies",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A sysadmin deletes a local log file on a virtual machine, but centralized log forwarding (e.g. Elasticsearch/CloudWatch) is active across the cluster.",
+          "question": "Did deleting the local file completely erase the logged events from the infrastructure?",
+          "options": {
+            "A": "Yes, deleting a local file removes all copies across the entire network.",
+            "B": "No, forwarded logs and replicas may still persist in central log clusters or backup storage.",
+            "C": "Yes, the OS broadcast engine forces deletion across all distributed servers.",
+            "D": "Any server log naturally purges itself within 1 minute."
+          },
+          "explanation": "In distributed architectures, centralized aggregation engines retain forwarded events even if local node files are purged."
+        },
+        "uz": {
+          "context": "Siz serverdagi vaqtinchalik log faylini o‘chirib tashladingiz, ammo markazlashgan log monitoring tizimi (masalan, Elasticsearch/CloudWatch) ishlab turibdi.",
+          "question": "Ushbu log ma’lumotlari tarmoq infratuzilmasidan butunlay yo‘qoldimi?",
+          "options": {
+            "A": "Ha, lokal fayl o‘chirilsa, tarmoqdagi barcha nusxalar ham yo‘qoladi.",
+            "B": "Yo‘q, markaziy log serverlari yoki zaxira nusxalarda ma’lumotlar saqlanib qolgan bo‘lishi mumkin.",
+            "C": "Ha, operatsion tizim barcha o‘chirish buyruqlarini tarmoqqa majburiy tarqatadi.",
+            "D": "Har qanday server logi 1 daqiqa ichida o‘z-o‘zidan yo‘qoladi."
+          },
+          "explanation": "Taqsimlangan tizimlarda lokal fayl o‘chirilsa ham, tarmoqdagi markaziy xotira yoki replikalarda ma’lumotlar saqlanib qoladi."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-I-03",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DLIT-03",
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Browsing, searching and filtering",
+      "subCompetency": "Search intent vs unnecessary keywords",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO1.1.02"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Search intent vs unnecessary keywords",
+      "possibleFailurePattern": "Search intent vs unnecessary keywords",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "You need to find the exact official PostgreSQL documentation syntax for indexing JSONB columns.",
+          "question": "Which search query targets the required technical documentation most effectively?",
+          "options": {
+            "A": "Tell me about database systems",
+            "B": "site:postgresql.org/docs \"CREATE INDEX\" \"jsonb\"",
+            "C": "why do we need json and tables",
+            "D": "List of all SQL syntax errors"
+          },
+          "explanation": "Targeting the official docs domain with specific DDL statements returns the definitive technical reference."
+        },
+        "uz": {
+          "context": "PostgreSQL da JSONB ustunlari bo‘yicha indeks yaratish sintaksisini rasmiy qo‘llanmadan topish kerak.",
+          "question": "Qaysi qidiruv usuli eng maqsadli natija beradi?",
+          "options": {
+            "A": "Menga ma’lumotlar bazasi haqida gapirib ber",
+            "B": "site:postgresql.org/docs \"CREATE INDEX\" \"jsonb\"",
+            "C": "json va jadvallar nima uchun kerak",
+            "D": "Barcha SQL xatolari ro‘yxati"
+          },
+          "explanation": "Aniq SQL operatorlari va site: domeni orqali qidirish eng maqbul natijani beradi."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-I-04",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DLIT-04",
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Managing information",
+      "subCompetency": "Folder/directory hierarchy",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO1.3.09"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Folder/directory hierarchy",
+      "possibleFailurePattern": "Folder/directory hierarchy",
+      "roadmapMapping": null,
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "Inside a project root directory, the src/ folder contains a services/ folder with auth.service.ts.",
+          "question": "What is the correct relative path from the project root to this file?",
+          "options": {
+            "A": "auth.service.ts",
+            "B": "services/auth.service.ts",
+            "C": "src/services/auth.service.ts",
+            "D": "src/auth.service.ts/services"
+          },
+          "explanation": "Hierarchical directory navigation starts from parent folders descending into subfolders separated by forward slashes."
+        },
+        "uz": {
+          "context": "Loyiha katalogida src/ papkasi ichida services/ papkasi, uning ichida esa auth.service.ts fayli joylashgan.",
+          "question": "Loyiha ildizidan (root) ushbu faylga to‘g‘ri nisbiy yo‘l (relative path) qanday yoziladi?",
+          "options": {
+            "A": "auth.service.ts",
+            "B": "services/auth.service.ts",
+            "C": "src/services/auth.service.ts",
+            "D": "src/auth.service.ts/services"
+          },
+          "explanation": "Ildiz papkadan boshlab ketma-ket papkalar ajratuvchi slash (/) orqali yoziladi: src/services/auth.service.ts."
+        }
+      }
+    },
+    {
+      "itemId": "DLIT-I-05",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DLIT-05",
+      "domain": "Digital & Information Literacy",
+      "domainUz": "Raqamli va axborot savodxonligi",
+      "competency": "Copyright and licenses",
+      "subCompetency": "Online access vs permission/licensing",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO3.3.01"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Online access vs permission/licensing",
+      "possibleFailurePattern": "Online access vs permission/licensing",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A developer finds public source code in a GitHub repository that does not include any LICENSE file.",
+          "question": "Can you automatically incorporate this code into your proprietary project without explicit permission?",
+          "options": {
+            "A": "Yes, all public code hosted on GitHub is automatically placed in the public domain.",
+            "B": "No; without an open-source license, default copyright laws apply ('all rights reserved') and permission is required.",
+            "C": "Yes, any code file under 1 MB is exempt from copyright laws.",
+            "D": "Code written in compiled languages is legally free of copyright."
+          },
+          "explanation": "Public availability on hosting platforms does not grant reuse rights. Absence of a license implies full copyright reservation."
+        },
+        "uz": {
+          "context": "GitHub da ommaviy (public) repozitoriyda kod joylashtirilgan, biroq unda hech qanday LICENSE fayli yo‘q.",
+          "question": "Litsenziyasiz ochiq koddan o‘z xususiy loyihangizda avtomatik ravishda erkin foydalanish mumkinmi?",
+          "options": {
+            "A": "Ha, GitHub da ochiq turgan barcha kodlar avtomatik public domain hisoblanadi.",
+            "B": "Yo‘q; litsenziya bo‘lmasa, mualliflik huquqi qonuniga ko‘ra barcha huquqlar muallifda saqlanadi va ruxsat talab qilinadi.",
+            "C": "Ha, faqat fayl hajmi 1 MB dan kichik bo‘lsa ruxsatsiz ishlatish mumkin.",
+            "D": "Faqat kod C++ tilida yozilgan bo‘lsa mualliflik huquqi bo‘lmaydi."
+          },
+          "explanation": "Ochiq ko‘rinishi litsenziyasiz koddan foydalanish huquqini bermaydi. Standart mualliflik huquqi bo‘yicha 'barcha huquqlar himoyalangan' hisoblanadi."
+        }
+      }
+    },
+    {
+      "itemId": "CT-I-01",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "CT-01",
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Algorithmic reasoning",
+      "subCompetency": "Input vs Process vs Output",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "7.1; DESIGN INFERENCE"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Input vs Process vs Output",
+      "possibleFailurePattern": "Input vs Process vs Output",
+      "roadmapMapping": null,
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "A software function receives an array of user objects, filters for users older than 18, and returns the sorted list.",
+          "question": "Which component is the Input of this function?",
+          "options": {
+            "A": "The comparison and sorting conditional logic.",
+            "B": "The final filtered and sorted result list.",
+            "C": "The initial array of user objects passed as an argument.",
+            "D": "The console log output string."
+          },
+          "explanation": "The parameter argument passed into the function constitutes its Input data."
+        },
+        "uz": {
+          "context": "Dasturiy funksiya foydalanuvchilar massivini (array) qabul qiladi, yoshi 18 dan kattalarini saralab filtrlaydi va natijaviy ro‘yxatni qaytaradi.",
+          "question": "Funksiyaning \"Input\" (kirish ma’lumoti) qaysi?",
+          "options": {
+            "A": "Yoshni tekshirish va saralash mantiqi.",
+            "B": "Natijaviy saralangan ro‘yxat.",
+            "C": "Funksiyaga parametr sifatida uzatilgan dastlabki foydalanuvchilar massivi.",
+            "D": "Konsolga chiqarilgan log xabari."
+          },
+          "explanation": "Funksiyaga uzatilgan dastlabki massiv — bu kirish ma’lumoti (Input)."
+        }
+      }
+    },
+    {
+      "itemId": "CT-I-02",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "CT-02",
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Sequencing",
+      "subCompetency": "Sequence/order and state",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "7.7; DESIGN INFERENCE"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Sequence/order and state",
+      "possibleFailurePattern": "Sequence/order and state",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A server daemon state starts as STOPPED. Each TOGGLE command alternates the state: STOPPED → RUNNING, and RUNNING → STOPPED.",
+          "question": "What is the server state after the TOGGLE command is executed exactly 3 times?",
+          "options": {
+            "A": "STOPPED",
+            "B": "RUNNING",
+            "C": "FAILED",
+            "D": "PAUSED"
+          },
+          "explanation": "1: RUNNING, 2: STOPPED, 3: RUNNING. An odd number of toggles inverts the initial state."
+        },
+        "uz": {
+          "context": "Server demonining holati dastlab STOPPED. Har bir TOGGLE buyrug‘i holatni almashtiradi: STOPPED → RUNNING, RUNNING → STOPPED.",
+          "question": "TOGGLE buyrug‘i ketma-ket 3 marta bajarilgandan so‘ng server holati qanday bo‘ladi?",
+          "options": {
+            "A": "STOPPED",
+            "B": "RUNNING",
+            "C": "FAILED",
+            "D": "PAUSED"
+          },
+          "explanation": "1-marta: RUNNING. 2-marta: STOPPED. 3-marta: RUNNING."
+        }
+      }
+    },
+    {
+      "itemId": "CT-I-03",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "CT-03",
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Pattern recognition",
+      "subCompetency": "Rule fitting all examples",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO3.4.08"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Rule fitting all examples",
+      "possibleFailurePattern": "Rule fitting all examples",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A string utility produces these outputs from inputs: \"Sun\" → \"S\", \"Moon\" → \"M\", \"Star\" → \"S\".",
+          "question": "Which algorithmic rule consistently fits all given test cases?",
+          "options": {
+            "A": "Extracting the last character of the string.",
+            "B": "Extracting the first character of the string (string[0]).",
+            "C": "Always returning the literal character \"S\".",
+            "D": "Stripping all uppercase characters."
+          },
+          "explanation": "The transformation extracts index 0 of each string input."
+        },
+        "uz": {
+          "context": "Matnli utilita berilgan kirishdan chiqish hosil qiladi: \"Sun\" → \"S\", \"Moon\" → \"M\", \"Star\" → \"S\".",
+          "question": "Barcha test misollariga mos keluvchi umumiy algoritmik qoida qaysi?",
+          "options": {
+            "A": "Satrning oxirgi belgisini olish.",
+            "B": "Satrning birinchi belgisini olish (string[0]).",
+            "C": "Har doim qat’iy \"S\" harfini qaytarish.",
+            "D": "Barcha katta harflarni o‘chirib tashlash."
+          },
+          "explanation": "Har bir so‘zning 0-indeksdagi birinchi belgisi olinmoqda (S, M, S)."
+        }
+      }
+    },
+    {
+      "itemId": "CT-I-04",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "CT-04",
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Decomposition",
+      "subCompetency": "Sub-task vs whole system",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "7.1"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Sub-task vs whole system",
+      "possibleFailurePattern": "Sub-task vs whole system",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "The software engineering technique of breaking a large, complex system into smaller, self-contained sub-modules.",
+          "question": "What is this foundational computational thinking technique called?",
+          "options": {
+            "A": "Abstraction",
+            "B": "Decomposition",
+            "C": "Compilation",
+            "D": "Virtualization"
+          },
+          "explanation": "Decomposition is the practice of breaking down complex problems into manageable sub-tasks."
+        },
+        "uz": {
+          "context": "Katta dasturiy ta’minot loyihasini mustaqil kichik komponentlar, modullar va funksiyalarga bo‘lib chiqish jarayoni.",
+          "question": "Ushbu kompyuter fanlari va algoritmlash usuli nima deb ataladi?",
+          "options": {
+            "A": "Abstraction",
+            "B": "Decomposition",
+            "C": "Compilation",
+            "D": "Virtualization"
+          },
+          "explanation": "Muammoni mayda, boshqariladigan qismlarga bo‘lish — Decomposition (dekompozitsiya) deyiladi."
+        }
+      }
+    },
+    {
+      "itemId": "CT-I-05",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "CT-05",
+      "domain": "Computational Thinking & Algorithms",
+      "domainUz": "Hisoblash tafakkuri va algoritmlar",
+      "competency": "Abstraction",
+      "subCompetency": "Relevant vs irrelevant detail",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO3.4.06"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Relevant vs irrelevant detail",
+      "possibleFailurePattern": "Relevant vs irrelevant detail",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "You are modeling a User class in object-oriented code for authentication and notifications.",
+          "question": "Which attribute is irrelevant to this model and should be excluded through abstraction?",
+          "options": {
+            "A": "user_email",
+            "B": "desktop_monitor_color",
+            "C": "password_hash",
+            "D": "user_id"
+          },
+          "explanation": "Hardware monitor color is irrelevant to the user authentication domain model."
+        },
+        "uz": {
+          "context": "Siz foydalanuvchi akkauntini ifodalovchi User klassini (OOP modeli) yaratmoqdasiz (vazifa: login qilish va email yuborish).",
+          "question": "Ushbu klass uchun qaysi atribut mantiqan ortiqcha va abstraksiyadan chiqarilishi kerak?",
+          "options": {
+            "A": "user_email",
+            "B": "desktop_monitor_color",
+            "C": "password_hash",
+            "D": "user_id"
+          },
+          "explanation": "Foydalanuvchining monitor rangi dasturiy autentifikatsiya modeli uchun mutlaqo aloqasiz detaldir."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-I-01",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "PROG-01",
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Variables and State",
+      "subCompetency": "Assignment direction/overwrite",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.1"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Assignment direction/overwrite",
+      "possibleFailurePattern": "Assignment direction/overwrite",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "Trace this code snippet:\nX = 10\nY = 20\nX = Y",
+          "question": "What is the value of X after the third line executes?",
+          "options": {
+            "A": "10",
+            "B": "20",
+            "C": "30",
+            "D": "0"
+          },
+          "explanation": "Assignment copies the value of Y (20) into X, replacing 10."
+        },
+        "uz": {
+          "context": "Kodni tahlil qiling:\nX = 10\nY = 20\nX = Y",
+          "question": "Uchinchi qatordan so‘ng X ning qiymati nechaga teng bo‘ladi?",
+          "options": {
+            "A": "10",
+            "B": "20",
+            "C": "30",
+            "D": "0"
+          },
+          "explanation": "O‘zlashtirish amali (assignment) o‘ngdagi qiymatni chapdagi o‘zgaruvchiga yozadi: X = 20 bo‘ladi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-I-02",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "PROG-02",
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Control flow",
+      "subCompetency": "Loop termination",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.4"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Loop termination",
+      "possibleFailurePattern": "Loop termination",
+      "roadmapMapping": null,
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "Trace this code snippet:\nscore = 12\nwhile score < 10:\n    score += 1",
+          "question": "How many times does the body of the loop execute?",
+          "options": {
+            "A": "10 times",
+            "B": "12 times",
+            "C": "0 times",
+            "D": "Infinite loop"
+          },
+          "explanation": "Initial score is 12, so the condition 12 < 10 evaluates to false immediately. The loop body executes 0 times."
+        },
+        "uz": {
+          "context": "Python kodini ko‘ring:\nscore = 12\nwhile score < 10:\n    score += 1",
+          "question": "Sikl tanasi necha marta bajariladi?",
+          "options": {
+            "A": "10 marta",
+            "B": "12 marta",
+            "C": "0 marta",
+            "D": "Cheksiz"
+          },
+          "explanation": "score = 12 bo‘lgani uchun shart (12 < 10) boshidanoq False bo‘ladi va sikl 0 marta bajariladi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-I-03",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "PROG-03",
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Control flow",
+      "subCompetency": "IF/ELSE execution",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.4"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "IF/ELSE execution",
+      "possibleFailurePattern": "IF/ELSE execution",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "Trace this conditional:\nIF Temperature > 30 THEN OUTPUT \"Hot\" ELSE OUTPUT \"Cold\". Currently Temperature = 25.",
+          "question": "What will be output by this statement?",
+          "options": {
+            "A": "Hot",
+            "B": "Cold",
+            "C": "25",
+            "D": "Both Hot and Cold"
+          },
+          "explanation": "Since 25 is not > 30, the ELSE clause executes, outputting 'Cold'."
+        },
+        "uz": {
+          "context": "Shartli operatorni tahlil qiling:\nIF Temperature > 30 THEN OUTPUT \"Hot\" ELSE OUTPUT \"Cold\". Hozirda Temperature = 25.",
+          "question": "Dastur qanday natija chiqaradi?",
+          "options": {
+            "A": "Hot",
+            "B": "Cold",
+            "C": "25",
+            "D": "Hot va Cold ikkalasi ham"
+          },
+          "explanation": "25 > 30 False bo‘lgani uchun ELSE tarmog‘i 'Cold' ni chiqaradi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-I-04",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "PROG-04",
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Logical operators",
+      "subCompetency": "AND/OR/NOT confusion",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.4"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "AND/OR/NOT confusion",
+      "possibleFailurePattern": "AND/OR/NOT confusion",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "Security rule logic: Access_Granted = (Door_Open == True or Window_Open == True).",
+          "question": "When does Access_Granted evaluate to True?",
+          "options": {
+            "A": "Only when both door and window are open.",
+            "B": "When the door is open, even if the window is closed.",
+            "C": "Only when the door is closed.",
+            "D": "Only during night hours."
+          },
+          "explanation": "A logical OR evaluates to True whenever at least one operand is True."
+        },
+        "uz": {
+          "context": "Xavfsizlik qoidasi: Access_Granted = (Door_Open == True or Window_Open == True).",
+          "question": "Qachon Access_Granted qiymati True bo‘ladi?",
+          "options": {
+            "A": "Faqat eshik va deraza ikkalasi ham ochiq bo‘lsa.",
+            "B": "Eshik ochiq bo‘lsa, deraza yopiq bo‘lsa ham.",
+            "C": "Faqat eshik yopiq bo‘lsa.",
+            "D": "Faqat tunda."
+          },
+          "explanation": "OR mantiqiy operatorida kamida bitta tomon True bo‘lishi butun ifodani True qiladi."
+        }
+      }
+    },
+    {
+      "itemId": "PROG-I-05",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "PROG-05",
+      "domain": "Programming Fundamentals",
+      "domainUz": "Dasturlash asoslari",
+      "competency": "Testing",
+      "subCompetency": "Boundary/range testing",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "7.6"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Boundary/range testing",
+      "possibleFailurePattern": "Boundary/range testing",
+      "roadmapMapping": null,
+      "correctOption": "D",
+      "content": {
+        "en": {
+          "context": "An endpoint accepts rating integers from 1 to 5 inclusive (1 <= grade <= 5).",
+          "question": "Which test input confirms that out-of-range invalid data is properly rejected?",
+          "options": {
+            "A": "3",
+            "B": "1",
+            "C": "5",
+            "D": "10"
+          },
+          "explanation": "10 is outside the valid [1, 5] range, serving as an invalid input test case."
+        },
+        "uz": {
+          "context": "Dastur 1 dan 5 gacha bo‘lgan baholarni qabul qiladi (1 <= grade <= 5).",
+          "question": "Noto‘g‘ri oraliqdagi qiymat rad etilishini tekshirish uchun qaysi test qiymatini kiritish kerak?",
+          "options": {
+            "A": "3",
+            "B": "1",
+            "C": "5",
+            "D": "10"
+          },
+          "explanation": "10 ruxsat etilgan [1, 5] oralig‘idan tashqarida bo‘lib, noto‘g‘ri qiymatni sinovdan o‘tkazadi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-I-01",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "SYS-01",
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Hardware",
+      "subCompetency": "RAM volatility",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "3.3.1"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "RAM volatility",
+      "possibleFailurePattern": "RAM volatility",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "When a computer loses electrical power, unsaved contents stored in volatile RAM vanish.",
+          "question": "Why does unsaved data in primary memory disappear on power loss?",
+          "options": {
+            "A": "Because the SSD is too slow.",
+            "B": "Because RAM is volatile and requires continuous electrical current to retain transistor charges.",
+            "C": "Because the OS intentionally purges user files.",
+            "D": "Because the CPU cannot compute without battery power."
+          },
+          "explanation": "Dynamic RAM cells require continuous power to refresh capacitor charge states."
+        },
+        "uz": {
+          "context": "Kompyuter elektr tarmog‘idan uzilganda operativ xotiradagi (RAM) saqlanmagan fayllar yo‘qoladi.",
+          "question": "Nega saqlanmagan matn yoki kod yo‘qoladi?",
+          "options": {
+            "A": "SSD juda sekin bo‘lgani uchun.",
+            "B": "RAM uchuvchan (volatile) bo‘lib, ma’lumotni saqlab turish uchun uzluksiz elektr quvvati talab qiladi.",
+            "C": "Kompyuter o‘chishdan oldin fayllarni ataylab o‘chiradi.",
+            "D": "CPU batareyasiz hisoblay olmagani uchun."
+          },
+          "explanation": "RAM ma’lumotni saqlash uchun uzluksiz elektr quvvatiga tayanadi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-I-02",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "SYS-02",
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Internet Fundamentals",
+      "subCompetency": "Packets vs continuous stream",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "2.1.1"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Packets vs continuous stream",
+      "possibleFailurePattern": "Packets vs continuous stream",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "How is high-volume data transmitted across modern TCP/IP networks?",
+          "question": "In what format does data travel across the network?",
+          "options": {
+            "A": "As a single unbroken continuous analog stream.",
+            "B": "Segmented into discrete packets that are reassembled at the destination.",
+            "C": "Exclusively through private dedicated point-to-point cables.",
+            "D": "Strictly via satellite uplinks."
+          },
+          "explanation": "Data streams are fragmented into discrete packets for transmission and reassembly."
+        },
+        "uz": {
+          "context": "Katta ma’lumot oqimi internet tarmog‘i bo‘ylab qanday uzatiladi?",
+          "question": "Tarmoq bo‘ylab ma’lumot qanday ko‘rinishda harakatlanadi?",
+          "options": {
+            "A": "Bitta bo‘linmas uzluksiz blok sifatida.",
+            "B": "Paketlarga bo‘linib alohida yuboriladi va manzilda qayta yig‘iladi.",
+            "C": "Faqat siz uchun ajratilgan shaxsiy jismoniy kabel orqali.",
+            "D": "Faqat sun’iy yo‘ldosh orqali uzatiladi."
+          },
+          "explanation": "Ma’lumotlar kichik paketlarga bo‘linib uzatiladi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-I-03",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "SYS-03",
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Cybersecurity",
+      "subCompetency": "Sender/URL phishing cues",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO4.2.15"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Sender/URL phishing cues",
+      "possibleFailurePattern": "Sender/URL phishing cues",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "An email displays the display name \"System Administrator\", but the actual SMTP sender address is prizes-win-99@gmail.com.",
+          "question": "Should this administrative message be trusted?",
+          "options": {
+            "A": "Yes, because the display name says 'Administrator'.",
+            "B": "No; the sender address domain does not match the organization's official domain.",
+            "C": "Yes, because Gmail is a trusted platform.",
+            "D": "No, because administrators never communicate via email."
+          },
+          "explanation": "Display names are trivial to spoof; validating the actual sender domain is critical."
+        },
+        "uz": {
+          "context": "Xatdagi ko‘rinadigan ism \"Tizim administratori\", ammo haqiqiy SMTP jo‘natuvchi manzili prizes-win-99@gmail.com.",
+          "question": "Bu xatga ishonish kerakmi?",
+          "options": {
+            "A": "Ha, chunki ko‘rinadigan ismda \"Administrator\" yozilgan.",
+            "B": "Yo‘q; manzil tashkilotning rasmiy korporativ domeniga mos emas.",
+            "C": "Ha, chunki Gmail ishonchli kompaniya.",
+            "D": "Yo‘q, chunki administratorlar hech qachon email yubormaydi."
+          },
+          "explanation": "Ko‘rinadigan ism (display name) osongina soxtalashtiriladi. Asl jo‘natuvchi manzilini tekshirish lozim."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-I-04",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "SYS-04",
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Software",
+      "subCompetency": "OS vs application roles",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO5.1.03"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "OS vs application roles",
+      "possibleFailurePattern": "OS vs application roles",
+      "roadmapMapping": null,
+      "correctOption": "A",
+      "content": {
+        "en": {
+          "context": "Consider a personal computer without any installed operating system.",
+          "question": "Why cannot standard user applications execute on bare hardware?",
+          "options": {
+            "A": "Applications rely on operating system services to arbitrate hardware and memory.",
+            "B": "They only require higher network bandwidth.",
+            "C": "Applications are themselves complete operating systems.",
+            "D": "Applications can only execute when hosted on cloud servers."
+          },
+          "explanation": "User applications depend on the OS kernel for memory allocation and hardware device drivers."
+        },
+        "uz": {
+          "context": "Oddiy shaxsiy kompyuterda operatsion tizim o‘rnatilmaganini tasavvur qiling.",
+          "question": "Nega odatiy brauzer yoki o‘yin ilovalari odatdagidek ishlay olmaydi?",
+          "options": {
+            "A": "Ilovalar odatda qurilmalarni boshqaradigan va ishlash muhiti beradigan OS xizmatlariga tayanadi.",
+            "B": "Ularga faqat tez internet kerak.",
+            "C": "Ilovalarning o‘zi operatsion tizim hisoblanadi.",
+            "D": "Ilovalar faqat bulut serverida saqlansa ishlaydi."
+          },
+          "explanation": "Ilovalar apparat bilan to‘g‘ridan-to‘g‘ri emas, OS tizim chaqiruvlari (system calls) orqali muloqot qiladi."
+        }
+      }
+    },
+    {
+      "itemId": "SYS-I-05",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "SYS-05",
+      "domain": "Systems, Networks & Cybersecurity",
+      "domainUz": "Kompyuter tizimlari, tarmoqlar va kiberxavfsizlik",
+      "competency": "Cybersecurity",
+      "subCompetency": "MFA factors vs two passwords",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO4.1.05"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "MFA factors vs two passwords",
+      "possibleFailurePattern": "MFA factors vs two passwords",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "Which option represents a true Multi-Factor Authentication implementation?",
+          "question": "Identify the option that leverages genuinely distinct authentication factor categories.",
+          "options": {
+            "A": "A password followed by a second password.",
+            "B": "A password followed by a code sent to your physical device.",
+            "C": "Username and date of birth.",
+            "D": "A single very long password."
+          },
+          "explanation": "Combining something you know (password) with something you possess (device code) forms true 2FA."
+        },
+        "uz": {
+          "context": "Qaysi variant Multi-Factor Authentication (MFA) ga eng yaxshi misol?",
+          "question": "Haqiqatan turli autentifikatsiya omillaridan foydalanadigan variantni tanlang.",
+          "options": {
+            "A": "Parol, keyin yana boshqa parol.",
+            "B": "Parol, keyin jismoniy telefoningizga yuborilgan kod.",
+            "C": "Ism va tug‘ilgan sana.",
+            "D": "Bitta juda uzun parol."
+          },
+          "explanation": "Parol (bilish omili) va telefon/token (egalik omili) — ikki xil omildir."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-I-01",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DATA-01",
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Database Structure",
+      "subCompetency": "Record/field/primary-key uniqueness",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "9.3"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Record/field/primary-key uniqueness",
+      "possibleFailurePattern": "Record/field/primary-key uniqueness",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "In a database schema, Student_ID is designated as the Primary Key.",
+          "question": "What invariant must hold for any two distinct records in this table?",
+          "options": {
+            "A": "Their ID values must be identical.",
+            "B": "Their ID values must be distinct (unique).",
+            "C": "They may share duplicate ID values.",
+            "D": "The ID must match their phone number."
+          },
+          "explanation": "Primary keys enforce strict uniqueness across all table records."
+        },
+        "uz": {
+          "context": "Ma’lumotlar bazasida Student_ID maydoni Primary Key sifatida belgilangan.",
+          "question": "Jadvaldagi istalgan ikki xil yozuv uchun qaysi qoida to‘g‘ri bo‘lishi shart?",
+          "options": {
+            "A": "Ularning ID raqami bir xil bo‘lishi kerak.",
+            "B": "Ularning ID raqamlari turlicha (unikal) bo‘lishi kerak.",
+            "C": "Ular istalgan takrorlanuvchi ID ni tanlashi mumkin.",
+            "D": "ID telefon raqamiga teng bo‘lishi shart."
+          },
+          "explanation": "Primary key hech qachon takrorlanmaydi va har bir yozuvda unikal bo‘ladi."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-I-02",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DATA-02",
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Data Quality",
+      "subCompetency": "Invalid/noisy data",
+      "source": {
+        "name": "UNESCO AI",
+        "citation": "CG4.1.4.1; DESIGN INFERENCE"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Invalid/noisy data",
+      "possibleFailurePattern": "Invalid/noisy data",
+      "roadmapMapping": null,
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "A data column contains recorded ages: 14, 15, 14, 999, 14, 15.",
+          "question": "Which value is an obvious corrupted outlier that requires data cleaning?",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "999",
+            "D": "All recorded values are completely valid."
+          },
+          "explanation": "999 is outside biological reality, representing invalid corrupted data."
+        },
+        "uz": {
+          "context": "Foydalanuvchilarning ro‘yxatdagi yoshi 14, 15, 14, 999, 14, 15 deb yozilgan.",
+          "question": "Qaysi qiymat yaqqol anomaliya (outlier/xato) bo‘lgani uchun tekshirilishi kerak?",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "999",
+            "D": "Ro‘yxatning hammasi to‘g‘ri."
+          },
+          "explanation": "999 inson yoshi uchun mantiqsiz qiymat bo‘lib, kiritish xatosidir."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-I-03",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DATA-03",
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Data Types",
+      "subCompetency": "Precision/representation",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "8.1.2"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Precision/representation",
+      "possibleFailurePattern": "Precision/representation",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A financial column must store decimal currency values like 2500.50 without loss of precision.",
+          "question": "Which data type accurately retains fractional numeric values?",
+          "options": {
+            "A": "Integer",
+            "B": "Real / Float / Decimal",
+            "C": "Boolean",
+            "D": "Character"
+          },
+          "explanation": "Floating point and fixed decimal data types preserve fractional values."
+        },
+        "uz": {
+          "context": "2500.50 kabi narxni kasr qismi yo‘qolmasdan saqlash kerak.",
+          "question": "Qaysi ma’lumot turi mos keladi?",
+          "options": {
+            "A": "Integer",
+            "B": "Real / Float / Decimal",
+            "C": "Boolean",
+            "D": "Character"
+          },
+          "explanation": "Kasrli sonlar Float, Real yoki Decimal ma’lumot turlarida saqlanadi."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-I-04",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DATA-04",
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Spreadsheets",
+      "subCompetency": "Relative references",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO1.3.19"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Relative references",
+      "possibleFailurePattern": "Relative references",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "Cell B1 contains the relative formula =A1. You copy the formula from B1 down to B2.",
+          "question": "What does the newly pasted formula in B2 become?",
+          "options": {
+            "A": "=A1",
+            "B": "=A2",
+            "C": "=B1",
+            "D": "10"
+          },
+          "explanation": "The relative row reference increments by one, updating =A1 to =A2."
+        },
+        "uz": {
+          "context": "B1 katagida =A1 formulasi bor. Formulani B1 dan B2 ga nusxalaysiz.",
+          "question": "Yangi formula qanday bo‘ladi?",
+          "options": {
+            "A": "=A1",
+            "B": "=A2",
+            "C": "=B1",
+            "D": "10"
+          },
+          "explanation": "Nisbiy manzil pastga nusxalanganda qator indeksi ortib, =A2 bo‘ladi."
+        }
+      }
+    },
+    {
+      "itemId": "DATA-I-05",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "DATA-05",
+      "domain": "Data & Databases",
+      "domainUz": "Ma’lumotlar va ma’lumotlar bazalari",
+      "competency": "Data Quality",
+      "subCompetency": "Validation vs verification",
+      "source": {
+        "name": "Cambridge IGCSE",
+        "citation": "7.2"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Validation vs verification",
+      "possibleFailurePattern": "Validation vs verification",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A signup form asks you to enter your new password twice to ensure you did not mistype it.",
+          "question": "What is this dual-entry verification process called?",
+          "options": {
+            "A": "Validation",
+            "B": "Verification",
+            "C": "Encryption",
+            "D": "Coding"
+          },
+          "explanation": "Double-entry confirmation is a classic Verification technique."
+        },
+        "uz": {
+          "context": "Forma xato yozmaganligingizni tekshirish uchun yangi parolni ikki marta kiritishni so‘raydi.",
+          "question": "Bu tekshiruv nima deb ataladi?",
+          "options": {
+            "A": "Validation",
+            "B": "Verification",
+            "C": "Encryption",
+            "D": "Coding"
+          },
+          "explanation": "Ikki maydonni tengligiga tekshirish — bu Verification jarayonidir."
+        }
+      }
+    },
+    {
+      "itemId": "AI-I-01",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "AI-01",
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "Human agency",
+      "subCompetency": "Human responsibility / automation",
+      "source": {
+        "name": "UNESCO AI",
+        "citation": "CG4.1.1.1"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Human responsibility / automation",
+      "possibleFailurePattern": "Human responsibility / automation",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "An automated AI system deployed by an enterprise encounters a software failure that causes severe data loss.",
+          "question": "Who is ultimately legally and ethically responsible for the system's deployment and outcomes?",
+          "options": {
+            "A": "The AI model itself, as an independent legal person.",
+            "B": "The engineers and organization that developed, tested, and deployed the system.",
+            "C": "Nobody, because software is exempt from liability.",
+            "D": "The landlord of the data center building."
+          },
+          "explanation": "AI models are computational artifacts; accountability strictly rests on the deploying organization and creators."
+        },
+        "uz": {
+          "context": "Kompaniya tomonidan ishga tushirilgan avtomatlashtirilgan AI tizimi dasturiy xato tufayli jiddiy zarar yetkazdi.",
+          "question": "Tizimning xavfsizligi, test qilinishi va yetkazilgan zarar uchun oxir-oqibat kim javobgar?",
+          "options": {
+            "A": "AI ning o‘zi, chunki u alohida axloqiy shaxs.",
+            "B": "Tizimni yaratgan, sinovdan o‘tkazgan va ishga tushirgan insonlar hamda tashkilot.",
+            "C": "Hech kim, chunki dasturiy ta’minot uchun javobgarlik bo‘lmaydi.",
+            "D": "Server joylashgan bino egasi."
+          },
+          "explanation": "Sun’iy intellekt texnologik vositadir; uning xatti-harakatlari uchun uni yaratgan va joriy qilgan insonlar va tashkilotlar mas’uldirlar."
+        }
+      }
+    },
+    {
+      "itemId": "AI-I-02",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "AI-02",
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "AI Foundations",
+      "subCompetency": "LLM vs database/search-engine mental model",
+      "source": {
+        "name": "UNESCO AI / DigComp 3.0",
+        "citation": "CG4.1.3.1; LO3.1.04"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "LLM vs database/search-engine mental model",
+      "possibleFailurePattern": "LLM vs database/search-engine mental model",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "You ask a generative AI model to draft a realistic technical story about a completely fictional gadget.",
+          "question": "Through what mechanism can the model construct this fictional narrative?",
+          "options": {
+            "A": "It looked up a real gadget in an authoritative technical catalog.",
+            "B": "It synthesizes plausible token combinations based on learned language patterns without requiring real-world existence.",
+            "C": "A human operator remotely types the response.",
+            "D": "It must locate a photograph of the object first."
+          },
+          "explanation": "Generative models produce probable token sequences learned during pretraining regardless of real-world veracity."
+        },
+        "uz": {
+          "context": "Siz generativ AI dan aslida mavjud bo‘lmagan texnologiya haqida realistik ilmiy hikoya yozishni so‘raysiz.",
+          "question": "AI bunday hikoyani qanday yarata oladi?",
+          "options": {
+            "A": "U tekshirilgan faktlar bazasidan haqiqiy qurilmani topgan bo‘lishi kerak.",
+            "B": "U trening davomida o‘rgangan naqshlar asosida ehtimoliy so‘zlar ketma-ketligini yaratadi; tasvirlangan narsa real bo‘lishi shart emas.",
+            "C": "Kompyuter ichidagi odam hikoyani yozadi.",
+            "D": "Avval internetdan uning suratini topishi shart."
+          },
+          "explanation": "Generativ modellar til naqshlari va ehtimollik taqsimotiga tayangan holda to‘qima matnlarni osongina shakllantiradi."
+        }
+      }
+    },
+    {
+      "itemId": "AI-I-03",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "AI-03",
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "AI Applications",
+      "subCompetency": "Vague vs constrained prompts",
+      "source": {
+        "name": "DigComp 3.0",
+        "citation": "LO2.1.20"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Vague vs constrained prompts",
+      "possibleFailurePattern": "Vague vs constrained prompts",
+      "roadmapMapping": null,
+      "correctOption": "C",
+      "content": {
+        "en": {
+          "context": "You want an AI assistant to generate a concise, conventional Git commit message for an authentication fix.",
+          "question": "Which prompt is most effective for this technical task?",
+          "options": {
+            "A": "Write something.",
+            "B": "Tell me about Git.",
+            "C": "'Write a 1-line Conventional Commit message for fixing a password validation bug (e.g. fix(auth): ...).'",
+            "D": "Write a poem about computer history."
+          },
+          "explanation": "Clear format constraints like Conventional Commits guide the AI to generate actionable engineering output."
+        },
+        "uz": {
+          "context": "Siz AI dan loyihangiz uchun qisqa va aniq Git commit xabari (commit message) yozishni so‘ramoqchisiz.",
+          "question": "Qaysi prompt eng maqsadli va foydali natija beradi?",
+          "options": {
+            "A": "Biror narsa yoz.",
+            "B": "Git haqida gapirib ber.",
+            "C": "“Foydalanuvchi parolini tekshirishdagi xatoni tuzatish bo‘yicha Conventional Commits formatida 1 qatorli xabar yoz (masalan: fix(auth): ...).”",
+            "D": "Menga kompyuterlar tarixi haqida she’r yoz."
+          },
+          "explanation": "Aniq kontekst va formatni (Conventional Commits) belgilash to‘g‘ri natija olish garovidir."
+        }
+      }
+    },
+    {
+      "itemId": "AI-I-04",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "AI-04",
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "Ethics of AI",
+      "subCompetency": "Training-data representation bias",
+      "source": {
+        "name": "UNESCO AI / DigComp 3.0",
+        "citation": "CG4.1.2.2; LO1.2.13"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Training-data representation bias",
+      "possibleFailurePattern": "Training-data representation bias",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "An object classification model is trained solely on images of red apples, with no other fruit varieties.",
+          "question": "What is the primary risk when the model encounters a yellow banana?",
+          "options": {
+            "A": "The AI will generalize accurately without any prior exposure.",
+            "B": "Because the training set lacked diverse fruit classes, the model will misclassify or fail to recognize it.",
+            "C": "The model will request to purchase groceries.",
+            "D": "The hardware sensor will recalibrate automatically from sunlight."
+          },
+          "explanation": "Lack of class representation in training data causes severe misclassification on novel inputs."
+        },
+        "uz": {
+          "context": "Tasvirlarni aniqlash AI modeli faqat qizil olmalar suratida o‘qitilgan, boshqa mevalar berilmagan.",
+          "question": "U sariq bananni ko‘rganda asosiy xavf nima?",
+          "options": {
+            "A": "AI aqlli bo‘lgani uchun uni har doim to‘g‘ri taniydi.",
+            "B": "Trening misollarida boshqa mevalar bo‘lmagani sababli uni noto‘g‘ri tasniflashi yoki tanimasligi mumkin.",
+            "C": "U sizdan banan sotib olishingizni so‘raydi.",
+            "D": "Quyoshga qarab bananni avtomatik o‘rganadi."
+          },
+          "explanation": "Trening to‘plamida xilma-xillik bo‘lmasa, model yangi sinflarni to‘g‘ri aniqlay olmaydi."
+        }
+      }
+    },
+    {
+      "itemId": "AI-I-05",
+      "assessmentRole": "isolation",
+      "parentCoreItemId": "AI-05",
+      "domain": "AI Literacy",
+      "domainUz": "Sun’iy intellekt savodxonligi",
+      "competency": "AI system design",
+      "subCompetency": "Proportionality/problem suitability",
+      "source": {
+        "name": "UNESCO AI",
+        "citation": "CG4.1.4.1"
+      },
+      "difficulty": "foundation",
+      "recommendedGradeBand": "grade_8_9",
+      "questionType": "isolation",
+      "isolationTarget": "Proportionality/problem suitability",
+      "possibleFailurePattern": "Proportionality/problem suitability",
+      "roadmapMapping": null,
+      "correctOption": "B",
+      "content": {
+        "en": {
+          "context": "A software application needs to compute a simple addition (2 + 2 = 4).",
+          "question": "Is deploying a large, energy-intensive generative AI model appropriate for this task?",
+          "options": {
+            "A": "Yes, neural networks are always superior to traditional arithmetic instructions.",
+            "B": "No; deterministic arithmetic code is 100% exact, microsecond fast, and consumes negligible compute resources.",
+            "C": "Yes, because generative AI can produce creative answers beyond 4.",
+            "D": "No, because software models are prohibited from performing math."
+          },
+          "explanation": "Deterministic arithmetic is exact and efficient; invoking large probabilistic models for basic arithmetic is wasteful and error-prone."
+        },
+        "uz": {
+          "context": "Siz dasturda ikkita butun sonni qo‘shmoqchisiz (2 + 2 = 4).",
+          "question": "Buning uchun katta va ko‘p energiya sarflaydigan generativ AI modelidan foydalanish maqbulmi?",
+          "options": {
+            "A": "Ha, AI har doim an’anaviy koddan yaxshiroq.",
+            "B": "Yo‘q; oddiy arifmetik amal (2 + 2) 100% aniq, ishonchli, tez va resurs sarflamasdan ishlaydi.",
+            "C": "Ha, AI 4 dan ijodiyroq javob berishi mumkin.",
+            "D": "Yo‘q, AI ga matematika qilish taqiqlangan."
+          },
+          "explanation": "Oddiy arifmetik amallar uchun og‘ir AI modellarini ishlatish mutanosib emas (proportionality). Dasturlash tillaridagi standart arifmetika yetarli va aniq."
+        }
+      }
+    }
+  ]
+}

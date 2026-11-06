@@ -1,0 +1,43 @@
+"use client";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { forgotSchema } from "@/validation/schemas";
+import { forgotAction } from "@/actions/auth";
+import { Button } from "@/components/ui/button";
+import type { Locale } from "@/types/domain";
+
+export function ForgotForm({ locale }: { locale: Locale }) {
+  const [message, setMessage] = useState("");
+  const [pending, setPending] = useState(false);
+  const { register, handleSubmit, formState: { errors } } = useForm<z.infer<typeof forgotSchema>>({ resolver: zodResolver(forgotSchema) });
+  const uz = locale === "uz";
+
+  async function onSubmit(v: z.infer<typeof forgotSchema>) {
+    setPending(true);
+    setMessage("");
+    try {
+      const res = await forgotAction(locale, v);
+      if (res?.message) setMessage(res.message);
+    } catch {
+      setMessage(uz ? "Xatolik yuz berdi. Qayta urinib ko‘ring." : "An error occurred. Please try again.");
+    } finally {
+      setPending(false);
+    }
+  }
+
+  return (
+    <form className="w-full max-w-md rounded-2xl border border-ui-border bg-surface p-5 text-primary-text shadow-sm sm:p-7" onSubmit={handleSubmit(onSubmit)}>
+      <h1 className="display text-3xl font-semibold sm:text-4xl">{uz ? "Parolni tiklash" : "Reset password"}</h1>
+      <p className="mt-3 text-sm text-secondary-text">{uz ? "Email manzilingizga tiklash havolasi yuboramiz." : "We’ll email you a secure reset link."}</p>
+      <label className="mt-7 block text-sm font-bold" htmlFor="reset-email">Email</label>
+      <input id="reset-email" type="email" autoComplete="email" aria-invalid={!!errors.email} className="mt-2 min-h-11 w-full rounded-lg border border-strong-border bg-white px-3 text-primary-text focus:border-teal-800 focus:ring-2 focus:ring-teal-200" {...register("email")} />
+      {errors.email && <p role="alert" className="mt-1 text-xs font-medium text-red-700">{uz ? "To‘g‘ri email manzilini kiriting." : errors.email.message}</p>}
+      {message && <p role="status" className="mt-3 rounded-lg border border-teal-300 bg-teal-50 p-3 text-sm font-medium text-teal-950">{message}</p>}
+      <Button disabled={pending} aria-busy={pending} className="mt-5 w-full">
+        {pending ? (uz ? "Yuborilmoqda…" : "Sending…") : (uz ? "Havolani yuborish" : "Send reset link")}
+      </Button>
+    </form>
+  );
+}

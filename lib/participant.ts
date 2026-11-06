@@ -1,0 +1,2 @@
+export function generateParticipantCode(sequence:number,year=new Date().getUTCFullYear()){if(!Number.isInteger(sequence)||sequence<1||sequence>999999)throw new Error("Participant sequence must be between 1 and 999999");return`SM-${year}-${String(sequence).padStart(6,"0")}`}
+export function generateLocalParticipantCode(year=new Date().getUTCFullYear()){const bytes=new Uint32Array(1);crypto.getRandomValues(bytes);return generateParticipantCode(bytes[0]%999999+1,year)}

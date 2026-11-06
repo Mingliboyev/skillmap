@@ -1,0 +1,3 @@
+import { getActivityLog, getAdminItemAnalytics, getAdminOverview, getAdminParticipants, getAdminQuestions, getPilotSettings } from "../lib/admin-data";
+const [overview,questions,participants,analytics,settings,activity]=await Promise.all([getAdminOverview(),getAdminQuestions(),getAdminParticipants(),getAdminItemAnalytics(),getPilotSettings(),getActivityLog()]);
+console.log(JSON.stringify({overview:{participants:overview.participants,completed:overview.completed,published:overview.published},questions:questions.length,participants:participants.length,analytics:analytics.length,pilotNamePresent:Boolean(settings.pilot_name),activity:activity.length}));

@@ -1,0 +1,4 @@
+import {AlertTriangle,Inbox}from "lucide-react";
+export function Skeleton({className="h-5 w-full"}:{className?:string}){return <div aria-hidden className={`animate-pulse rounded bg-slate-300 ${className}`}/>}
+export function EmptyState({title,body}:{title:string;body:string}){return <div className="grid place-items-center rounded-2xl border border-dashed border-strong-border bg-slate-50 p-10 text-center"><Inbox className="text-slate-600" size={36}/><h3 className="mt-4 font-bold text-primary-text">{title}</h3><p className="mt-2 max-w-sm text-sm text-secondary-text">{body}</p></div>}
+export function ErrorState({title,body}:{title:string;body:string}){return <div className="rounded-xl border border-red-200 bg-red-50 p-5 text-red-900"><AlertTriangle/><h3 className="mt-3 font-bold">{title}</h3><p className="mt-1 text-sm">{body}</p></div>}

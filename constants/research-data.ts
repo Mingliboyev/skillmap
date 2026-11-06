@@ -1,0 +1,4 @@
+export const regionalScores=[{region:"Tashkent City",score:74,participants:412},{region:"Samarkand",score:67,participants:328},{region:"Fergana",score:65,participants:301},{region:"Bukhara",score:64,participants:214},{region:"Namangan",score:61,participants:287},{region:"Karakalpakstan",score:57,participants:183},{region:"Surkhandarya",score:55,participants:206}];
+export const categoryAverages=[{name:"Digital literacy",score:72},{name:"Computational thinking",score:64},{name:"Programming",score:57},{name:"Cybersecurity",score:69},{name:"AI literacy",score:52},{name:"Problem solving",score:66}];
+export const scoreDistribution=[{range:"0–20",students:42},{range:"21–40",students:184},{range:"41–60",students:502},{range:"61–80",students:731},{range:"81–100",students:472}];
+export const gradeScores=[{grade:"8",score:57},{grade:"9",score:62},{grade:"10",score:68},{grade:"11",score:72}];
