@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { NextResponse } from "next/server";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import type { EmailOtpType } from "@supabase/supabase-js";
@@ -30,7 +29,3 @@ export async function GET(request: Request, { params }: { params: Promise<{ loca
   const redirectTarget = next.startsWith("/") ? next : `/${safeLocale}`;
   return NextResponse.redirect(new URL(redirectTarget, url.origin));
 }
-=======
-import {NextResponse} from "next/server";import {createSupabaseServerClient} from "@/lib/supabase/server";
-export async function GET(request:Request,{params}:{params:Promise<{locale:string}>}){const {locale}=await params;const url=new URL(request.url);const code=url.searchParams.get("code");if(code){const supabase=await createSupabaseServerClient();await supabase?.auth.exchangeCodeForSession(code)}return NextResponse.redirect(new URL(`/${locale}`,url.origin))}
->>>>>>> b5f5cc6a2d1b2769b7b52f64961832ba40907e93
